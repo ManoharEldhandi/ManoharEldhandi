@@ -56,6 +56,9 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/snake.svg" alt="Snake animation" />
+## 🐍 Contribution Snake
 
-###
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-snake-dark.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/ocean.gif" />
+</picture>
