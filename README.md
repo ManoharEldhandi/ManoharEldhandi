@@ -12,7 +12,7 @@
 
 ###
 
-<img align="right" height="130" src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif"  />
+<img align="right" src="assets/eat-sleep-code-repeat.gif" height="600" width ="600" alt="Eat Sleep Code Repeat"  />
 
 ###
 
