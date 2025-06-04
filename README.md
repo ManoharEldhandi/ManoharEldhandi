@@ -1,15 +1,13 @@
 <!-- Profile Header -->
 <h1 align="center">
-  Hi <span style="display:inline-block; transform-origin: 70% 70%; animation: wave 2s infinite;">👋</span>, I'm Manohar Eldhandi
+  Hi <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" height="30" width="30" style="margin-bottom: -5px;" alt="waving hand" />
+  I'm Manohar Eldhandi
 </h1>
-<h3 align="center">Brewing ideas & code 24/7</h3>
 
-
-<!-- Typing SVG -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=435&lines=Backend+Developer;Machine+Learning+Enthusiast;Lifelong+Learner" alt="Typing SVG" />
+<br><br>
+<p align="left">
+   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&duration=3000&pause=1000&Center=true&vCenter=true&color=2780F7&width=800&height=70&lines=Backend+Developer+...;Machine+Learning+Enthusiast+...;Life+Long+Learner+...;Brewing+ideas+%26+code+24%2F7+..." alt="Typing SVG" />
 </p>
-
 
 <h1 align="left" >About Me</h1>
 
