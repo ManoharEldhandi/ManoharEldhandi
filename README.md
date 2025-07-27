@@ -11,7 +11,7 @@
 
 <h1 align="left" >About Me</h1>
 
-I’m a final-year student, passionate about building scalable, modular software solutions and machine learning models that solve real-world problems, I thrive at the intersection of clean code, practical innovation, and mentorship.
+I’m a recent graduate passionate about building scalable, modular software solutions and machine learning models that solve real-world problems, I thrive at the intersection of clean code, practical innovation, and mentorship.
 
 - I'm based in India  
 - See my portfolio at [manohareldhandi.github.io/portfolio](http://manohareldhandi.github.io/portfolio/)  
