@@ -15,7 +15,7 @@ I’m a recent graduate passionate about building scalable, modular software sol
 
 - I'm based in India  
 - See my portfolio at [manohareldhandi.github.io/portfolio](http://manohareldhandi.github.io/portfolio/)  
-- I'm currently working on [MeOS](https://github.com/ManoharEldhandi/MeOS/blob/main/README.md)  
+- I'm currently working on [OnTheWay](https://github.com/ManoharEldhandi/ontheway-backend)  
 - Learning whatever cool tech I can get my hands on — the pace is insane, and I love it
 - Open to collaborating on real-world impactful projects.
 <br>
