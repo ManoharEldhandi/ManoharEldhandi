@@ -11,7 +11,7 @@
 
 <h1 align="left" >About Me</h1>
 
-I’m a recent graduate passionate about building scalable, modular software solutions and machine learning models that solve real-world problems, I thrive at the intersection of clean code, practical innovation, and mentorship.
+I’m a recent Computer Science graduate who enjoys building clean and scalable backend systems using Java, Python, and SQL. I’m also into machine learning — love playing around with data, training models, and turning ideas into working solutions. I’ve worked on projects like OnTheWay, WaterNet, and JobNest, where I handled logic, APIs, and smart features. I enjoy learning new stuff, helping others, and making things that actually solve real problems.
 
 - I'm based in India  
 - See my portfolio at [manohareldhandi.github.io/portfolio](http://manohareldhandi.github.io/portfolio/)  
@@ -19,7 +19,7 @@ I’m a recent graduate passionate about building scalable, modular software sol
 - Learning whatever cool tech I can get my hands on — the pace is insane, and I love it
 - Open to collaborating on real-world impactful projects.
 <br>
-<h1 align="left">Inbox Always Open</h1>
+<h1 align="left">Connect with Me</h1>
 
 <p align="left">
   <a href="mailto:manohar.eldhandi@outlook.com" target="_blank" style="margin-right: 10px;">
@@ -38,29 +38,35 @@ I’m a recent graduate passionate about building scalable, modular software sol
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&style=for-the-badge" height="35"/>
   </a>
 </p>
-<br>
+
 <h1 align="left">Tech Stack</h1>
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="50" style="margin: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg" height="50" style="margin: 10px;" />
+<div style="font-family: 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.8;">
+  <table style="border-collapse: collapse;">
+    <tr>
+      <td style="padding: 8px 16px;"><strong>Programming Languages</strong></td>
+      <td style="padding: 8px 16px;">Java, Python, C, JavaScript, Go, HTML, CSS</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 16px;"><strong>Frameworks & Libraries</strong></td>
+      <td style="padding: 8px 16px;">Spring Boot, Django, RESTful APIs, TensorFlow, PyTorch, scikit-learn, XGBoost</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 16px;"><strong>Databases</strong></td>
+      <td style="padding: 8px 16px;">MySQL, MongoDB</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 16px;"><strong>Tools & Platforms</strong></td>
+      <td style="padding: 8px 16px;">GitHub, Postman, Google Colaboratory, Amazon Web Services, Salesforce</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 16px;"><strong>Core Concepts</strong></td>
+      <td style="padding: 8px 16px;">Software Development Life Cycle, Data Structures and Algorithms, Object-Oriented Programming, Machine Learning, System Design, Operating Systems, Exploratory Data Analysis, Database Management Systems</td>
+    </tr>
+  </table>
 </div>
-<br>
-<br>
+
+
 <h1 align="left" >Contributions</h1>
 
 <picture align="left">
