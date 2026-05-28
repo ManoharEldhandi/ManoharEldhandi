@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=22&amp;duration=2600&amp;pause=800&amp;color=F97316&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Generative+AI+systems+with+real+engineering+utility;MCP+servers%2C+LangGraph+workflows%2C+AI+systems;Backend+APIs+with+security%2C+tests%2C+and+traceability;Competitive+programming+discipline+for+hard+problems" alt="Typing animation" />
+  <img src="assets/typewriter-lines.svg" alt="Typing animation with engineering focus lines" />
 </p>
 
 <p align="center">
@@ -13,12 +13,6 @@
   <a href="mailto:manohar.eldhandi@outlook.com"><img src="https://img.shields.io/badge/Email-16A34A?style=for-the-badge&amp;logo=microsoftoutlook&amp;logoColor=white" alt="Email" /></a>
 </p>
 
-<p align="center">
-  <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="https://img.shields.io/badge/LeetCode-ManoharEldhandi-FFA116?style=for-the-badge&amp;logo=leetcode&amp;logoColor=black" alt="LeetCode" /></a>
-  <a href="https://codeforces.com/profile/ACatLastTry"><img src="https://img.shields.io/badge/Codeforces-ACatLastTry-7C3AED?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white" alt="Codeforces" /></a>
-  <a href="https://www.codechef.com/users/acatlasttry"><img src="https://img.shields.io/badge/CodeChef-acatlasttry-5B4638?style=for-the-badge&amp;logo=codechef&amp;logoColor=white" alt="CodeChef" /></a>
-</p>
-
 <br>
 
 <table>
@@ -26,14 +20,13 @@
     <td width="64%" valign="top">
       <h2>About Me</h2>
       <p>
-        I am <strong>Manohar Eldhandi</strong>, a <strong>Software Engineer Trainee at Cisco</strong> working across generative AI systems and backend engineering.
-        I like building AI systems that do real work: workflows connected to tools, RAG over useful context,
-        MCP servers, reliable APIs, audit trails, and tests that keep everything honest.
+        I am <strong>Manohar Eldhandi</strong>, a <strong>Software Engineer Trainee at Cisco</strong> in Bengaluru.
+        I build software where AI workflows meet production backend systems, with a strong bias for clear APIs,
+        useful automation, traceable outputs, and tests that keep the system honest.
       </p>
       <ul>
-        <li>Software Engineer Trainee at <strong>Cisco</strong>, Bengaluru.</li>
-        <li>Focused on <strong>generative AI systems, MCP, LangGraph, RAG, backend APIs, and automation</strong>.</li>
-        <li>Comfortable moving between product logic, data flow, model integration, and test automation.</li>
+        <li>Working on AI-assisted compliance automation and internal engineering tooling.</li>
+        <li>Comfortable moving between product logic, data flow, model integration, backend services, and test automation.</li>
         <li>Competitive programming background: Codeforces Expert, CodeChef 4 star, and over 500 LeetCode problems.</li>
       </ul>
     </td>
@@ -50,7 +43,7 @@
   <tr>
     <td width="33%" valign="top">
       <h3>Generative AI Systems</h3>
-      <p>LangGraph workflows, MCP servers, tool-calling assistants, RAG pipelines, vector retrieval, prompt engineering, and AI-backed engineering tooling.</p>
+      <p>Tool-calling workflows, MCP server interfaces, retrieval over engineering context, prompt design, and AI-backed internal tooling.</p>
     </td>
     <td width="33%" valign="top">
       <h3>Backend Platforms</h3>
@@ -65,16 +58,9 @@
 
 ## At Cisco
 
-<p>
-  <img src="https://img.shields.io/badge/Security%20Compliance%20Automation-F97316?style=for-the-badge&amp;logo=cisco&amp;logoColor=white" alt="Security compliance automation" />
-  <img src="https://img.shields.io/badge/MCP%20Server-111827?style=for-the-badge" alt="MCP server" />
-  <img src="https://img.shields.io/badge/LangGraph%20Agents-7C3AED?style=for-the-badge" alt="LangGraph agents" />
-  <img src="https://img.shields.io/badge/RAG%20Pipelines-16A34A?style=for-the-badge" alt="RAG pipelines" />
-</p>
-
 - Building an AI-powered security compliance automation tool that reduces manual code review effort by about 60%.
 - Designed and deployed an MCP server that connects internal engineering tools with AI assistants.
-- Built LangGraph-based agent workflows with RAG and vector retrieval for code and compliance analysis.
+- Built LangGraph-based workflows with retrieval over code and compliance context.
 - Engineered REST APIs, MySQL schemas, and audit logging pipelines for release-level traceability.
 - Developed Playwright end-to-end automation for a large-scale internal Cisco application.
 
@@ -178,13 +164,6 @@
 **B.Tech in Computer Science and Engineering, AI & ML specialization**<br>
 CMR Institute of Technology, Hyderabad, affiliated to JNTU Hyderabad<br>
 CGPA: 8.48
-
-## How I Build
-
-- AI workflows should be connected to real tools, real data, and clear boundaries.
-- Backend APIs should be understandable, secure, testable, and easy to extend.
-- AI features should produce traceable outputs, not mysterious magic.
-- Competitive programming habits help me reason through edge cases, constraints, and performance.
 
 <p align="center">
   <img src="assets/profile-footer.svg" alt="Profile footer" />
