@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Engineering Focus Lines</title>
+  <desc id="desc">Four animated typing lines in different colors describing Manohar Eldhandi's generative AI and backend engineering focus.</desc>
+  <defs>
+    <clipPath id="line1"><rect x="56" y="28" width="0" height="24"><animate attributeName="width" values="0;850;850;0;0" keyTimes="0;0.20;0.88;0.94;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line2"><rect x="56" y="58" width="0" height="24"><animate attributeName="width" values="0;0;850;850;0;0" keyTimes="0;0.18;0.38;0.88;0.94;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line3"><rect x="56" y="88" width="0" height="24"><animate attributeName="width" values="0;0;0;850;850;0;0" keyTimes="0;0.36;0.38;0.58;0.88;0.94;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line4"><rect x="56" y="118" width="0" height="24"><animate attributeName="width" values="0;0;0;0;850;850;0" keyTimes="0;0.55;0.57;0.58;0.78;0.88;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101010" />
+      <stop offset="1" stop-color="#161b13" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; }
+      .cursor { animation: blink 0.85s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+  <rect x="10" y="8" width="980" height="134" rx="22" fill="url(#panel)" stroke="rgba(255,255,255,0.14)" />
+  <circle cx="32" cy="30" r="5" fill="#ef4444" />
+  <circle cx="50" cy="30" r="5" fill="#facc15" />
+  <circle cx="68" cy="30" r="5" fill="#22c55e" />
+
+  <text x="56" y="48" class="mono" font-size="18" fill="#f97316" clip-path="url(#line1)">&gt; LangGraph workflows with tools, retrieval, and guardrails.</text>
+  <text x="56" y="78" class="mono" font-size="18" fill="#22c55e" clip-path="url(#line2)">&gt; MCP servers connecting AI assistants to engineering systems.</text>
+  <text x="56" y="108" class="mono" font-size="18" fill="#a855f7" clip-path="url(#line3)">&gt; Java and Python APIs with auth, audit logs, tests, and docs.</text>
+  <text x="56" y="138" class="mono" font-size="18" fill="#facc15" clip-path="url(#line4)">&gt; Competitive-programming discipline for edge cases and scale.</text>
+  <text x="932" y="138" class="mono cursor" font-size="20" fill="#ffffff">_</text>
+</svg>
