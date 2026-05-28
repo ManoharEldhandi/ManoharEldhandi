@@ -101,16 +101,19 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td colspan="2" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/ontheway-backend">OnTheWay</a></h3>
       <p><strong>Route-based preordering backend</strong></p>
       <ul>
         <li>Built 27 REST APIs for users, merchants, and admins.</li>
         <li>Implemented JWT/RBAC with Spring Security.</li>
-        <li>Added order tracking, inventory APIs, Swagger docs, and JUnit coverage.</li>
+        <li>Added order tracking, merchant inventory/status APIs, Swagger docs, and JUnit coverage.</li>
+        <li>Structured the backend with clear controller-service layers and database-backed workflows.</li>
       </ul>
       <p><sub><strong>Stack:</strong> Java, Spring Boot, MySQL, JWT, JUnit</sub></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/WaterNet">WaterNet</a></h3>
       <p><strong>Real-time water quality assessment</strong></p>
@@ -121,8 +124,6 @@
       </ul>
       <p><sub><strong>Stack:</strong> Python, Django, scikit-learn, XGBoost, MySQL</sub></p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/HackerEarth-Machine-Learning-challenge--World-Water-Day">Smart Water Monitoring</a></h3>
       <p><strong>HackerEarth ML challenge solution</strong></p>
@@ -133,30 +134,33 @@
       </ul>
       <p><sub><strong>Stack:</strong> Python, XGBoost, feature engineering, ML pipeline</sub></p>
     </td>
-    <td width="50%" valign="top">
-      <h3>AI Security Compliance Automation</h3>
-      <p><strong>Generative AI compliance workflow</strong></p>
-      <ul>
-        <li>Built around code and compliance analysis.</li>
-        <li>Connected assistants to tools and engineering context.</li>
-        <li>Ranked Top 35 among over 2,000 Cisco hackathon teams.</li>
-      </ul>
-      <p><sub><strong>Stack:</strong> LangGraph, MCP, RAG, backend APIs, Playwright</sub></p>
-    </td>
   </tr>
 </table>
 
 ## Coding Profiles
 
-<p align="center">
-  <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="https://leetcard.jacoblin.cool/ManoharEldhandi?theme=dark&amp;font=Inter&amp;ext=heatmap" alt="LeetCode profile card" /></a>
-</p>
-
-<p align="center">
-  <a href="https://www.codechef.com/users/acatlasttry"><img src="https://img.shields.io/badge/CodeChef-4%20Star%20%7C%201893-5B4638?style=for-the-badge&amp;logo=codechef&amp;logoColor=white" alt="CodeChef 4 star rating 1893" /></a>
-  <a href="https://codeforces.com/profile/ACatLastTry"><img src="https://img.shields.io/badge/Codeforces-Expert%20%7C%201785-7C3AED?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white" alt="Codeforces Expert rating 1785" /></a>
-  <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="https://img.shields.io/badge/LeetCode-500%20Problems-FFA116?style=for-the-badge&amp;logo=leetcode&amp;logoColor=black" alt="LeetCode 500 problems" /></a>
-</p>
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <h3><a href="https://leetcode.com/u/ManoharEldhandi/">LeetCode</a></h3>
+      <p><strong>553+ problems solved</strong></p>
+      <p><sub>Interview-style problem solving across arrays, graphs, dynamic programming, SQL, and system-thinking patterns.</sub></p>
+      <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="https://img.shields.io/badge/LeetCode-500%2B%20Problems-FFA116?style=for-the-badge&amp;logo=leetcode&amp;logoColor=black" alt="LeetCode 500 plus problems" /></a>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3><a href="https://codeforces.com/profile/ACatLastTry">Codeforces</a></h3>
+      <p><strong>Expert, max rating 1785</strong></p>
+      <p><sub>Strong contest performance, including rank 252 out of over 24,000 participants in a Division 2 round.</sub></p>
+      <a href="https://codeforces.com/profile/ACatLastTry"><img src="https://img.shields.io/badge/Codeforces-Expert%20%7C%201785-7C3AED?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white" alt="Codeforces Expert rating 1785" /></a>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3><a href="https://www.codechef.com/users/acatlasttry">CodeChef</a></h3>
+      <p><strong>4 star, rating 1893</strong></p>
+      <p><sub>Regular contest practice with a global rank 13 finish in CodeChef Starters 147 Division 4.</sub></p>
+      <a href="https://www.codechef.com/users/acatlasttry"><img src="https://img.shields.io/badge/CodeChef-4%20Star%20%7C%201893-5B4638?style=for-the-badge&amp;logo=codechef&amp;logoColor=white" alt="CodeChef 4 star rating 1893" /></a>
+    </td>
+  </tr>
+</table>
 
 ## Achievements
 

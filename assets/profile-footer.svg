@@ -10,7 +10,7 @@
     <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f97316" />
       <stop offset="0.32" stop-color="#22c55e" />
-      <stop offset="0.68" stop-color="#38bdf8" />
+      <stop offset="0.68" stop-color="#14b8a6" />
       <stop offset="1" stop-color="#a855f7" />
     </linearGradient>
     <style>
@@ -35,7 +35,7 @@
   </g>
   <g transform="translate(520 56)">
     <rect class="node" x="0" y="0" width="156" height="46" rx="23" />
-    <text class="mono" x="35" y="29" fill="#38bdf8" font-size="14" font-weight="800">AI ASSIST</text>
+    <text class="mono" x="35" y="29" fill="#14b8a6" font-size="14" font-weight="800">AI ASSIST</text>
   </g>
   <g transform="translate(760 34)">
     <rect class="node" x="0" y="0" width="128" height="46" rx="23" />

@@ -10,7 +10,7 @@
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f97316" />
       <stop offset="0.32" stop-color="#22c55e" />
-      <stop offset="0.66" stop-color="#38bdf8" />
+      <stop offset="0.66" stop-color="#14b8a6" />
       <stop offset="1" stop-color="#a855f7" />
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
@@ -24,10 +24,6 @@
     <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0" stop-color="#22c55e" stop-opacity="0.34" />
       <stop offset="1" stop-color="#22c55e" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.32" />
-      <stop offset="1" stop-color="#38bdf8" stop-opacity="0" />
     </radialGradient>
     <filter id="softBlur">
       <feGaussianBlur stdDeviation="22" />
@@ -56,7 +52,6 @@
   <rect width="1200" height="340" rx="34" fill="url(#bg)" />
   <circle cx="1020" cy="50" r="190" fill="url(#orangeGlow)" filter="url(#softBlur)" />
   <circle cx="935" cy="250" r="190" fill="url(#greenGlow)" filter="url(#softBlur)" />
-  <circle cx="520" cy="10" r="180" fill="url(#blueGlow)" filter="url(#softBlur)" />
 
   <path d="M0 76 H1200 M0 140 H1200 M0 204 H1200 M0 268 H1200" stroke="#ffffff" stroke-opacity="0.035" />
   <path d="M112 0 V340 M260 0 V340 M408 0 V340 M556 0 V340 M704 0 V340 M852 0 V340 M1000 0 V340" stroke="#ffffff" stroke-opacity="0.026" />
@@ -73,7 +68,7 @@
       <rect x="154" y="0" width="92" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16" />
       <text class="mono" x="183" y="24" fill="#22c55e" font-size="14" font-weight="700">MCP</text>
       <rect x="262" y="0" width="116" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16" />
-      <text class="mono" x="286" y="24" fill="#38bdf8" font-size="14" font-weight="700">AI Assist</text>
+      <text class="mono" x="286" y="24" fill="#14b8a6" font-size="14" font-weight="700">AI Assist</text>
       <rect x="394" y="0" width="150" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16" />
       <text class="mono" x="416" y="24" fill="#facc15" font-size="14" font-weight="700">Backend APIs</text>
     </g>
@@ -92,7 +87,7 @@
     <text class="mono" x="28" y="78" fill="#94a3b8" font-size="14">def build_system():</text>
     <text class="mono" x="54" y="108" fill="#f97316" font-size="14">context = engineering_tools()</text>
     <text class="mono" x="54" y="138" fill="#22c55e" font-size="14">assistant = ai_workflow(context)</text>
-    <text class="mono" x="54" y="168" fill="#38bdf8" font-size="14">api = secure_backend(assistant)</text>
+    <text class="mono" x="54" y="168" fill="#14b8a6" font-size="14">api = secure_backend(assistant)</text>
 
     <g transform="translate(34 188)">
       <rect x="0" y="0" width="62" height="28" rx="14" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-opacity="0.45" />
@@ -101,8 +96,8 @@
       <rect x="104" y="0" width="58" height="28" rx="14" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-opacity="0.45" />
       <text class="mono" x="125" y="19" fill="#22c55e" font-size="11" font-weight="800">AI</text>
       <path d="M168 14 H198" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2" />
-      <rect x="204" y="0" width="62" height="28" rx="14" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.45" />
-      <text class="mono" x="222" y="19" fill="#38bdf8" font-size="11" font-weight="800">API</text>
+      <rect x="204" y="0" width="62" height="28" rx="14" fill="#14b8a6" fill-opacity="0.16" stroke="#14b8a6" stroke-opacity="0.45" />
+      <text class="mono" x="222" y="19" fill="#14b8a6" font-size="11" font-weight="800">API</text>
       <path d="M272 14 H302" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2" />
       <rect x="308" y="0" width="58" height="28" rx="14" fill="#a855f7" fill-opacity="0.16" stroke="#a855f7" stroke-opacity="0.45" />
       <text class="mono" x="321" y="19" fill="#a855f7" font-size="11" font-weight="800">TEST</text>
