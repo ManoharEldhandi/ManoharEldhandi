@@ -130,13 +130,13 @@
     <td width="33%" align="center" valign="top">
       <h3><a href="https://leetcode.com/u/ManoharEldhandi/">LeetCode</a></h3>
       <p><strong>553+ problems solved</strong></p>
-      <p><sub>Interview-style problem solving across arrays, graphs, dynamic programming, SQL, and system-thinking patterns.</sub></p>
+      <p><sub>Interview-style problem solving across graphs, dynamic programming, and system-thinking patterns.</sub></p>
       <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="https://img.shields.io/badge/LeetCode-500%2B%20Problems-FFA116?style=for-the-badge&amp;logo=leetcode&amp;logoColor=black" alt="LeetCode 500 plus problems" /></a>
     </td>
     <td width="33%" align="center" valign="top">
       <h3><a href="https://codeforces.com/profile/ACatLastTry">Codeforces</a></h3>
       <p><strong>Expert, max rating 1785</strong></p>
-      <p><sub>Strong contest performance, including rank 252 out of over 24,000 participants in a Division 2 round.</sub></p>
+      <p><sub>Strong contest performance, ranked 252 out of over 24,000 participants in a Division 2 round.</sub></p>
       <a href="https://codeforces.com/profile/ACatLastTry"><img src="https://img.shields.io/badge/Codeforces-Expert%20%7C%201785-7C3AED?style=for-the-badge&amp;logo=codeforces&amp;logoColor=white" alt="Codeforces Expert rating 1785" /></a>
     </td>
     <td width="33%" align="center" valign="top">
