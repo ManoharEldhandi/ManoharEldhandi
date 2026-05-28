@@ -1,26 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" role="img" aria-labelledby="title desc">
   <title id="title">Profile Footer</title>
-  <desc id="desc">Animated footer line for Manohar Eldhandi's GitHub profile.</desc>
+  <desc id="desc">Animated footer showing a calm software delivery flow from idea to build, AI assistance, tests, and release.</desc>
   <defs>
-    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14" />
+      <stop offset="0.58" stop-color="#0d1322" />
+      <stop offset="1" stop-color="#141006" />
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f97316" />
       <stop offset="0.32" stop-color="#22c55e" />
-      <stop offset="0.66" stop-color="#a855f7" />
-      <stop offset="1" stop-color="#facc15" />
-    </linearGradient>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0d1117" />
-      <stop offset="0.5" stop-color="#15120d" />
-      <stop offset="1" stop-color="#101415" />
+      <stop offset="0.68" stop-color="#38bdf8" />
+      <stop offset="1" stop-color="#a855f7" />
     </linearGradient>
     <style>
-      .flow { stroke-dasharray: 22 24; animation: move 16s linear infinite; }
+      .sans { font-family: Inter, Segoe UI, Arial, sans-serif; }
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      @keyframes move { to { stroke-dashoffset: -560; } }
+      .dash { stroke-dasharray: 18 22; animation: move 18s linear infinite; }
+      .node { fill: #111827; fill-opacity: 0.98; stroke: #ffffff; stroke-opacity: 0.18; }
+      @keyframes move { to { stroke-dashoffset: -500; } }
     </style>
   </defs>
-  <rect width="1200" height="130" rx="26" fill="url(#bg)" />
-  <path class="flow" d="M30 72 C170 26 282 116 418 66 S670 24 822 70 1044 116 1170 44" fill="none" stroke="url(#stroke)" stroke-width="5" opacity="0.82" />
-  <text x="92" y="52" class="mono" fill="#ffffff" font-size="20" font-weight="700">AI systems, backend APIs, reliable automation</text>
-  <text x="92" y="92" class="mono" fill="#a7f3d0" font-size="14" font-weight="700">Generative AI, backend engineering, competitive programming</text>
+
+  <rect width="1200" height="160" rx="28" fill="url(#bg)" />
+  <path d="M90 80 C188 58 258 58 366 58 S492 80 598 80 714 58 824 58 940 80 1050 80 1116 70 1140 58" fill="none" stroke="url(#flow)" stroke-width="4" opacity="0.82" class="dash" />
+
+  <g transform="translate(76 56)">
+    <rect class="node" x="0" y="0" width="128" height="46" rx="23" />
+    <text class="mono" x="32" y="29" fill="#f97316" font-size="14" font-weight="800">IDEA</text>
+  </g>
+  <g transform="translate(300 34)">
+    <rect class="node" x="0" y="0" width="132" height="46" rx="23" />
+    <text class="mono" x="35" y="29" fill="#22c55e" font-size="14" font-weight="800">BUILD</text>
+  </g>
+  <g transform="translate(520 56)">
+    <rect class="node" x="0" y="0" width="156" height="46" rx="23" />
+    <text class="mono" x="35" y="29" fill="#38bdf8" font-size="14" font-weight="800">AI ASSIST</text>
+  </g>
+  <g transform="translate(760 34)">
+    <rect class="node" x="0" y="0" width="128" height="46" rx="23" />
+    <text class="mono" x="35" y="29" fill="#a855f7" font-size="14" font-weight="800">TEST</text>
+  </g>
+  <g transform="translate(984 56)">
+    <rect class="node" x="0" y="0" width="132" height="46" rx="23" />
+    <text class="mono" x="27" y="29" fill="#facc15" font-size="14" font-weight="800">RELEASE</text>
+  </g>
+
+  <text x="600" y="138" text-anchor="middle" class="sans" fill="#d8dee9" font-size="15" font-weight="700">Generative AI systems, backend APIs, automation, and competitive programming discipline</text>
 </svg>

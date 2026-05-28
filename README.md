@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/profile-lines.svg" alt="Animated engineering focus lines" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=22&amp;duration=2600&amp;pause=800&amp;color=F97316&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Generative+AI+systems+with+real+engineering+utility;MCP+servers%2C+LangGraph+workflows%2C+AI+systems;Backend+APIs+with+security%2C+tests%2C+and+traceability;Competitive+programming+discipline+for+hard+problems" alt="Typing animation" />
 </p>
 
 <p align="center">
@@ -103,29 +103,45 @@
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/ontheway-backend">OnTheWay</a></h3>
-      <p><strong>Route-based preordering platform backend</strong></p>
-      <p>Built a scalable ordering backend with 27 REST APIs for users, merchants, and admins. Includes JWT/RBAC, Spring Security, layered controller-service design, real-time order tracking, merchant inventory/status APIs, Swagger docs, and JUnit coverage.</p>
-      <p><code>Java</code> <code>Spring Boot</code> <code>MySQL</code> <code>JWT</code> <code>JUnit</code></p>
+      <p><strong>Route-based preordering backend</strong></p>
+      <ul>
+        <li>Built 27 REST APIs for users, merchants, and admins.</li>
+        <li>Implemented JWT/RBAC with Spring Security.</li>
+        <li>Added order tracking, inventory APIs, Swagger docs, and JUnit coverage.</li>
+      </ul>
+      <p><sub><strong>Stack:</strong> Java, Spring Boot, MySQL, JWT, JUnit</sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/WaterNet">WaterNet</a></h3>
       <p><strong>Real-time water quality assessment</strong></p>
-      <p>Django ML API that predicts water potability from 9 chemical parameters. Covers preprocessing, feature engineering, model comparison, XGBoost/ensemble inference, MySQL logging, sensor input, and batch CSV workflows.</p>
-      <p><code>Python</code> <code>Django</code> <code>scikit-learn</code> <code>XGBoost</code> <code>MySQL</code></p>
+      <ul>
+        <li>Built a Django API for water potability prediction.</li>
+        <li>Used 9 chemical parameters with model comparison.</li>
+        <li>Supported sensor input, batch CSV flow, and MySQL logging.</li>
+      </ul>
+      <p><sub><strong>Stack:</strong> Python, Django, scikit-learn, XGBoost, MySQL</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/HackerEarth-Machine-Learning-challenge--World-Water-Day">Smart Water Monitoring</a></h3>
       <p><strong>HackerEarth ML challenge solution</strong></p>
-      <p>Forecasting workflow with time-based features, preprocessing, XGBoost training, reusable inference/submission logic, and an 85% prediction accuracy challenge result.</p>
-      <p><code>Python</code> <code>XGBoost</code> <code>Feature Engineering</code> <code>ML Pipeline</code></p>
+      <ul>
+        <li>Built an XGBoost forecasting workflow.</li>
+        <li>Added time-based features and preprocessing steps.</li>
+        <li>Created reusable inference and submission logic.</li>
+      </ul>
+      <p><sub><strong>Stack:</strong> Python, XGBoost, feature engineering, ML pipeline</sub></p>
     </td>
     <td width="50%" valign="top">
       <h3>AI Security Compliance Automation</h3>
       <p><strong>Generative AI compliance workflow</strong></p>
-      <p>Built around code/compliance analysis, tool-connected assistants, retrieval over engineering context, auditability, and release support. Ranked Top 35 among over 2,000 teams in Cisco WebEx Playtime Hackathon.</p>
-      <p><code>LangGraph</code> <code>MCP</code> <code>RAG</code> <code>Backend APIs</code> <code>Playwright</code></p>
+      <ul>
+        <li>Built around code and compliance analysis.</li>
+        <li>Connected assistants to tools and engineering context.</li>
+        <li>Ranked Top 35 among over 2,000 Cisco hackathon teams.</li>
+      </ul>
+      <p><sub><strong>Stack:</strong> LangGraph, MCP, RAG, backend APIs, Playwright</sub></p>
     </td>
   </tr>
 </table>
