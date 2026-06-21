@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="96" viewBox="0 0 960 96" role="img" aria-labelledby="title desc">
+  <title id="title">Eat sleep code repeat scrolling strip</title>
+  <desc id="desc">A horizontally scrolling raw-grid routine strip reading Eat, Sleep, Code, Repeat.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#0b0b0b" stroke-opacity="0.08" />
+    </pattern>
+    <clipPath id="mask"><rect x="28" y="24" width="904" height="48" /></clipPath>
+    <style><![CDATA[
+      .line { stroke: #0b0b0b; stroke-width: 3; }
+      .mono { font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace; font-weight: 900; letter-spacing: 1px; }
+      .marquee { animation: moveRight 8s linear infinite; }
+      @keyframes moveRight { from { transform: translateX(-520px); } to { transform: translateX(0); } }
+    ]]></style>
+  </defs>
+  <rect width="960" height="96" fill="#f5f1e8" />
+  <rect width="960" height="96" fill="url(#grid)" />
+  <rect x="28" y="24" width="904" height="48" fill="#ffd426" class="line" />
+  <g clip-path="url(#mask)">
+    <g class="marquee">
+      <text x="-500" y="56" class="mono" font-size="20" fill="#0b0b0b">EAT - SLEEP - CODE - REPEAT -</text>
+      <text x="20" y="56" class="mono" font-size="20" fill="#0b0b0b">EAT - SLEEP - CODE - REPEAT -</text>
+      <text x="540" y="56" class="mono" font-size="20" fill="#0b0b0b">EAT - SLEEP - CODE - REPEAT -</text>
+      <text x="1060" y="56" class="mono" font-size="20" fill="#0b0b0b">EAT - SLEEP - CODE - REPEAT -</text>
+      <text x="1580" y="56" class="mono" font-size="20" fill="#0b0b0b">EAT - SLEEP - CODE - REPEAT -</text>
+    </g>
+  </g>
+</svg>
