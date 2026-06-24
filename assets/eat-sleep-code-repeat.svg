@@ -9,8 +9,8 @@
     <style><![CDATA[
       .line { stroke: #0b0b0b; stroke-width: 3; }
       .mono { font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace; font-weight: 900; letter-spacing: 1px; }
-      .marquee { animation: moveRight 8s linear infinite; }
-      @keyframes moveRight { from { transform: translateX(-520px); } to { transform: translateX(0); } }
+      .marquee { animation: moveLeft 4s linear infinite; }
+      @keyframes moveLeft { from { transform: translateX(0); } to { transform: translateX(-520px); } }
     ]]></style>
   </defs>
   <rect width="960" height="96" fill="#f5f1e8" />
