@@ -14,7 +14,7 @@
 </p>
 
 <p align="left">
-  <img src="assets/eat-sleep-code-repeat.svg" alt="Scrolling Eat Sleep Code Repeat strip" width="100%" />
+  <img src="assets/eat-sleep-code-repeat.svg?v=2" alt="Scrolling Eat Sleep Code Repeat strip" width="100%" />
 </p>
 
 <h2 align="center">Current Work</h2>
