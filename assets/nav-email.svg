@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="66" viewBox="0 0 230 66" role="img" aria-label="Send email">
+  <defs><linearGradient id="m" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4eee4"/><stop offset="1" stop-color="#aaa397"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/></filter></defs>
+  <rect x="4" y="4" width="222" height="56" rx="13" fill="url(#m)" stroke="#777168" filter="url(#s)"/>
+  <rect x="11" y="10" width="208" height="43" rx="9" fill="#14243a" stroke="#07101d"/>
+  <circle cx="34" cy="31.5" r="7" fill="#55d187"/><circle cx="34" cy="31.5" r="3" fill="#d5ffe3"/>
+  <text x="55" y="37" fill="#fffaf0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="750" letter-spacing="1.5">EMAIL ↗</text>
+</svg>
