@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="110" viewBox="0 0 1280 110" role="img" aria-label="End of portfolio chassis">
+  <defs><linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#efd594"/><stop offset="0.5" stop-color="#c29a4f"/><stop offset="1" stop-color="#6f542b"/></linearGradient></defs>
+  <rect width="1280" height="110" fill="#0a111d"/>
+  <path d="M24 0V54Q24 92 62 92H1218Q1256 92 1256 54V0" fill="none" stroke="url(#edge)" stroke-width="4"/>
+  <path d="M40 0V50Q40 76 66 76H1214Q1240 76 1240 50V0" fill="none" stroke="#718096" stroke-width="2"/>
+  <path d="M66 91H1214" stroke="#d6b56d" stroke-width="2" stroke-opacity="0.75"/>
+  <g fill="#d6b56d" stroke="#5e4725" stroke-width="1.5"><circle cx="58" cy="76" r="7"/><circle cx="1222" cy="76" r="7"/></g>
+</svg>

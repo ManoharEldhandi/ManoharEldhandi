@@ -182,3 +182,5 @@ I trained a voting ensemble over nine water-chemistry features and served it thr
   <a href="https://www.linkedin.com/in/manohar-eldhandi/"><img src="./assets/nav-linkedin.svg" width="190" alt="LinkedIn" /></a>&nbsp;
   <a href="mailto:manohareldhandi@outlook.com"><img src="./assets/nav-email.svg" width="190" alt="Email Manohar" /></a>
 </p>
+
+<img src="./assets/chassis-bottom.svg" width="100%" alt="End of portfolio chassis" />

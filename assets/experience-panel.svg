@@ -7,8 +7,9 @@
     <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#efd594"/><stop offset="0.5" stop-color="#c29a4f"/><stop offset="1" stop-color="#6f542b"/></linearGradient>
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#03070d" flood-opacity="0.46"/></filter>
   </defs>
-  <rect x="24" y="18" width="1232" height="524" rx="28" fill="#0a111d" stroke="url(#edge)" stroke-width="4" filter="url(#shadow)"/>
-  <rect x="40" y="34" width="1200" height="492" rx="18" fill="url(#plate)" stroke="#34465e" stroke-width="2"/>
+  <rect width="1280" height="560" fill="#0a111d"/>
+  <path d="M24 0V560M1256 0V560" stroke="#c29a4f" stroke-width="4"/>
+  <rect x="50" y="18" width="1180" height="524" rx="17" fill="url(#plate)" stroke="#718096" stroke-width="2"/>
   <g text-rendering="geometricPrecision">
     <line x1="326" y1="111" x2="326" y2="451" stroke="#d6b56d" stroke-width="4" stroke-linecap="round"/>
 
