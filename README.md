@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://manohareldhandi.github.io/portfolio/"><img src="./assets/nav-portfolio.svg" width="155" alt="Portfolio" /></a>&nbsp;
-  <a href="https://manohareldhandi.github.io/Resume/"><img src="./assets/nav-resume.svg" width="155" alt="Resume" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/manohar-eldhandi/"><img src="./assets/nav-linkedin.svg" width="155" alt="LinkedIn" /></a>&nbsp;
-  <a href="mailto:manohareldhandi@outlook.com"><img src="./assets/nav-email.svg" width="155" alt="Email Manohar" /></a>
+  <a href="https://manohareldhandi.github.io/portfolio/"><img src="./assets/nav-portfolio.svg" width="190" alt="Portfolio" /></a>&nbsp;
+  <a href="https://manohareldhandi.github.io/Resume/"><img src="./assets/nav-resume.svg" width="190" alt="Resume" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/manohar-eldhandi/"><img src="./assets/nav-linkedin.svg" width="190" alt="LinkedIn" /></a>&nbsp;
+  <a href="mailto:manohareldhandi@outlook.com"><img src="./assets/nav-email.svg" width="190" alt="Email Manohar" /></a>
 </p>
 
 ## About
@@ -37,7 +37,11 @@ As a **Software Engineer Trainee at Cisco**, I build Python backend services, MC
 
 I designed the route and fulfillment logic, secure multi-role backend, order and payment state flows, searchable catalog, and customer, merchant, and admin experiences. The demo dataset contains **115 shops and 507 items**; the project includes **72 tests**, a simulated **1,000-user load test**, Docker, Kubernetes, and CI.
 
-[Repository](https://github.com/ManoharEldhandi/OnTheWay) · [Architecture](https://github.com/ManoharEldhandi/OnTheWay/blob/main/ARCHITECTURE.md) · [Run it](https://github.com/ManoharEldhandi/OnTheWay/blob/main/docs/USAGE.md)
+<p>
+  <a href="https://github.com/ManoharEldhandi/OnTheWay"><img src="./assets/link-repository.svg" width="195" alt="Open the OnTheWay repository" /></a>&nbsp;
+  <a href="https://github.com/ManoharEldhandi/OnTheWay/blob/main/ARCHITECTURE.md"><img src="./assets/link-architecture.svg" width="205" alt="Read the OnTheWay architecture" /></a>&nbsp;
+  <a href="https://github.com/ManoharEldhandi/OnTheWay/blob/main/docs/USAGE.md"><img src="./assets/link-run.svg" width="145" alt="Run OnTheWay" /></a>
+</p>
 
 <br />
 
@@ -47,7 +51,11 @@ I designed the route and fulfillment logic, secure multi-role backend, order and
 
 I built a local-first pipeline that discovers roles across **five ATS connectors** and public career pages, explains match quality, generates evidence-grounded materials, and prepares browser-assisted dry runs. Privacy gates keep personal data local, and the apply worker always stops before submission for human review.
 
-[Repository](https://github.com/ManoharEldhandi/Carivyo-AI) · [Architecture](https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/ARCHITECTURE.md) · [Safety model](https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/APPLICATION_POLICIES.md)
+<p>
+  <a href="https://github.com/ManoharEldhandi/Carivyo-AI"><img src="./assets/link-repository.svg" width="195" alt="Open the Carivyo-AI repository" /></a>&nbsp;
+  <a href="https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/ARCHITECTURE.md"><img src="./assets/link-architecture.svg" width="205" alt="Read the Carivyo-AI architecture" /></a>&nbsp;
+  <a href="https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/APPLICATION_POLICIES.md"><img src="./assets/link-safety.svg" width="195" alt="Read the Carivyo-AI safety model" /></a>
+</p>
 
 <br />
 
@@ -57,7 +65,10 @@ I built a local-first pipeline that discovers roles across **five ATS connectors
 
 I trained a voting ensemble over nine water-chemistry features and served it through a Django API with authenticated workflows and traceable persistence. The reproducible evaluation reports **95%+ accuracy and 0.96 AUC** on a **3,000+ sample** dataset, with **1,000+ inference requests** handled at sub-50 ms latency.
 
-[Repository](https://github.com/ManoharEldhandi/WaterNet) · [Project overview](https://github.com/ManoharEldhandi/WaterNet#model--performance)
+<p>
+  <a href="https://github.com/ManoharEldhandi/WaterNet"><img src="./assets/link-repository.svg" width="195" alt="Open the WaterNet repository" /></a>&nbsp;
+  <a href="https://github.com/ManoharEldhandi/WaterNet#model--performance"><img src="./assets/link-overview.svg" width="210" alt="Read the WaterNet project overview" /></a>
+</p>
 
 ## Engineering toolkit
 
@@ -90,55 +101,37 @@ I trained a voting ensemble over nine water-chemistry features and served it thr
 
 ## Experience &amp; education
 
-<table>
-  <tr>
-    <td width="24%" valign="top">
-      <strong>Oct 2025 — Present</strong><br />
-      Bengaluru, India
-    </td>
-    <td width="76%" valign="top">
-      <strong>Software Engineer Trainee · Cisco Systems</strong><br /><br />
-      Building an internal AI security-compliance platform used by four product teams; developing backend services, MCP/RAG workflows, audit logging, validation, and release automation for 50+ engineers.
-    </td>
-  </tr>
-  <tr>
-    <td width="24%" valign="top">
-      <strong>2024</strong><br />
-      Hyderabad, India
-    </td>
-    <td width="76%" valign="top">
-      <strong>DSA Mentor · Smart Interviews</strong><br /><br />
-      Mentored 150+ students in structured problem solving, debugging, and optimization, contributing to a 40% average improvement in practice-assessment performance.
-    </td>
-  </tr>
-  <tr>
-    <td width="24%" valign="top">
-      <strong>Dec 2021 — Jul 2025</strong><br />
-      Hyderabad, India
-    </td>
-    <td width="76%" valign="top">
-      <strong>B.Tech, Computer Science &amp; Engineering · AI &amp; ML</strong><br /><br />
-      CMR Institute of Technology, affiliated to JNTU Hyderabad · <strong>CGPA 8.48 / 10</strong>
-    </td>
-  </tr>
-</table>
+<img src="./assets/experience-panel.svg" width="100%" alt="Experience timeline: Software Engineer Trainee at Cisco Systems, DSA Mentor at Smart Interviews, and B.Tech in Computer Science and Engineering with AI and ML" />
+
+<details>
+  <summary><strong>Read experience details</strong></summary>
+  <br />
+  <strong>Software Engineer Trainee · Cisco Systems</strong> — Oct 2025 to present, Bengaluru<br />
+  Internal AI security-compliance tooling for four product teams and 50+ engineers, covering backend services, MCP/RAG workflows, audit logging, validation, and release automation.
+  <br /><br />
+  <strong>DSA Mentor · Smart Interviews</strong> — 2024, Hyderabad<br />
+  Mentored 150+ students in problem solving, debugging, and optimization, contributing to a 40% average improvement in practice-assessment performance.
+  <br /><br />
+  <strong>B.Tech, Computer Science &amp; Engineering · AI &amp; ML</strong> — Dec 2021 to Jul 2025<br />
+  CMR Institute of Technology, JNTU Hyderabad · <strong>CGPA 8.48 / 10</strong>
+</details>
 
 ## Problem solving
 
 <table>
   <tr>
     <td width="33.33%" align="center">
-      <a href="https://codeforces.com/profile/ACatLastTry"><strong>Codeforces</strong></a><br /><br />
+      <a href="https://codeforces.com/profile/ACatLastTry"><img src="./assets/link-codeforces.svg" width="190" alt="Codeforces profile" /></a><br />
       <code>MASTER · 2141</code><br /><br />
       Rank 252 of 24,000+ in a Division 2 round
     </td>
     <td width="33.33%" align="center">
-      <a href="https://www.codechef.com/users/acatlasttry"><strong>CodeChef</strong></a><br /><br />
+      <a href="https://www.codechef.com/users/acatlasttry"><img src="./assets/link-codechef.svg" width="190" alt="CodeChef profile" /></a><br />
       <code>4-STAR · 1893</code><br /><br />
       Global rank 13 in Starters 147
     </td>
     <td width="33.33%" align="center">
-      <a href="https://leetcode.com/u/ManoharEldhandi/"><strong>LeetCode</strong></a><br /><br />
+      <a href="https://leetcode.com/u/ManoharEldhandi/"><img src="./assets/link-leetcode.svg" width="190" alt="LeetCode profile" /></a><br />
       <code>557 SOLVED</code><br /><br />
       Java-first practice across graphs, DP, and patterns
     </td>
@@ -151,19 +144,21 @@ I trained a voting ensemble over nine water-chemistry features and served it thr
 - **HackerEarth ML Challenge:** placed in the global Top 50 of 20,000+ participants with an XGBoost forecasting model.
 - **Cisco Webex Playtime Hackathon:** placed Top 35 of 2,000+ teams with an AI security-compliance automation tool.
 - **Smart Coder National Certificate:** ranked in the top 2%, then returned as a mentor for 150+ DSA learners.
-- **Open source:** created [LER_DSA](https://github.com/ManoharEldhandi/LER_DSA), a free 30-day Java interview roadmap with 20 modules, reusable templates, revision rules, and a progress tracker.
+- **Open source:** created LER_DSA, a free 30-day Java interview roadmap with 20 modules, reusable templates, revision rules, and a progress tracker.
+
+<a href="https://github.com/ManoharEldhandi/LER_DSA"><img src="./assets/link-lerdsa.svg" width="205" alt="Explore the LER_DSA repository" /></a>
 
 ## Contact
 
-<img src="./assets/contact-panel.svg" width="100%" alt="Let's build something useful - contact Manohar Eldhandi" />
+<img src="./assets/contact-panel.svg" width="100%" alt="Manohar Eldhandi is open to software engineering roles" />
 
 <p align="center">
   <strong>Open to conversations about software engineering, backend development, AI/LLM systems, machine learning, developer productivity, and security automation.</strong>
 </p>
 
 <p align="center">
-  <a href="mailto:manohareldhandi@outlook.com">Email</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/manohar-eldhandi/">LinkedIn</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://manohareldhandi.github.io/portfolio/">Portfolio</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://manohareldhandi.github.io/Resume/">Resume</a>
+  <a href="https://manohareldhandi.github.io/portfolio/"><img src="./assets/nav-portfolio.svg" width="190" alt="Portfolio" /></a>&nbsp;
+  <a href="https://manohareldhandi.github.io/Resume/"><img src="./assets/nav-resume.svg" width="190" alt="Resume" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/manohar-eldhandi/"><img src="./assets/nav-linkedin.svg" width="190" alt="LinkedIn" /></a>&nbsp;
+  <a href="mailto:manohareldhandi@outlook.com"><img src="./assets/nav-email.svg" width="190" alt="Email Manohar" /></a>
 </p>

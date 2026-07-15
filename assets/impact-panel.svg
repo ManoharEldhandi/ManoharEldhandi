@@ -1,64 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="286" viewBox="0 0 1280 286" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="294" viewBox="0 0 1280 294" role="img" aria-labelledby="title desc">
   <title id="title">Selected impact from Manohar's current Cisco role</title>
-  <desc id="desc">Four instrument cards show adoption across four product teams, support for more than fifty engineers, seventy percent less manual review effort, and sixty percent less manual QA effort.</desc>
+  <desc id="desc">Four dark cards show adoption across four product teams, support for more than fifty engineers, seventy percent less manual review effort, and sixty percent less manual QA effort.</desc>
   <defs>
-    <linearGradient id="case" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ece5d9"/>
-      <stop offset="1" stop-color="#b7afa2"/>
-    </linearGradient>
-    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fffdf7"/>
-      <stop offset="1" stop-color="#e5ded1"/>
-    </linearGradient>
-    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
-      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#080c13" flood-opacity="0.28"/>
-    </filter>
+    <linearGradient id="case" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#30363d"/><stop offset="1" stop-color="#161b22"/></linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#161b22"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#21262d"/><stop offset="1" stop-color="#161b22"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#010409" flood-opacity="0.52"/></filter>
+    <filter id="cardShadow" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#010409" flood-opacity="0.45"/></filter>
   </defs>
-
-  <rect x="24" y="20" width="1232" height="246" rx="28" fill="url(#case)" stroke="#79736a" stroke-width="2" filter="url(#shadow)"/>
-  <rect x="40" y="36" width="1200" height="214" rx="19" fill="#101b2b" stroke="#08101d" stroke-width="2"/>
-
-  <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <text x="70" y="73" fill="#869ab4" font-size="13" font-weight="700" letter-spacing="2.5">IMPACT LEDGER · CURRENT ROLE</text>
-
-    <g transform="translate(69 91)">
-      <rect width="266" height="130" rx="14" fill="url(#face)" stroke="#686158"/>
-      <path d="M18 112H248" stroke="#c7bfb2"/>
-      <text x="22" y="63" fill="#16243a" font-size="48" font-weight="780">4</text>
-      <text x="91" y="49" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">PRODUCT</text>
-      <text x="91" y="70" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">TEAMS</text>
-      <circle cx="229" cy="25" r="7" fill="#55d187"/><circle cx="229" cy="25" r="3" fill="#d3ffe2"/>
-      <text x="22" y="102" fill="#6c665f" font-size="13">platform adoption</text>
-    </g>
-
-    <g transform="translate(361 91)">
-      <rect width="266" height="130" rx="14" fill="url(#face)" stroke="#686158"/>
-      <path d="M18 112H248" stroke="#c7bfb2"/>
-      <text x="22" y="63" fill="#16243a" font-size="48" font-weight="780">50+</text>
-      <text x="137" y="49" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">ENGINEERING</text>
-      <text x="137" y="70" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">USERS</text>
-      <circle cx="229" cy="25" r="7" fill="#5aa8ff"/><circle cx="229" cy="25" r="3" fill="#d5eaff"/>
-      <text x="22" y="102" fill="#6c665f" font-size="13">one secure MCP interface</text>
-    </g>
-
-    <g transform="translate(653 91)">
-      <rect width="266" height="130" rx="14" fill="url(#face)" stroke="#686158"/>
-      <path d="M18 112H248" stroke="#c7bfb2"/>
-      <text x="22" y="63" fill="#16243a" font-size="48" font-weight="780">70%</text>
-      <text x="135" y="49" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">LESS MANUAL</text>
-      <text x="135" y="70" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">REVIEW EFFORT</text>
-      <circle cx="229" cy="25" r="7" fill="#f5b942"/><circle cx="229" cy="25" r="3" fill="#fff0ae"/>
-      <text x="22" y="102" fill="#6c665f" font-size="13">security-risk workflows</text>
-    </g>
-
-    <g transform="translate(945 91)">
-      <rect width="266" height="130" rx="14" fill="url(#face)" stroke="#686158"/>
-      <path d="M18 112H248" stroke="#c7bfb2"/>
-      <text x="22" y="63" fill="#16243a" font-size="48" font-weight="780">60%</text>
-      <text x="135" y="49" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">LESS MANUAL</text>
-      <text x="135" y="70" fill="#32445d" font-size="14" font-weight="750" letter-spacing="1">QA EFFORT</text>
-      <circle cx="229" cy="25" r="7" fill="#ef7188"/><circle cx="229" cy="25" r="3" fill="#ffdbe2"/>
-      <text x="22" y="102" fill="#6c665f" font-size="13">200+ automated test cases</text>
-    </g>
+  <rect x="24" y="20" width="1232" height="252" rx="28" fill="url(#case)" stroke="#484f58" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="36" width="1200" height="220" rx="19" fill="url(#board)" stroke="#30363d" stroke-width="2"/>
+  <g font-family="Avenir Next, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <text x="70" y="75" fill="#58a6ff" font-size="15" font-weight="780" letter-spacing="2.2">IMPACT · CURRENT ROLE</text>
+    <g transform="translate(69 93)" filter="url(#cardShadow)"><rect width="266" height="132" rx="14" fill="url(#card)" stroke="#30363d"/><rect width="266" height="5" rx="2.5" fill="#58a6ff"/><path d="M18 113H248" stroke="#30363d"/><text x="22" y="67" fill="#f0f6fc" font-size="54" font-weight="800">4</text><text x="91" y="49" fill="#c9d1d9" font-size="15" font-weight="780" letter-spacing="0.8">PRODUCT</text><text x="91" y="71" fill="#c9d1d9" font-size="15" font-weight="780" letter-spacing="0.8">TEAMS</text><circle cx="229" cy="25" r="7" fill="#3fb950"/><text x="22" y="103" fill="#8b949e" font-size="14">platform adoption</text></g>
+    <g transform="translate(361 93)" filter="url(#cardShadow)"><rect width="266" height="132" rx="14" fill="url(#card)" stroke="#30363d"/><rect width="266" height="5" rx="2.5" fill="#58a6ff"/><path d="M18 113H248" stroke="#30363d"/><text x="22" y="67" fill="#f0f6fc" font-size="54" font-weight="800">50+</text><text x="137" y="49" fill="#c9d1d9" font-size="14" font-weight="780" letter-spacing="0.7">ENGINEERING</text><text x="137" y="71" fill="#c9d1d9" font-size="14" font-weight="780" letter-spacing="0.7">USERS</text><circle cx="229" cy="25" r="7" fill="#58a6ff"/><text x="22" y="103" fill="#8b949e" font-size="14">one secure MCP interface</text></g>
+    <g transform="translate(653 93)" filter="url(#cardShadow)"><rect width="266" height="132" rx="14" fill="url(#card)" stroke="#30363d"/><rect width="266" height="5" rx="2.5" fill="#58a6ff"/><path d="M18 113H248" stroke="#30363d"/><text x="22" y="67" fill="#f0f6fc" font-size="54" font-weight="800">70%</text><text x="139" y="49" fill="#c9d1d9" font-size="14" font-weight="780">LESS MANUAL</text><text x="139" y="71" fill="#c9d1d9" font-size="14" font-weight="780">REVIEW EFFORT</text><circle cx="229" cy="25" r="7" fill="#d29922"/><text x="22" y="103" fill="#8b949e" font-size="14">security-risk workflows</text></g>
+    <g transform="translate(945 93)" filter="url(#cardShadow)"><rect width="266" height="132" rx="14" fill="url(#card)" stroke="#30363d"/><rect width="266" height="5" rx="2.5" fill="#58a6ff"/><path d="M18 113H248" stroke="#30363d"/><text x="22" y="67" fill="#f0f6fc" font-size="54" font-weight="800">60%</text><text x="139" y="49" fill="#c9d1d9" font-size="14" font-weight="780">LESS MANUAL</text><text x="139" y="71" fill="#c9d1d9" font-size="14" font-weight="780">QA EFFORT</text><circle cx="229" cy="25" r="7" fill="#f85149"/><text x="22" y="103" fill="#8b949e" font-size="14">200+ automated test cases</text></g>
   </g>
 </svg>
