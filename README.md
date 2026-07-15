@@ -11,21 +11,35 @@
 
 ## About
 
-I work mainly with backend development and AI systems. At Cisco, I contribute to internal security-compliance tooling built around authenticated services, MCP integrations, retrieval-backed workflows, audit trails, and test automation.
-
-Outside work, I build complete projects to learn how the pieces fit together, from APIs and data models to testing and deployment. Recent projects include a route-aware pickup platform, a local-first job-search assistant, and a water-quality ML application.
-
-<p>
-  <kbd>AI SYSTEMS</kbd>&nbsp;
-  <kbd>BACKEND DEVELOPMENT</kbd>&nbsp;
-  <kbd>MACHINE LEARNING ENTHUSIAST</kbd>
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>At Cisco</strong><br /><br />
+      I contribute to internal security-compliance tooling built around authenticated services, MCP integrations, retrieval-backed workflows, audit trails, and test automation.
+    </td>
+    <td width="50%" valign="top">
+      <strong>Outside work</strong><br /><br />
+      I build complete projects to understand the full system—from APIs and data models to testing and deployment. Recent work spans route-aware commerce, local-first job search, and applied ML.
+    </td>
+  </tr>
+</table>
 
 ## Current work
 
 <img src="./assets/impact-panel.svg" width="100%" alt="Cisco impact: adoption across 4 product teams and 50+ engineers, with 70% less manual review effort and 60% less manual QA effort" />
 
-As a **Software Engineer Trainee at Cisco**, I build Python backend services, MCP and RAG integrations, agentic workflows, API validation, authentication, audit logging, and release automation. I also maintain regression coverage across large release workflows with Playwright, JUnit, and CI/CD.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>What I build</strong><br /><br />
+      Python backend services, authenticated MCP and RAG integrations, agentic workflows, API validation, audit logging, and release automation.
+    </td>
+    <td width="50%" valign="top">
+      <strong>How I validate it</strong><br /><br />
+      Regression coverage across large release workflows using Playwright, JUnit, API testing, and CI/CD.
+    </td>
+  </tr>
+</table>
 
 > Product names and internal implementation details are intentionally kept private.
 
@@ -36,6 +50,8 @@ As a **Software Engineer Trainee at Cisco**, I build Python backend services, MC
 </a>
 
 I designed the route and fulfillment logic, secure multi-role backend, order and payment state flows, searchable catalog, and customer, merchant, and admin experiences. The demo dataset contains **115 shops and 507 items**; the project includes **72 tests**, a simulated **1,000-user load test**, Docker, Kubernetes, and CI.
+
+<p><code>Java 17</code> <code>Spring Boot</code> <code>React</code> <code>MySQL</code> <code>Kafka</code> <code>Docker</code></p>
 
 <p>
   <a href="https://github.com/ManoharEldhandi/OnTheWay"><img src="./assets/link-repository.svg" width="195" alt="Open the OnTheWay repository" /></a>&nbsp;
@@ -51,6 +67,8 @@ I designed the route and fulfillment logic, secure multi-role backend, order and
 
 I built a local-first pipeline that discovers roles across **five ATS connectors** and public career pages, explains match quality, generates evidence-grounded materials, and prepares browser-assisted dry runs. Privacy gates keep personal data local, and the apply worker always stops before submission for human review.
 
+<p><code>Node.js</code> <code>LLM Gateway</code> <code>Playwright</code> <code>Python</code> <code>CLI</code></p>
+
 <p>
   <a href="https://github.com/ManoharEldhandi/Carivyo-AI"><img src="./assets/link-repository.svg" width="195" alt="Open the Carivyo-AI repository" /></a>&nbsp;
   <a href="https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/ARCHITECTURE.md"><img src="./assets/link-architecture.svg" width="205" alt="Read the Carivyo-AI architecture" /></a>&nbsp;
@@ -64,6 +82,8 @@ I built a local-first pipeline that discovers roles across **five ATS connectors
 </a>
 
 I trained a voting ensemble over nine water-chemistry features and served it through a Django API with authenticated workflows and traceable persistence. The reproducible evaluation reports **95%+ accuracy and 0.96 AUC** on a **3,000+ sample** dataset, with **1,000+ inference requests** handled at sub-50 ms latency.
+
+<p><code>Python</code> <code>Django</code> <code>scikit-learn</code> <code>XGBoost</code> <code>MySQL</code></p>
 
 <p>
   <a href="https://github.com/ManoharEldhandi/WaterNet"><img src="./assets/link-repository.svg" width="195" alt="Open the WaterNet repository" /></a>&nbsp;
