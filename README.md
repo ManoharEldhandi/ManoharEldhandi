@@ -1,44 +1,18 @@
 <p align="center">
-  <img src="./assets/portfolio-board.svg" width="100%" alt="Manohar Eldhandi — Software Engineer portfolio covering backend development, AI systems, selected projects, experience, competitive programming, community work, and contact information" />
+  <img src="./assets/board-slices/01-header.svg" width="100%" align="left" alt="Manohar Eldhandi — Software Engineer focused on backend development and AI systems" />
+  <img src="./assets/board-slices/02-nav-left.svg" width="6.25%" align="left" alt="" /><a href="https://manohareldhandi.github.io/portfolio/"><img src="./assets/board-slices/02-nav-portfolio.svg" width="21.875%" align="left" alt="Open portfolio" /></a><a href="https://manohareldhandi.github.io/Resume/"><img src="./assets/board-slices/02-nav-resume.svg" width="21.875%" align="left" alt="Open resume" /></a><a href="https://www.linkedin.com/in/manohar-eldhandi/"><img src="./assets/board-slices/02-nav-linkedin.svg" width="21.875%" align="left" alt="Open LinkedIn profile" /></a><a href="mailto:manohareldhandi@outlook.com"><img src="./assets/board-slices/02-nav-email.svg" width="21.875%" align="left" alt="Email Manohar" /></a><img src="./assets/board-slices/02-nav-right.svg" width="6.25%" align="left" alt="" />
+  <img src="./assets/board-slices/03-introduction-proof-heading.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/04-proof-panel.svg" width="100%" align="left" alt="Proof highlights: Cisco impact across 4 teams and 50+ engineering users, Codeforces Master 2141, CodeChef 4-star 1893, and 150+ learners mentored through LER_DSA" />
+  <img src="./assets/board-slices/05-selected-work-ontheway.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/06-ontheway-left.svg" width="4.609375%" align="left" alt="" /><a href="https://github.com/ManoharEldhandi/OnTheWay"><img src="./assets/board-slices/06-ontheway-repository.svg" width="30.234375%" align="left" alt="Open the OnTheWay repository" /></a><a href="https://github.com/ManoharEldhandi/OnTheWay/blob/main/ARCHITECTURE.md"><img src="./assets/board-slices/06-ontheway-architecture.svg" width="30.234375%" align="left" alt="Read the OnTheWay architecture" /></a><a href="https://github.com/ManoharEldhandi/OnTheWay/blob/main/docs/USAGE.md"><img src="./assets/board-slices/06-ontheway-run.svg" width="30.234375%" align="left" alt="Read the OnTheWay usage guide" /></a><img src="./assets/board-slices/06-ontheway-right.svg" width="4.6875%" align="left" alt="" />
+  <img src="./assets/board-slices/07-carivyo.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/08-carivyo-left.svg" width="4.609375%" align="left" alt="" /><a href="https://github.com/ManoharEldhandi/Carivyo-AI"><img src="./assets/board-slices/08-carivyo-repository.svg" width="30.234375%" align="left" alt="Open the Carivyo-AI repository" /></a><a href="https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/ARCHITECTURE.md"><img src="./assets/board-slices/08-carivyo-architecture.svg" width="30.234375%" align="left" alt="Read the Carivyo-AI architecture" /></a><a href="https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/APPLICATION_POLICIES.md"><img src="./assets/board-slices/08-carivyo-safety.svg" width="30.234375%" align="left" alt="Read the Carivyo-AI safety model" /></a><img src="./assets/board-slices/08-carivyo-right.svg" width="4.6875%" align="left" alt="" />
+  <img src="./assets/board-slices/09-waternet.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/10-waternet-left.svg" width="19.609375%" align="left" alt="" /><a href="https://github.com/ManoharEldhandi/WaterNet"><img src="./assets/board-slices/10-waternet-repository.svg" width="30.390625%" align="left" alt="Open the WaterNet repository" /></a><a href="https://github.com/ManoharEldhandi/WaterNet#model--performance"><img src="./assets/board-slices/10-waternet-model-notes.svg" width="30.390625%" align="left" alt="Read the WaterNet model notes" /></a><img src="./assets/board-slices/10-waternet-right.svg" width="19.609375%" align="left" alt="" />
+  <img src="./assets/board-slices/11-toolkit-experience.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/12-competitive-left.svg" width="5.46875%" align="left" alt="" /><a href="https://codeforces.com/profile/ACatLastTry"><img src="./assets/board-slices/12-competitive-codeforces.svg" width="29.6875%" align="left" alt="Open Codeforces profile" /></a><a href="https://www.codechef.com/users/acatlasttry"><img src="./assets/board-slices/12-competitive-codechef.svg" width="30.46875%" align="left" alt="Open CodeChef profile" /></a><a href="https://leetcode.com/u/ManoharEldhandi/"><img src="./assets/board-slices/12-competitive-leetcode.svg" width="28.90625%" align="left" alt="Open LeetCode profile" /></a><img src="./assets/board-slices/12-competitive-right.svg" width="5.46875%" align="left" alt="" />
+  <img src="./assets/board-slices/13-competitive-divider.svg" width="100%" align="left" alt="" />
+  <img src="./assets/board-slices/14-community-amazon.svg" width="50.78125%" align="left" alt="" /><a href="https://github.com/ManoharEldhandi/LER_DSA"><img src="./assets/board-slices/14-community-ler-dsa.svg" width="49.21875%" align="left" alt="Explore the LER_DSA roadmap" /></a>
+  <a href="mailto:manohareldhandi@outlook.com"><img src="./assets/board-slices/15-contact.svg" width="100%" align="left" alt="Email manohareldhandi@outlook.com" /></a>
+  <br clear="all" />
 </p>
-
-<details>
-  <summary><strong>Open links and accessible text version</strong></summary>
-
-  <br />
-
-  **Navigation:** [Portfolio](https://manohareldhandi.github.io/portfolio/) · [Resume](https://manohareldhandi.github.io/Resume/) · [LinkedIn](https://www.linkedin.com/in/manohar-eldhandi/) · [Email](mailto:manohareldhandi@outlook.com)
-
-  ### Profile
-
-  **Manohar Eldhandi** — Software Engineer focused on backend development and AI systems. Software Engineer Trainee at Cisco in Bangalore, India.
-
-  I build backend services and AI-assisted workflows, and I like being able to trace what happened from the first request to the final result. I care about dependable releases and AI that takes repetitive work off people’s plates without becoming a black box.
-
-  ### Proof
-
-  - Cisco platform adoption across **4 product teams and 50+ engineering users**.
-  - [Codeforces Master — 2141](https://codeforces.com/profile/ACatLastTry), including rank 252 of 24,000+ in a Division 2 round.
-  - [CodeChef 4-star — 1893](https://www.codechef.com/users/acatlasttry), including global rank 13 in Starters 147.
-  - Mentored **150+ DSA learners** and created [LER_DSA](https://github.com/ManoharEldhandi/LER_DSA), a free 30-day Java roadmap with 20 modules.
-
-  ### Selected work
-
-  - **[OnTheWay](https://github.com/ManoharEldhandi/OnTheWay):** route-aware pickup and reservation platform with secure multi-role APIs, fulfillment logic, payment states, 72 tests, 115 shops, 507 items, and a 1,000-user load simulation. [Architecture](https://github.com/ManoharEldhandi/OnTheWay/blob/main/ARCHITECTURE.md) · [Usage](https://github.com/ManoharEldhandi/OnTheWay/blob/main/docs/USAGE.md)
-  - **[Carivyo-AI](https://github.com/ManoharEldhandi/Carivyo-AI):** local-first job discovery and application support across five ATS connectors, with evidence-backed materials, privacy gates, and mandatory human review. [Architecture](https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/ARCHITECTURE.md) · [Safety model](https://github.com/ManoharEldhandi/Carivyo-AI/blob/servant/docs/APPLICATION_POLICIES.md)
-  - **[WaterNet](https://github.com/ManoharEldhandi/WaterNet):** voting-ensemble water-quality platform served through authenticated Django APIs, reporting 95%+ accuracy, 0.96 AUC, and sub-50 ms inference latency.
-
-  ### Experience
-
-  - **Software Engineer Trainee · Cisco Systems** — Oct 2025 to present.
-  - **DSA Mentor · Smart Interviews** — 2024.
-  - **B.Tech, Computer Science & Engineering · AI & ML** — CMR Institute of Technology, JNTU Hyderabad · CGPA 8.5/10.
-
-  ### Supporting evidence
-
-  [Codeforces](https://codeforces.com/profile/ACatLastTry) · [CodeChef](https://www.codechef.com/users/acatlasttry) · [LeetCode](https://leetcode.com/u/ManoharEldhandi/) · [LER_DSA](https://github.com/ManoharEldhandi/LER_DSA)
-
-  **Open to:** I’m currently exploring AI Engineer and Backend Software Engineer opportunities in Hyderabad or Bangalore, and I’m also open to remote roles in India. If my background could be useful to your team, I’d be glad to connect.
-
-  **Contact:** [manohareldhandi@outlook.com](mailto:manohareldhandi@outlook.com)
-</details>
