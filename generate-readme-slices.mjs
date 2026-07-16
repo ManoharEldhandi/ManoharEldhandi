@@ -53,11 +53,9 @@ const rows = [
     y: 1597,
     height: 128,
     slices: [
-      ["06-ontheway-left", 0, 59],
-      ["06-ontheway-repository", 59, 387],
+      ["06-ontheway-repository", 0, 446],
       ["06-ontheway-architecture", 446, 387],
-      ["06-ontheway-run", 833, 387],
-      ["06-ontheway-right", 1220, 60],
+      ["06-ontheway-run", 833, 447],
     ],
   },
   {
@@ -69,11 +67,9 @@ const rows = [
     y: 2077,
     height: 128,
     slices: [
-      ["08-carivyo-left", 0, 59],
-      ["08-carivyo-repository", 59, 387],
+      ["08-carivyo-repository", 0, 446],
       ["08-carivyo-architecture", 446, 387],
-      ["08-carivyo-safety", 833, 387],
-      ["08-carivyo-right", 1220, 60],
+      ["08-carivyo-safety", 833, 447],
     ],
   },
   {
@@ -85,10 +81,8 @@ const rows = [
     y: 2557,
     height: 128,
     slices: [
-      ["10-waternet-left", 0, 251],
-      ["10-waternet-repository", 251, 389],
-      ["10-waternet-model-notes", 640, 389],
-      ["10-waternet-right", 1029, 251],
+      ["10-waternet-repository", 0, 640],
+      ["10-waternet-model-notes", 640, 640],
     ],
   },
   {
