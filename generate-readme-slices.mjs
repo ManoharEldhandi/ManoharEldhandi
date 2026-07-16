@@ -11,12 +11,12 @@ const boardHeight = 5400;
 const rows = [
   {
     y: 0,
-    height: 479,
+    height: 447,
     slices: [["01-header", 0, 1280]],
   },
   {
-    y: 479,
-    height: 72,
+    y: 447,
+    height: 128,
     slices: [
       ["02-nav-left", 0, 80],
       ["02-nav-portfolio", 80, 280],
@@ -27,23 +27,31 @@ const rows = [
     ],
   },
   {
-    y: 551,
-    height: 264,
+    y: 575,
+    height: 240,
     slices: [["03-introduction-proof-heading", 0, 1280]],
   },
   {
     y: 815,
     height: 350,
-    slices: [["04-proof-panel", 0, 1280]],
+    slices: [
+      ["04-proof-left", 0, 360],
+      ["04-proof-codeforces", 360, 270],
+      ["04-proof-gap-a", 630, 20],
+      ["04-proof-codechef", 650, 270],
+      ["04-proof-gap-b", 920, 20],
+      ["04-proof-ler-dsa", 940, 270],
+      ["04-proof-right", 1210, 70],
+    ],
   },
   {
     y: 1165,
-    height: 467,
+    height: 432,
     slices: [["05-selected-work-ontheway", 0, 1280]],
   },
   {
-    y: 1632,
-    height: 93,
+    y: 1597,
+    height: 128,
     slices: [
       ["06-ontheway-left", 0, 59],
       ["06-ontheway-repository", 59, 387],
@@ -54,12 +62,12 @@ const rows = [
   },
   {
     y: 1725,
-    height: 387,
+    height: 352,
     slices: [["07-carivyo", 0, 1280]],
   },
   {
-    y: 2112,
-    height: 93,
+    y: 2077,
+    height: 128,
     slices: [
       ["08-carivyo-left", 0, 59],
       ["08-carivyo-repository", 59, 387],
@@ -70,12 +78,12 @@ const rows = [
   },
   {
     y: 2205,
-    height: 387,
+    height: 352,
     slices: [["09-waternet", 0, 1280]],
   },
   {
-    y: 2592,
-    height: 93,
+    y: 2557,
+    height: 128,
     slices: [
       ["10-waternet-left", 0, 251],
       ["10-waternet-repository", 251, 389],
@@ -90,7 +98,7 @@ const rows = [
   },
   {
     y: 4330,
-    height: 240,
+    height: 270,
     slices: [
       ["12-competitive-left", 0, 70],
       ["12-competitive-codeforces", 70, 380],
@@ -98,11 +106,6 @@ const rows = [
       ["12-competitive-leetcode", 840, 370],
       ["12-competitive-right", 1210, 70],
     ],
-  },
-  {
-    y: 4570,
-    height: 30,
-    slices: [["13-competitive-divider", 0, 1280]],
   },
   {
     y: 4600,
