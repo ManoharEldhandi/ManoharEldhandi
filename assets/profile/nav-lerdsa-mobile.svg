@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="46" viewBox="0 0 140 46" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40" role="img" aria-labelledby="title description">
   <title id="title">LER_DSA</title>
   <desc id="description">Open LER_DSA</desc>
   <defs>
@@ -17,6 +17,6 @@
       <stop offset="1" stop-color="#dda756" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><rect x="0.5" y="0.5" width="139" height="45" rx="12" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
-      <text x="70" y="29" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="740" letter-spacing="0.1" text-anchor="middle">LER_DSA</text></g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><rect x="0.5" y="0.5" width="79" height="39" rx="11" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
+      <text x="40" y="25" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="740" letter-spacing="0.1" text-anchor="middle">LER_DSA</text></g>
 </svg>

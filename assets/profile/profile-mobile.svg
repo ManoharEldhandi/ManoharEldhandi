@@ -16,15 +16,9 @@
       <stop offset="0.5" stop-color="#dda756" stop-opacity="0.8"/>
       <stop offset="1" stop-color="#dda756" stop-opacity="0"/>
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.34"/>
-    </filter>
   </defs>
-  <rect width="600" height="980" fill="#0b0f14"/>
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g filter="url(#shadow)">
-    <rect x="16" y="16" width="568" height="948" rx="28" fill="url(#panel)" stroke="#34404d" stroke-width="1.5"/>
-    <rect x="26" y="26" width="548" height="928" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
-    <path d="M54 17 H546" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g>
+    <rect x="0.5" y="0.5" width="599" height="979" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
   </g>
       <text x="44" y="70" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">ENGINEERING PROFILE</text>
       <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="760" letter-spacing="-0.7" text-anchor="start"><tspan x="44" y="116">Build the foundation.</tspan><tspan x="44" y="154">Apply intelligence where</tspan><tspan x="44" y="192">it earns its place.</tspan></text>

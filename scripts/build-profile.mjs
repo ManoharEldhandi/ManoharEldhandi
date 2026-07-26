@@ -52,20 +52,14 @@ function svgDocument({ width, height, title, description, body }) {
       <stop offset="0.5" stop-color="${colors.amber}" stop-opacity="0.8"/>
       <stop offset="1" stop-color="${colors.amber}" stop-opacity="0"/>
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.34"/>
-    </filter>
   </defs>
-  <rect width="${width}" height="${height}" fill="${colors.bg}"/>
   <g font-family="${sans}">${body}</g>
 </svg>`;
 }
 
 function surface(width, height, radius = 28) {
-  return `<g filter="url(#shadow)">
-    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${radius}" fill="url(#panel)" stroke="${colors.border}" stroke-width="1.5"/>
-    <rect x="26" y="26" width="${width - 52}" height="${height - 52}" rx="${Math.max(12, radius - 9)}" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
-    <path d="M54 17 H${width - 54}" stroke="#ffffff" stroke-opacity="0.08"/>
+  return `<g>
+    <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="${radius}" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
   </g>`;
 }
 
@@ -157,19 +151,17 @@ function hero(mobile = false) {
   });
 }
 
-function navButton(label, caption) {
-  const width = 280;
-  const height = 82;
+function navButton(label, mobile = false) {
+  const width = mobile ? 80 : 140;
+  const height = mobile ? 40 : 46;
+  const labelSize = mobile ? (label.length > 8 ? 8.5 : 9.5) : 14;
   return svgDocument({
     width,
     height,
     title: label,
     description: `Open ${label}`,
-    body: `<rect x="4" y="4" width="272" height="74" rx="18" fill="url(#panel)" stroke="${colors.border}"/>
-      <rect x="12" y="12" width="256" height="58" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
-      ${text({ x: 24, y: 36, value: label.toUpperCase(), size: 20, weight: 760, spacing: -0.2 })}
-      ${text({ x: 24, y: 58, value: caption, size: 10, fill: colors.sage, weight: 700, family: mono, spacing: 1.1 })}
-      ${text({ x: 252, y: 51, value: "↗", size: 26, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+    body: `<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="${mobile ? 11 : 12}" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
+      ${text({ x: width / 2, y: mobile ? 25 : 29, value: label, size: labelSize, weight: 740, anchor: "middle", spacing: 0.1 })}`,
   });
 }
 
@@ -239,18 +231,19 @@ function profile(mobile = false) {
 
 function projectsHeader(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 230 : 190;
+  const height = mobile ? 170 : 140;
   return svgDocument({
     width,
     height,
     title: "Selected projects",
     description: "Three selected projects showing backend, applied AI, and machine-learning engineering.",
-    body: `${surface(width, height, 24)}
-      ${kicker(mobile ? 44 : 64, mobile ? 70 : 72, "Selected builds")}
+    body: `${text({ x: width / 2, y: mobile ? 30 : 31, value: "SELECTED BUILDS", size: mobile ? 13 : 14, fill: colors.sage, weight: 750, family: mono, spacing: 2.1, anchor: "middle" })}
       ${mobile
-        ? lines({ x: 44, y: 116, values: ["Three systems.", "Three different engineering problems."], size: 30, lineHeight: 38, fill: colors.text, weight: 760 })
-        : text({ x: 64, y: 128, value: "Three systems. Three different engineering problems.", size: 38, weight: 760, spacing: -1 })}
-    `,
+        ? lines({ x: width / 2, y: 74, values: ["Three systems.", "Three different engineering problems."], size: 27, lineHeight: 35, fill: colors.text, weight: 760, anchor: "middle" })
+        : text({ x: width / 2, y: 82, value: "Three systems. Three different engineering problems.", size: 36, weight: 760, spacing: -1, anchor: "middle" })}
+      <path d="M${mobile ? 78 : 110} ${mobile ? 143 : 111} H${mobile ? 255 : 514}" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      <path d="M${mobile ? 345 : 686} ${mobile ? 143 : 111} H${mobile ? 522 : 1090}" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      <path d="M${width / 2} ${mobile ? 137 : 105} l6 6 -6 6 -6 -6z" fill="${colors.amber}"/>`,
   });
 }
 
@@ -429,23 +422,23 @@ function highlights(mobile = false) {
 
 function contributions(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 250 : 190;
-  const x = mobile ? 44 : 64;
+  const height = mobile ? 170 : 140;
   return svgDocument({
     width,
     height,
     title: "Contribution activity",
     description: "Contribution activity with a color-changing snake animation below.",
-    body: `${surface(width, height, 24)}
-      ${kicker(x, mobile ? 70 : 72, "Contributions")}
+    body: `${text({ x: width / 2, y: mobile ? 30 : 31, value: "CONTRIBUTIONS", size: mobile ? 13 : 14, fill: colors.sage, weight: 750, family: mono, spacing: 2.1, anchor: "middle" })}
       ${mobile
-        ? lines({ x, y: 116, values: ["Consistency", "leaves a trail."], size: 31, lineHeight: 38, fill: colors.text, weight: 760 })
-        : text({ x, y: 128, value: "Consistency leaves a trail.", size: 38, weight: 760, spacing: -1 })}
-      <g transform="translate(${mobile ? 410 : 1008} ${mobile ? 176 : 100})">
-        <rect x="0" y="0" width="16" height="16" rx="4" fill="#5f3745"/>
-        <rect x="24" y="0" width="16" height="16" rx="4" fill="#8c4f4f"/>
-        <rect x="48" y="0" width="16" height="16" rx="4" fill="#c17649"/>
-        <rect x="72" y="0" width="16" height="16" rx="4" fill="#e6b85c"/>
+        ? lines({ x: width / 2, y: 74, values: ["Consistency", "leaves a trail."], size: 29, lineHeight: 35, fill: colors.text, weight: 760, anchor: "middle" })
+        : text({ x: width / 2, y: 82, value: "Consistency leaves a trail.", size: 36, weight: 760, spacing: -1, anchor: "middle" })}
+      <path d="M${mobile ? 104 : 210} ${mobile ? 143 : 111} H${mobile ? 250 : 514}" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      <path d="M${mobile ? 350 : 686} ${mobile ? 143 : 111} H${mobile ? 496 : 990}" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      <g transform="translate(${mobile ? 268 : 558} ${mobile ? 135 : 103})">
+        <rect x="0" y="0" width="12" height="12" rx="3" fill="#5f3745"/>
+        <rect x="18" y="0" width="12" height="12" rx="3" fill="#8c4f4f"/>
+        <rect x="36" y="0" width="12" height="12" rx="3" fill="#c17649"/>
+        <rect x="54" y="0" width="12" height="12" rx="3" fill="#e6b85c"/>
       </g>`,
   });
 }
@@ -496,12 +489,18 @@ const assets = new Map([
   ["contributions-mobile.svg", contributions(true)],
   ["footer.svg", footer(false)],
   ["footer-mobile.svg", footer(true)],
-  ["nav-portfolio.svg", navButton("Portfolio", "SELECTED WORK")],
-  ["nav-resume.svg", navButton("Resume", "EXPERIENCE")],
-  ["nav-linkedin.svg", navButton("LinkedIn", "CONNECT")],
-  ["nav-email.svg", navButton("Email", "START A CONVERSATION")],
-  ["nav-codeforces.svg", navButton("Codeforces", "MASTER / 2141")],
-  ["nav-lerdsa.svg", navButton("LER_DSA", "OPEN ROADMAP")],
+  ["nav-portfolio.svg", navButton("Portfolio")],
+  ["nav-portfolio-mobile.svg", navButton("Portfolio", true)],
+  ["nav-resume.svg", navButton("Resume")],
+  ["nav-resume-mobile.svg", navButton("Resume", true)],
+  ["nav-linkedin.svg", navButton("LinkedIn")],
+  ["nav-linkedin-mobile.svg", navButton("LinkedIn", true)],
+  ["nav-email.svg", navButton("Email")],
+  ["nav-email-mobile.svg", navButton("Email", true)],
+  ["nav-codeforces.svg", navButton("Codeforces")],
+  ["nav-codeforces-mobile.svg", navButton("Codeforces", true)],
+  ["nav-lerdsa.svg", navButton("LER_DSA")],
+  ["nav-lerdsa-mobile.svg", navButton("LER_DSA", true)],
 ]);
 
 for (const [filename, svg] of assets) {
