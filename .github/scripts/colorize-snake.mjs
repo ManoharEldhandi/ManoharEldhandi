@@ -50,6 +50,22 @@ for (const file of files) {
     throw new Error(`No animated snake segments found in ${file}.`);
   }
 
+  const progressBarPattern = /<rect class="u u[0-9a-z]+"[^>]*\/>/g;
+  const progressBars = svg.match(progressBarPattern) ?? [];
+  svg = svg.replace(progressBarPattern, "");
+
+  if (progressBars.length > 0) {
+    const viewBoxPattern = /viewBox="(-?[\d.]+) (-?[\d.]+) ([\d.]+) ([\d.]+)"/;
+    const viewBox = svg.match(viewBoxPattern);
+
+    if (viewBox) {
+      const [, minX, minY, viewWidth] = viewBox;
+      const trimmedHeight = 120 - Number(minY);
+      svg = svg.replace(viewBoxPattern, `viewBox="${minX} ${minY} ${viewWidth} ${trimmedHeight}"`);
+      svg = svg.replace(/(<svg\b[^>]*\bheight=")[^"]+(" )/, `$1${trimmedHeight}$2`);
+    }
+  }
+
   await writeFile(file, svg);
-  console.log(`${file}: ${events.size} color changes applied to ${coloredSegments} snake segments.`);
+  console.log(`${file}: ${events.size} color changes applied to ${coloredSegments} snake segments; ${progressBars.length} progress bars removed.`);
 }

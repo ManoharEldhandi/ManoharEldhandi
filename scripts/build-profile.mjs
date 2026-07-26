@@ -114,18 +114,18 @@ function hero(mobile = false) {
     ${kicker(64, 158, "Applied AI + Backend Engineering")}
     ${text({ x: 64, y: 230, value: "Manohar Eldhandi", size: 66, weight: 780, spacing: -2.7 })}
     ${text({ x: 66, y: 278, value: "AI & Backend Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
-    ${lines({ x: 66, y: 331, values: ["I build dependable backend platforms and applied-AI products with Java and Python—", "designed for real users, observable decisions, and production reliability."], size: 19, lineHeight: 31 })}
+    ${lines({ x: 66, y: 331, values: ["I build dependable backend platforms and applied-AI products", "with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 21, lineHeight: 29 })}
     ${card(820, 126, 314, 230, 20, true)}
     ${kicker(850, 165, "Current role")}
     ${text({ x: 850, y: 211, value: "Software Engineer", size: 26, weight: 740 })}
     ${text({ x: 850, y: 243, value: "at Cisco", size: 26, weight: 740 })}
-    ${lines({ x: 850, y: 281, values: ["Applying agentic AI and backend", "engineering to security-compliance", "workflows across product teams."], size: 16, lineHeight: 25 })}
+    ${lines({ x: 850, y: 281, values: ["Applying agentic AI and", "backend engineering to", "security-compliance workflows", "across product teams."], size: 17, lineHeight: 24 })}
     <path d="M64 418 H1136" stroke="${colors.borderSoft}"/>
-    ${text({ x: 230, y: 458, value: "BACKEND SYSTEMS", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    ${text({ x: 230, y: 458, value: "BACKEND SYSTEMS", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
     <path d="M405 432 V470" stroke="${colors.borderSoft}"/>
-    ${text({ x: 600, y: 458, value: "APPLIED AI", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    ${text({ x: 600, y: 458, value: "APPLIED AI", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
     <path d="M795 432 V470" stroke="${colors.borderSoft}"/>
-    ${text({ x: 970, y: 458, value: "PRODUCT ENGINEERING", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
+    ${text({ x: 970, y: 458, value: "PRODUCT ENGINEERING", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
 
   const mobileBody = `${surface(width, height)}
     <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
@@ -134,13 +134,13 @@ function hero(mobile = false) {
     ${kicker(44, 146, "Applied AI + Backend")}
     ${lines({ x: 44, y: 211, values: ["Manohar", "Eldhandi"], size: 58, lineHeight: 60, fill: colors.text, weight: 780, spacing: -2.2 })}
     ${text({ x: 46, y: 352, value: "AI & Backend Engineer", size: 27, fill: colors.amber, weight: 730 })}
-    ${lines({ x: 46, y: 401, values: ["I build dependable backend platforms and applied-AI", "products with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 17, lineHeight: 27 })}
+    ${lines({ x: 46, y: 401, values: ["I build dependable backend platforms and applied-AI", "products with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 19, lineHeight: 29 })}
     ${card(44, 505, 512, 160, 18, true)}
     ${kicker(68, 540, "Current role")}
     ${text({ x: 68, y: 578, value: "Software Engineer at Cisco", size: 24, weight: 740 })}
-    ${lines({ x: 68, y: 614, values: ["Agentic AI + backend engineering for security-compliance", "workflows used across Cisco product teams."], size: 15, lineHeight: 24 })}
+    ${lines({ x: 68, y: 614, values: ["Agentic AI + backend engineering for security-compliance", "workflows used across Cisco product teams."], size: 17, lineHeight: 26 })}
     <path d="M44 704 H556" stroke="${colors.borderSoft}"/>
-    ${text({ x: 300, y: 735, value: "BACKEND  /  APPLIED AI  /  PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
+    ${text({ x: 300, y: 735, value: "BACKEND  /  APPLIED AI  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
 
   return svgDocument({
     width,
@@ -152,9 +152,9 @@ function hero(mobile = false) {
 }
 
 function navButton(label, mobile = false) {
-  const width = mobile ? 80 : 140;
+  const width = mobile ? 76 : 140;
   const height = mobile ? 40 : 46;
-  const labelSize = mobile ? (label.length > 8 ? 8.5 : 9.5) : 14;
+  const labelSize = mobile ? (label.length > 8 ? 9 : 10) : 15;
   return svgDocument({
     width,
     height,
@@ -180,8 +180,8 @@ function profile(mobile = false) {
       const x = 64 + index * 270;
       return `${card(x, 366, 252, 180, 17, index === 0 || index === 3)}
         ${text({ x: x + 22, y: 414, value, size: 34, weight: 780, spacing: -1 })}
-        ${text({ x: x + 22, y: 445, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
-        ${lines({ x: x + 22, y: 484, values: copy, size: 14, lineHeight: 22 })}`;
+        ${text({ x: x + 22, y: 445, value: label, size: 13, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
+        ${lines({ x: x + 22, y: 484, values: copy, size: 16, lineHeight: 24 })}`;
     }).join("");
     return svgDocument({
       width,
@@ -193,10 +193,10 @@ function profile(mobile = false) {
         ${text({ x: 64, y: 126, value: "Build the foundation. Apply intelligence where it earns its place.", size: 36, weight: 760, spacing: -1.1 })}
         ${card(64, 166, 520, 160, 18)}
         ${text({ x: 90, y: 207, value: "What I build", size: 24, weight: 740 })}
-        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services, agent tooling, and", "deterministic-first LLM pipelines that hold up in production."], size: 17, lineHeight: 28 })}
+        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services,", "agent tooling, and deterministic-first", "LLM pipelines that hold up in production."], size: 19, lineHeight: 27 })}
         ${card(602, 166, 534, 160, 18, true)}
         ${text({ x: 628, y: 207, value: "Current focus", size: 24, weight: 740 })}
-        ${lines({ x: 628, y: 245, values: ["At Cisco, I apply AI and backend engineering to automate", "security-compliance workflows used across product teams."], size: 17, lineHeight: 28 })}
+        ${lines({ x: 628, y: 245, values: ["At Cisco, I apply AI and backend engineering", "to automate security-compliance workflows", "used across product teams."], size: 19, lineHeight: 27 })}
         ${metricCards}`,
     });
   }
@@ -208,8 +208,8 @@ function profile(mobile = false) {
     const y = 610 + row * 178;
     return `${card(x, y, 240, 158, 16, index === 0 || index === 3)}
       ${text({ x: x + 18, y: y + 43, value, size: 30, weight: 780 })}
-      ${text({ x: x + 18, y: y + 70, value: label, size: 11, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
-      ${lines({ x: x + 18, y: y + 108, values: copy, size: 13, lineHeight: 20 })}`;
+      ${text({ x: x + 18, y: y + 70, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
+      ${lines({ x: x + 18, y: y + 108, values: copy, size: 15, lineHeight: 22 })}`;
   }).join("");
   return svgDocument({
     width,
@@ -221,10 +221,10 @@ function profile(mobile = false) {
       ${lines({ x: 44, y: 116, values: ["Build the foundation.", "Apply intelligence where", "it earns its place."], size: 30, lineHeight: 38, fill: colors.text, weight: 760, spacing: -0.7 })}
       ${card(44, 250, 512, 145, 18)}
       ${text({ x: 68, y: 290, value: "What I build", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 327, values: ["Reliable APIs, event-driven services, agent tooling,", "and deterministic-first LLM pipelines."], size: 16, lineHeight: 26 })}
+      ${lines({ x: 68, y: 327, values: ["Reliable APIs, event-driven services,", "agent tooling, and deterministic-first", "LLM pipelines."], size: 18, lineHeight: 27 })}
       ${card(44, 415, 512, 155, 18, true)}
       ${text({ x: 68, y: 456, value: "Current focus", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 493, values: ["At Cisco, I apply AI and backend engineering to", "security-compliance automation across product teams."], size: 16, lineHeight: 26 })}
+      ${lines({ x: 68, y: 493, values: ["At Cisco, I apply AI and backend", "engineering to security-compliance", "workflows across product teams."], size: 18, lineHeight: 27 })}
       ${metricCards}`,
   });
 }
@@ -288,7 +288,7 @@ function projectVisual(kind, x, y, width, height) {
       <circle cx="${x + width / 2}" cy="${y + 125}" r="59" fill="none" stroke="${colors.border}" stroke-width="12"/>
       <circle cx="${x + width / 2}" cy="${y + 125}" r="59" fill="none" stroke="${colors.amber}" stroke-width="12" stroke-linecap="round" stroke-dasharray="356 371" transform="rotate(-90 ${x + width / 2} ${y + 125})"/>
       ${text({ x: x + width / 2, y: y + 122, value: "0.96", size: 34, fill: colors.text, weight: 780, anchor: "middle" })}
-      ${text({ x: x + width / 2, y: y + 147, value: "AUC", size: 12, fill: colors.sage, weight: 750, family: mono, anchor: "middle", spacing: 1 })}`;
+      ${text({ x: x + width / 2, y: y + 147, value: "AUC", size: 13, fill: colors.sage, weight: 750, family: mono, anchor: "middle", spacing: 1 })}`;
   }
   const names = kind === "flow" ? ["ROUTE", "PREP", "PICKUP"] : ["SOURCE", "EVIDENCE", "REVIEW"];
   const label = kind === "flow" ? "ETA-SYNCHRONIZED FLOW" : "EVIDENCE-GROUNDED FLOW";
@@ -298,7 +298,7 @@ function projectVisual(kind, x, y, width, height) {
     ${kicker(x + 24, y + 44, label)}
     ${names.map((name, index) => {
       const nodeX = x + 24 + index * (nodeWidth + 17);
-      return `<rect x="${nodeX}" y="${nodeY}" width="${nodeWidth}" height="54" rx="12" fill="#1b2632" stroke="${colors.border}"/>${text({ x: nodeX + nodeWidth / 2, y: nodeY + 34, value: name, size: 12, weight: 750, family: mono, anchor: "middle" })}${index < 2 ? text({ x: nodeX + nodeWidth + 8, y: nodeY + 35, value: "›", size: 24, fill: colors.amber, weight: 700, anchor: "middle" }) : ""}`;
+      return `<rect x="${nodeX}" y="${nodeY}" width="${nodeWidth}" height="54" rx="12" fill="#1b2632" stroke="${colors.border}"/>${text({ x: nodeX + nodeWidth / 2, y: nodeY + 34, value: name, size: 13, weight: 750, family: mono, anchor: "middle" })}${index < 2 ? text({ x: nodeX + nodeWidth + 8, y: nodeY + 35, value: "›", size: 24, fill: colors.amber, weight: 700, anchor: "middle" }) : ""}`;
     }).join("")}`;
 }
 
@@ -313,11 +313,11 @@ function projectAsset(key, mobile = false) {
       title: `${project.title} project`,
       description: project.mobileCopy.join(" "),
       body: `${surface(width, height)}
-        ${text({ x: 44, y: 67, value: project.index, size: 14, fill: colors.amber, weight: 750, family: mono, spacing: 1.2 })}
+        ${text({ x: 44, y: 67, value: project.index, size: 15, fill: colors.amber, weight: 750, family: mono, spacing: 1.2 })}
         ${text({ x: 44, y: 119, value: `${project.title} ↗`, size: 38, weight: 780, spacing: -1 })}
-        ${lines({ x: 44, y: 160, values: project.mobileCopy, size: 16, lineHeight: 25 })}
-        ${chipLayout(project.chips, 44, 259, 512, 14, 37)}
-        ${text({ x: 44, y: 337, value: project.meta, size: 12, fill: colors.muted, weight: 650, family: mono })}
+        ${lines({ x: 44, y: 160, values: project.mobileCopy, size: 18, lineHeight: 27 })}
+        ${chipLayout(project.chips, 44, 259, 512, 15, 37)}
+        ${text({ x: 44, y: 337, value: project.meta, size: 13, fill: colors.muted, weight: 650, family: mono })}
         ${projectVisual(project.visual, 44, 374, 512, 172)}`,
     });
   }
@@ -330,51 +330,86 @@ function projectAsset(key, mobile = false) {
     title: `${project.title} project`,
     description: project.copy.join(" "),
     body: `${surface(width, height)}
-      ${text({ x: textX, y: 75, value: project.index, size: 14, fill: colors.amber, weight: 750, family: mono, spacing: 1.3 })}
+      ${text({ x: textX, y: 75, value: project.index, size: 15, fill: colors.amber, weight: 750, family: mono, spacing: 1.3 })}
       ${text({ x: textX, y: 133, value: `${project.title} ↗`, size: 42, weight: 780, spacing: -1.2 })}
-      ${lines({ x: textX, y: 176, values: project.copy, size: 17, lineHeight: 27 })}
-      ${chipLayout(project.chips, textX, 255, 710, 14, 38)}
-      ${text({ x: textX, y: 317, value: project.meta, size: 13, fill: colors.muted, weight: 650, family: mono })}
+      ${lines({ x: textX, y: 176, values: project.copy, size: 19, lineHeight: 29 })}
+      ${chipLayout(project.chips, textX, 255, 710, 15, 38)}
+      ${text({ x: textX, y: 317, value: project.meta, size: 14, fill: colors.muted, weight: 650, family: mono })}
       ${projectVisual(project.visual, visualX, 70, 316, 240)}`,
   });
 }
 
+function toolkitIcon(kind, x, y, size) {
+  const cx = x + size / 2;
+  const cy = y + size / 2;
+  const frame = `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${size * 0.27}" fill="#18232e" stroke="${colors.border}" stroke-width="1.4"/>`;
+  const stroke = `fill="none" stroke="${colors.amber}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"`;
+
+  if (kind === "ai") {
+    return `${frame}<path d="M${cx} ${cy} L${cx - 17} ${cy - 14} M${cx} ${cy} L${cx + 18} ${cy - 13} M${cx} ${cy} L${cx} ${cy + 20}" ${stroke}/>
+      <circle cx="${cx}" cy="${cy}" r="7" fill="${colors.amber}"/><circle cx="${cx - 19}" cy="${cy - 16}" r="5" fill="${colors.sage}"/><circle cx="${cx + 20}" cy="${cy - 15}" r="5" fill="${colors.sage}"/><circle cx="${cx}" cy="${cy + 23}" r="5" fill="${colors.sage}"/>`;
+  }
+  if (kind === "backend") {
+    return `${frame}${[-17, 0, 17].map((offset) => `<rect x="${cx - 23}" y="${cy + offset - 6}" width="46" height="12" rx="4" ${stroke}/><circle cx="${cx + 15}" cy="${cy + offset}" r="2.5" fill="${colors.sage}"/>`).join("")}`;
+  }
+  if (kind === "frontend") {
+    return `${frame}<rect x="${cx - 25}" y="${cy - 21}" width="50" height="42" rx="6" ${stroke}/><path d="M${cx - 25} ${cy - 10} H${cx + 25} M${cx - 5} ${cy - 10} V${cy + 21}" ${stroke}/><circle cx="${cx - 17}" cy="${cy - 16}" r="2" fill="${colors.sage}"/><circle cx="${cx - 10}" cy="${cy - 16}" r="2" fill="${colors.sage}"/>`;
+  }
+  if (kind === "cloud") {
+    return `${frame}<path d="M${cx - 25} ${cy + 12} H${cx + 23} C${cx + 33} ${cy + 12} ${cx + 34} ${cy - 4} ${cx + 23} ${cy - 7} C${cx + 20} ${cy - 25} ${cx - 5} ${cy - 27} ${cx - 12} ${cy - 11} C${cx - 31} ${cy - 14} ${cx - 36} ${cy + 8} ${cx - 25} ${cy + 12} Z" ${stroke}/><path d="M${cx - 10} ${cy + 2} L${cx} ${cy - 8} L${cx + 10} ${cy + 2}" ${stroke}/>`;
+  }
+  return `${frame}<path d="M${cx - 21} ${cy + 20} L${cx + 17} ${cy - 18} M${cx - 17} ${cy - 17} L${cx + 20} ${cy + 20}" ${stroke}/><circle cx="${cx - 21}" cy="${cy + 20}" r="6" ${stroke}/><path d="M${cx + 10} ${cy - 25} L${cx + 24} ${cy - 20} L${cx + 17} ${cy - 9}" ${stroke}/>`;
+}
+
 function toolkit(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 740 : 500;
+  const height = mobile ? 780 : 500;
   const groups = [
-    ["BACKEND + DATA", ["Java", "Python", "Spring Boot", "FastAPI", "Kafka", "Elasticsearch", "MySQL"]],
-    ["APPLIED AI + PRODUCT", ["MCP", "RAG", "LLM APIs", "React", "TypeScript", "WebSockets"]],
-    ["QUALITY + DELIVERY", ["JUnit 5", "pytest", "Playwright", "Docker", "Kubernetes", "GitHub Actions"]],
+    { icon: "ai", label: "AI", details: ["MCP · RAG", "LLM APIs"] },
+    { icon: "backend", label: "Backend", details: ["Java · Python", "Spring · FastAPI"] },
+    { icon: "frontend", label: "Frontend", details: ["React · TypeScript", "JavaScript"] },
+    { icon: "cloud", label: "Cloud", details: ["Docker · Kubernetes", "GitHub Actions"] },
+    { icon: "tools", label: "Tools", details: ["Kafka · Elasticsearch", "MySQL · Playwright"] },
   ];
+
   if (!mobile) {
-    const rows = groups.map(([label, chips], index) => {
-      const y = 168 + index * 98;
-      return `${card(64, y, 1072, 82, 15, index === 1)}
-        ${text({ x: 90, y: y + 48, value: label, size: 14, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
-        <path d="M310 ${y + 18} V${y + 64}" stroke="${colors.border}"/>
-        ${chipLayout(chips, 338, y + 49, 760, 14, 35)}`;
+    const cards = groups.map((group, index) => {
+      const x = 64 + index * 217;
+      const center = x + 101.5;
+      return `${card(x, 166, 203, 270, 18, index === 0 || index === 4)}
+        ${toolkitIcon(group.icon, x + 67.5, 190, 68)}
+        ${text({ x: center, y: 300, value: group.label, size: 24, weight: 760, anchor: "middle" })}
+        <path d="M${x + 28} 320 H${x + 175}" stroke="${colors.borderSoft}"/>
+        ${lines({ x: center, y: 354, values: group.details, size: 14, lineHeight: 26, fill: colors.muted, weight: 560, anchor: "middle" })}`;
     }).join("");
     return svgDocument({
       width,
       height,
       title: "Engineering toolkit",
-      description: "A focused toolkit across backend, applied AI, product engineering, quality, and delivery.",
-      body: `${surface(width, height)}${kicker(64, 76, "Engineering toolkit")}${text({ x: 64, y: 126, value: "A focused stack for shipping complete systems.", size: 38, weight: 760, spacing: -1 })}${rows}`,
+      description: "Applied AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
+      body: `${surface(width, height)}${kicker(64, 76, "Engineering toolkit")}${text({ x: 64, y: 126, value: "Five disciplines. One complete engineering workflow.", size: 38, weight: 760, spacing: -1 })}${cards}`,
     });
   }
-  const rows = groups.map(([label, chips], index) => {
-    const y = 180 + index * 170;
-    return `${card(44, y, 512, 150, 17, index === 1)}
-      ${text({ x: 68, y: y + 38, value: label, size: 13, fill: colors.sage, weight: 750, family: mono, spacing: 0.9 })}
-      ${chipLayout(chips, 68, y + 86, 462, 14, 38)}`;
+
+  const compactCards = groups.slice(0, 4).map((group, index) => {
+    const x = 44 + (index % 2) * 264;
+    const y = 180 + Math.floor(index / 2) * 206;
+    const center = x + 124;
+    return `${card(x, y, 248, 190, 17, index === 0)}
+      ${toolkitIcon(group.icon, center - 28, y + 20, 56)}
+      ${text({ x: center, y: y + 108, value: group.label, size: 21, weight: 760, anchor: "middle" })}
+      ${lines({ x: center, y: y + 139, values: group.details, size: 13, lineHeight: 23, fill: colors.muted, weight: 560, anchor: "middle" })}`;
   }).join("");
+  const tools = groups[4];
+  const toolsCard = `${card(44, 592, 512, 128, 17, true)}${toolkitIcon(tools.icon, 68, 618, 72)}
+    ${text({ x: 170, y: 645, value: tools.label, size: 23, weight: 760 })}
+    ${lines({ x: 170, y: 676, values: tools.details, size: 14, lineHeight: 23, fill: colors.muted, weight: 560 })}`;
   return svgDocument({
     width,
     height,
     title: "Engineering toolkit",
-    description: "A focused toolkit across backend, applied AI, product engineering, quality, and delivery.",
-    body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["A focused stack for shipping", "complete systems."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${rows}`,
+    description: "Applied AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
+    body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["Five disciplines. One complete", "engineering workflow."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${compactCards}${toolsCard}`,
   });
 }
 
@@ -392,9 +427,9 @@ function highlights(mobile = false) {
       const x = 64 + (index % 2) * 544;
       const y = 166 + Math.floor(index / 2) * 176;
       return `${card(x, y, 526, 156, 18, index === 0 || index === 3)}
-        ${text({ x: x + 24, y: y + 36, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
+        ${text({ x: x + 24, y: y + 36, value: label, size: 13, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
         ${text({ x: x + 24, y: y + 82, value, size: 31, weight: 780, spacing: -0.8 })}
-        ${text({ x: x + 24, y: y + 119, value: copy, size: 15, fill: colors.muted, weight: 500 })}`;
+        ${text({ x: x + 24, y: y + 119, value: copy, size: 17, fill: colors.muted, weight: 500 })}`;
     }).join("");
     return svgDocument({
       width,
@@ -407,9 +442,9 @@ function highlights(mobile = false) {
   const cards = items.map(([label, value, copy], index) => {
     const y = 176 + index * 158;
     return `${card(44, y, 512, 140, 17, index === 0 || index === 3)}
-      ${text({ x: 68, y: y + 32, value: label, size: 11, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
+      ${text({ x: 68, y: y + 32, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
       ${text({ x: 68, y: y + 75, value, size: 29, weight: 780 })}
-      ${text({ x: 68, y: y + 108, value: copy, size: 14, fill: colors.muted })}`;
+      ${text({ x: 68, y: y + 108, value: copy, size: 16, fill: colors.muted })}`;
   }).join("");
   return svgDocument({
     width,
@@ -452,8 +487,8 @@ function footer(mobile = false) {
       height,
       title: "Contact Manohar Eldhandi",
       description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
-      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Let's build something useful.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "BACKEND  /  APPLIED AI  /  DEVTOOLS  /  PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
-        ${card(854, 91, 282, 102, 18, true)}${text({ x: 882, y: 150, value: "EMAIL MANOHAR", size: 18, weight: 760 })}${text({ x: 1104, y: 154, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Let's build something useful.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "BACKEND  /  APPLIED AI  /  DEVTOOLS  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
+        ${card(854, 91, 282, 102, 18, true)}${text({ x: 882, y: 150, value: "EMAIL ME", size: 18, weight: 760 })}${text({ x: 1104, y: 154, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
     });
   }
   return svgDocument({
@@ -461,7 +496,7 @@ function footer(mobile = false) {
     height,
     title: "Contact Manohar Eldhandi",
     description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
-    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Let's build", "something useful."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "BACKEND / APPLIED AI / DEVTOOLS / PRODUCT", size: 12, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL MANOHAR", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Let's build", "something useful."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "BACKEND / APPLIED AI / DEVTOOLS / PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL ME", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
   });
 }
 
@@ -499,6 +534,8 @@ const assets = new Map([
   ["nav-email-mobile.svg", navButton("Email", true)],
   ["nav-codeforces.svg", navButton("Codeforces")],
   ["nav-codeforces-mobile.svg", navButton("Codeforces", true)],
+  ["nav-codechef.svg", navButton("CodeChef")],
+  ["nav-codechef-mobile.svg", navButton("CodeChef", true)],
   ["nav-lerdsa.svg", navButton("LER_DSA")],
   ["nav-lerdsa-mobile.svg", navButton("LER_DSA", true)],
 ]);

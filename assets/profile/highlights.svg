@@ -23,25 +23,25 @@
     <rect x="64" y="166" width="526" height="156" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
     <path d="M82 167 H572" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-        <text x="88" y="202" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="1" text-anchor="start">COMPETITIVE PROGRAMMING</text>
+        <text x="88" y="202" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="1" text-anchor="start">COMPETITIVE PROGRAMMING</text>
         <text x="88" y="248" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="31" font-weight="780" letter-spacing="-0.8" text-anchor="start">Master / 2141</text>
-        <text x="88" y="285" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="0" text-anchor="start">CodeChef 4-star / 1893</text><g>
+        <text x="88" y="285" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0" text-anchor="start">CodeChef 4-star / 1893</text><g>
     <rect x="608" y="166" width="526" height="156" rx="18" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
     <path d="M626 167 H1116" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-        <text x="632" y="202" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="1" text-anchor="start">NATIONAL SELECTION</text>
+        <text x="632" y="202" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="1" text-anchor="start">NATIONAL SELECTION</text>
         <text x="632" y="248" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="31" font-weight="780" letter-spacing="-0.8" text-anchor="start">Top 1%</text>
-        <text x="632" y="285" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="0" text-anchor="start">Amazon ML Summer School / 50,000+ applicants</text><g>
+        <text x="632" y="285" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0" text-anchor="start">Amazon ML Summer School / 50,000+ applicants</text><g>
     <rect x="64" y="342" width="526" height="156" rx="18" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
     <path d="M82 343 H572" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-        <text x="88" y="378" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="1" text-anchor="start">ENGINEERING COMPETITION</text>
+        <text x="88" y="378" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="1" text-anchor="start">ENGINEERING COMPETITION</text>
         <text x="88" y="424" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="31" font-weight="780" letter-spacing="-0.8" text-anchor="start">Top 35</text>
-        <text x="88" y="461" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="0" text-anchor="start">Cisco Webex Playtime / 2,000+ teams</text><g>
+        <text x="88" y="461" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0" text-anchor="start">Cisco Webex Playtime / 2,000+ teams</text><g>
     <rect x="608" y="342" width="526" height="156" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
     <path d="M626 343 H1116" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-        <text x="632" y="378" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="1" text-anchor="start">OPEN-SOURCE EDUCATION</text>
+        <text x="632" y="378" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="1" text-anchor="start">OPEN-SOURCE EDUCATION</text>
         <text x="632" y="424" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="31" font-weight="780" letter-spacing="-0.8" text-anchor="start">500+ learners</text>
-        <text x="632" y="461" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="0" text-anchor="start">LER_DSA / 30 days / 20 modules</text></g>
+        <text x="632" y="461" fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0" text-anchor="start">LER_DSA / 30 days / 20 modules</text></g>
 </svg>
