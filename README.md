@@ -1,266 +1,121 @@
-<!-- GitHub profile README: native HTML/Markdown with a consistent two-column layout. -->
-
-<h1 align="center">Manohar Eldhandi</h1>
-
-<h3 align="center">Software Engineer at Cisco</h3>
-
 <p align="center">
-  <em>Backend Systems &nbsp;&middot;&nbsp; Security Automation &nbsp;&middot;&nbsp; Agentic AI</em><br>
-  <sub>Bengaluru, India</sub>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg">
+    <img src="./assets/profile/hero.svg" width="100%" alt="Manohar Eldhandi — AI and Backend Engineer at Cisco in Bengaluru, building dependable backend platforms and applied-AI products.">
+  </picture>
 </p>
 
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <a href="https://manohareldhandi.github.io/portfolio/"><strong>Portfolio</strong></a><br>
-      <sub>View work &nearr;</sub>
-    </td>
-    <td width="25%" align="center">
-      <a href="https://manohareldhandi.github.io/Resume/"><strong>Resume</strong></a><br>
-      <sub>View profile &nearr;</sub>
-    </td>
-    <td width="25%" align="center">
-      <a href="https://www.linkedin.com/in/manohar-eldhandi/"><strong>LinkedIn</strong></a><br>
-      <sub>Connect &nearr;</sub>
-    </td>
-    <td width="25%" align="center">
-      <a href="mailto:manohareldhandi@outlook.com"><strong>Email</strong></a><br>
-      <sub>Write to me &nearr;</sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://manohareldhandi.github.io/portfolio/">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/nav-portfolio-mobile.svg">
+      <img src="./assets/profile/nav-portfolio.svg" width="100%" alt="Open Manohar's portfolio">
+    </picture>
+  </a><br>
+  <a href="https://manohareldhandi.github.io/Resume/">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/nav-resume-mobile.svg">
+      <img src="./assets/profile/nav-resume.svg" width="100%" alt="Open Manohar's resume">
+    </picture>
+  </a><br>
+  <a href="https://www.linkedin.com/in/manohar-eldhandi/">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/nav-linkedin-mobile.svg">
+      <img src="./assets/profile/nav-linkedin.svg" width="100%" alt="Connect with Manohar on LinkedIn">
+    </picture>
+  </a><br>
+  <a href="mailto:manohareldhandi@outlook.com">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/nav-email-mobile.svg">
+      <img src="./assets/profile/nav-email.svg" width="100%" alt="Email Manohar">
+    </picture>
+  </a>
+</div>
 
-<br>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/profile-mobile.svg">
+  <img src="./assets/profile/profile.svg" width="100%" alt="Profile: Manohar builds reliable APIs, deterministic-first LLM pipelines, agent tooling, event-driven services, and full-stack workflows. At Cisco, he applies AI and backend engineering to security-compliance automation.">
+</picture>
 
-<h2>01 / PROFILE</h2>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/impact-mobile.svg">
+  <img src="./assets/profile/impact.svg" width="100%" alt="Selected impact: adoption by 50+ engineers across four Cisco teams, 70% less review effort, 10 times fewer model calls, and 736 tests with 96% UI coverage.">
+</picture>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>What I build</h3>
-      <p>
-        I build Java and Python systems at <strong>Cisco</strong> for security, compliance,
-        and AI-assisted engineering. My work spans reliable APIs, deterministic-first LLM
-        pipelines, agent tooling, and release automation.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>How I approach it</h3>
-      <p>
-        I prefer software with explicit trust boundaries, observable decisions, and tests
-        that cover the real workflow. AI should improve a system without hiding uncertainty
-        or weakening its engineering foundations.
-      </p>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/ManoharEldhandi/OnTheWay">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/project-ontheway-mobile.svg">
+    <img src="./assets/profile/project-ontheway.svg" width="100%" alt="Open OnTheWay — a route-aware pickup platform built with Java, Spring Boot, Kafka, Elasticsearch, React, and Kubernetes.">
+  </picture>
+</a>
 
-<br>
+<a href="https://github.com/ManoharEldhandi/Carivyo-AI">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/project-carivyo-mobile.svg">
+    <img src="./assets/profile/project-carivyo.svg" width="100%" alt="Open Carivyo — a local-first career-intelligence workspace with official ATS connectors, evidence-grounded AI, and explicit approval gates.">
+  </picture>
+</a>
 
-<h2>02 / IMPACT</h2>
+<a href="https://github.com/ManoharEldhandi/WaterNet">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/project-waternet-mobile.svg">
+    <img src="./assets/profile/project-waternet.svg" width="100%" alt="Open WaterNet — a reproducible water-quality classification system with a cached ensemble, traceable predictions, batch inference, and a Django API.">
+  </picture>
+</a>
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>50+ engineers &middot; 4 teams</h3>
-      <p>Agentic security-compliance tooling adopted across Cisco product teams.</p>
-      <sub><strong>Platform adoption</strong></sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h3>70% less review effort</h3>
-      <p>Traceable code-risk findings and remediations accelerated manual review.</p>
-      <sub><strong>Security automation</strong></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>10&times; fewer model calls</h3>
-      <p>An 11-phase pipeline and 100-worker inference engine reduced LLM usage.</p>
-      <sub><strong>AI orchestration</strong></sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h3>736 tests &middot; 96% UI coverage</h3>
-      <p>Backend and Playwright suites reduced manual QA effort by 60%.</p>
-      <sub><strong>Release confidence</strong></sub>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/toolkit-mobile.svg">
+  <img src="./assets/profile/toolkit.svg" width="100%" alt="Engineering toolkit: Java, Python, Spring Boot, FastAPI, MCP, RAG, Kafka, Elasticsearch, React, TypeScript, Playwright, Docker, Kubernetes, and GitHub Actions.">
+</picture>
 
-<br>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/notes-mobile.svg">
+  <img src="./assets/profile/notes.svg" width="100%" alt="How Manohar builds: start deterministic, keep boundaries clear, make decisions observable, and test complete workflows.">
+</picture>
 
-<h2>03 / BUILDS</h2>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/proof-header-mobile.svg">
+  <img src="./assets/profile/proof-header.svg" width="100%" alt="Beyond the stack: proof through competitive programming, national programs, engineering competitions, and open-source education.">
+</picture>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharEldhandi/OnTheWay">OnTheWay &nearr;</a></h3>
-      <p>
-        Route-aware pickup across 16 retail verticals, with ETA-synchronized preparation,
-        event streaming, search, and live tracking.
-      </p>
-      <p><code>Java</code> <code>Spring Boot</code> <code>Kafka</code> <code>React</code></p>
-      <sub>115 shops &middot; 507 items &middot; 70+ tests &middot; 1,000-user load test</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharEldhandi/Carivyo-AI">Carivyo &nearr;</a></h3>
-      <p>
-        Local-first career intelligence with official ATS connectors, evidence-grounded
-        AI, approval gates, and a transparent 27-check resume diagnostic.
-      </p>
-      <p><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>SQLite</code></p>
-      <sub>4 ATS connectors &middot; local model support &middot; explicit trust boundaries</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharEldhandi/WaterNet">WaterNet &nearr;</a></h3>
-      <p>
-        Reproducible water-quality classification with a cached ensemble, traceable
-        predictions, batch inference, and a hardened Django API.
-      </p>
-      <p><code>Python</code> <code>Django</code> <code>scikit-learn</code> <code>XGBoost</code></p>
-      <sub>95%+ accuracy &middot; 0.96 AUC &middot; sub-50 ms inference</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharEldhandi/LER_DSA">LER_DSA &nearr;</a></h3>
-      <p>
-        A structured Java interview roadmap with reusable patterns, guided practice,
-        progress tracking, and documentation designed for consistent learning.
-      </p>
-      <p><code>Java</code> <code>DSA</code> <code>Interview Preparation</code></p>
-      <sub>30 days &middot; 20 modules &middot; adopted by 500+ learners</sub>
-    </td>
-  </tr>
-</table>
+<a href="https://codeforces.com/profile/ACatLastTry">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/proof-codeforces-mobile.svg">
+    <img src="./assets/profile/proof-codeforces.svg" width="100%" alt="Open Codeforces profile — Master rating 2141; CodeChef 4-star rating 1893.">
+  </picture>
+</a>
 
-<br>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/proof-amazon-mobile.svg">
+  <img src="./assets/profile/proof-amazon.svg" width="100%" alt="Selected in the top 1% of more than 50,000 Amazon ML Summer School applicants in 2024.">
+</picture>
 
-<h2>04 / TOOLKIT</h2>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/proof-cisco-mobile.svg">
+  <img src="./assets/profile/proof-cisco.svg" width="100%" alt="Placed in the top 35 of more than 2,000 teams at Cisco Webex Playtime with an AI security-compliance tool.">
+</picture>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Backend</h3>
-      <p><code>Java</code> <code>Python</code> <code>Spring Boot</code> <code>FastAPI</code></p>
-      <sub>REST &middot; GraphQL &middot; Microservices &middot; Secure API design</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Agentic AI + Security</h3>
-      <p><code>MCP</code> <code>RAG</code> <code>LLM APIs</code> <code>LLM-as-judge</code></p>
-      <sub>Prompt-injection defense &middot; evidence grounding &middot; auditability</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Data + Events</h3>
-      <p><code>Kafka</code> <code>Elasticsearch</code> <code>MySQL</code> <code>SQLite</code></p>
-      <sub>Event-driven workflows &middot; search &middot; WebSockets &middot; persistence</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Product Engineering</h3>
-      <p><code>React</code> <code>TypeScript</code> <code>JavaScript</code> <code>HTML/CSS</code></p>
-      <sub>End-to-end product flows &middot; responsive interfaces &middot; API integration</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Quality</h3>
-      <p><code>JUnit 5</code> <code>pytest</code> <code>Playwright</code> <code>API Testing</code></p>
-      <sub>Regression coverage &middot; code review &middot; release evidence</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Delivery</h3>
-      <p><code>Docker</code> <code>Kubernetes</code> <code>GitHub Actions</code> <code>Git</code></p>
-      <sub>CI/CD &middot; containerized delivery &middot; reproducible environments</sub>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/ManoharEldhandi/LER_DSA">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/proof-lerdsa-mobile.svg">
+    <img src="./assets/profile/proof-lerdsa.svg" width="100%" alt="Open LER_DSA — a 30-day Java DSA roadmap with 20 modules adopted by more than 500 learners.">
+  </picture>
+</a>
 
-<br>
-
-<h2>05 / ENGINEERING NOTES</h2>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Start deterministic</h3>
-      <p>Use explicit rules for what can be known before asking a model to reason.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Protect the boundary</h3>
-      <p>Treat external content as untrusted input and keep permissions intentional.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Make decisions observable</h3>
-      <p>Prefer evidence, audit trails, and failure states that engineers can inspect.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Test the real workflow</h3>
-      <p>Validate complete user and system paths, not only isolated happy-path units.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<h2>06 / PROOF</h2>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://codeforces.com/profile/ACatLastTry">Codeforces Master &middot; 2141 &nearr;</a></h3>
-      <p><a href="https://www.codechef.com/users/acatlasttry">CodeChef 4-star &middot; 1893 &nearr;</a></p>
-      <sub>Competitive programming</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Amazon ML Summer School</h3>
-      <p>Selected in the top 1% of more than 50,000 applicants.</p>
-      <sub>National selection &middot; 2024</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Cisco Webex Playtime</h3>
-      <p>Placed in the top 35 of more than 2,000 teams with an AI security tool.</p>
-      <sub>Engineering competition</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>500+ learners reached</h3>
-      <p>Created reusable DSA curriculum, templates, tracking, and documentation.</p>
-      <sub>Open-source education</sub>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<h2>07 / CONTRIBUTIONS</h2>
-
-<p align="center">
-  <sub>Contribution intensity is represented by five distinct dot colors, from quiet days to peak activity.</sub>
-</p>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/contributions-mobile.svg">
+  <img src="./assets/profile/contributions.svg" width="100%" alt="Contribution activity">
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake.svg">
-  <img alt="Animated contribution graph with five activity colors" src="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution graph with a snake that changes color as it consumes different activity levels">
 </picture>
 
-<br>
-
-<table>
-  <tr>
-    <td width="50%" align="center" valign="middle">
-      <h3>Explore the complete work</h3>
-      <p>Architecture, decisions, demos, and deeper project stories.</p>
-      <p><a href="https://manohareldhandi.github.io/portfolio/"><strong>View portfolio &nearr;</strong></a></p>
-    </td>
-    <td width="50%" align="center" valign="middle">
-      <h3>Start a conversation</h3>
-      <p>Backend, platform, security automation, or applied AI.</p>
-      <p><a href="mailto:manohareldhandi@outlook.com"><strong>Email Manohar &nearr;</strong></a></p>
-    </td>
-  </tr>
-</table>
+<a href="mailto:manohareldhandi@outlook.com">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg">
+    <img src="./assets/profile/footer.svg" width="100%" alt="Email Manohar about backend platforms, applied AI, developer tooling, or product engineering.">
+  </picture>
+</a>
