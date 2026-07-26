@@ -5,7 +5,3 @@
 .idea/
 .vscode/
 *.swp
-
-# Generated development state
-node_modules/
-output/playwright/
