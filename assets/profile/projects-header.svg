@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title description">
-  <title id="title">Contribution activity</title>
-  <desc id="description">Contribution activity with a color-changing snake animation below.</desc>
+  <title id="title">Selected projects</title>
+  <desc id="description">Three selected projects showing backend, applied AI, and machine-learning engineering.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -26,12 +26,7 @@
     <rect x="26" y="26" width="1148" height="138" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
     <path d="M54 17 H1146" stroke="#ffffff" stroke-opacity="0.08"/>
   </g>
-      <text x="64" y="72" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">CONTRIBUTIONS</text>
-      <text x="64" y="128" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="760" letter-spacing="-1" text-anchor="start">Consistency leaves a trail.</text>
-      <g transform="translate(1008 100)">
-        <rect x="0" y="0" width="16" height="16" rx="4" fill="#5f3745"/>
-        <rect x="24" y="0" width="16" height="16" rx="4" fill="#8c4f4f"/>
-        <rect x="48" y="0" width="16" height="16" rx="4" fill="#c17649"/>
-        <rect x="72" y="0" width="16" height="16" rx="4" fill="#e6b85c"/>
-      </g></g>
+      <text x="64" y="72" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">SELECTED BUILDS</text>
+      <text x="64" y="128" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="760" letter-spacing="-1" text-anchor="start">Three systems. Three different engineering problems.</text>
+    </g>
 </svg>

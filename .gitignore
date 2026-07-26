@@ -5,3 +5,6 @@
 .idea/
 .vscode/
 *.swp
+
+# Local visual QA artifacts
+/output/playwright/

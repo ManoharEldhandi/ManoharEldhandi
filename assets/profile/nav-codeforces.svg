@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="82" viewBox="0 0 280 82" role="img" aria-labelledby="title description">
-  <title id="title">Email</title>
-  <desc id="description">Open Email</desc>
+  <title id="title">Codeforces</title>
+  <desc id="description">Open Codeforces</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -23,7 +23,7 @@
   <rect width="280" height="82" fill="#0b0f14"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><rect x="4" y="4" width="272" height="74" rx="18" fill="url(#panel)" stroke="#34404d"/>
       <rect x="12" y="12" width="256" height="58" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
-      <text x="24" y="36" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="760" letter-spacing="-0.2" text-anchor="start">EMAIL</text>
-      <text x="24" y="58" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.1" text-anchor="start">START A CONVERSATION</text>
+      <text x="24" y="36" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="760" letter-spacing="-0.2" text-anchor="start">CODEFORCES</text>
+      <text x="24" y="58" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.1" text-anchor="start">MASTER / 2141</text>
       <text x="252" y="51" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="0" text-anchor="middle">↗</text></g>
 </svg>

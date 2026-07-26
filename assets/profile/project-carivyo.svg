@@ -1,136 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title description">
   <title id="title">Carivyo project</title>
-  <desc id="description">Carivyo: Career intelligence with official ATS connectors, evidence-grounded AI, explicit approval gates, and a transparent 27-check resume diagnostic.</desc>
-  <rect width="1200" height="390" fill="#0d1117"/>
-  <foreignObject x="0" y="0" width="1200" height="390">
-    <div xmlns="http://www.w3.org/1999/xhtml" class="root">
-      <style>
-  * { box-sizing: border-box; }
-  html, body { margin: 0; width: 100%; height: 100%; }
-  .root {
-    --bg: #0d1117;
-    --surface: #121820;
-    --elevated: #171f29;
-    --border: #303a46;
-    --border-soft: #232c36;
-    --text: #f2eee6;
-    --muted: #a9b0b8;
-    --faint: #69727d;
-    --amber: #d7a15b;
-    --amber-soft: #8f6b3f;
-    --sage: #91aaa4;
-    width: 100%;
-    height: 100%;
-    padding: 22px;
-    color: var(--text);
-    background:
-      radial-gradient(circle at 12% 0%, rgba(215, 161, 91, .055), transparent 25%),
-      radial-gradient(circle at 88% 100%, rgba(145, 170, 164, .045), transparent 28%),
-      var(--bg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
-    text-rendering: geometricPrecision;
-  }
-  .surface {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: 26px;
-    background: linear-gradient(145deg, #151c24 0%, #10161d 58%, #0f141b 100%);
-    box-shadow:
-      inset 1px 1px 0 rgba(255,255,255,.045),
-      inset -1px -1px 0 rgba(0,0,0,.72),
-      0 18px 38px rgba(0,0,0,.28);
-  }
-  .surface::before {
-    content: "";
-    position: absolute;
-    inset: 10px;
-    pointer-events: none;
-    border: 1px solid rgba(255,255,255,.025);
-    border-radius: 18px;
-  }
-  .surface::after {
-    content: "";
-    position: absolute;
-    left: 34px;
-    right: 34px;
-    top: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.13), transparent);
-  }
-  .content { position: relative; z-index: 1; height: 100%; padding: 42px 48px; }
-  .kicker {
-    margin: 0 0 14px;
-    color: var(--sage);
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .17em;
-    text-transform: uppercase;
-  }
-  h1, h2, h3, p { margin-top: 0; }
-  h1 { margin-bottom: 12px; font-size: 64px; line-height: 1.02; letter-spacing: -.045em; font-weight: 780; }
-  h2 { margin-bottom: 12px; font-size: 38px; line-height: 1.12; letter-spacing: -.025em; font-weight: 760; }
-  h3 { margin-bottom: 10px; font-size: 24px; line-height: 1.2; letter-spacing: -.015em; font-weight: 730; }
-  p { color: var(--muted); font-size: 20px; line-height: 1.55; }
-  strong { color: var(--text); }
-  .accent { color: var(--amber); }
-  .muted { color: var(--muted); }
-  .mono { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
-  .chip-row { display: flex; flex-wrap: wrap; gap: 9px; }
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    min-height: 30px;
-    padding: 6px 11px;
-    border: 1px solid #2c3641;
-    border-radius: 9px;
-    color: #d9dee2;
-    background: #1b232d;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.035);
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 14px;
-    font-weight: 650;
-    line-height: 1;
-  }
-  .divider { height: 1px; background: var(--border-soft); }
-  .eyebrow-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-  .index { color: var(--amber); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 15px; font-weight: 700; letter-spacing: .12em; }
-  .status { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 14px; font-weight: 650; }
-  .status-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--sage); box-shadow: 0 0 0 5px rgba(145,170,164,.08); }
-  .is-mobile { padding: 14px; }
-  .is-mobile .surface { border-radius: 22px; }
-  .is-mobile .content { padding: 30px 28px; }
-  .is-mobile .kicker { font-size: 13px; margin-bottom: 11px; }
-  .is-mobile h1 { font-size: 48px; }
-  .is-mobile h2 { font-size: 31px; }
-  .is-mobile h3 { font-size: 23px; }
-  .is-mobile p { font-size: 18px; line-height: 1.5; }
-  .is-mobile .chip { min-height: 28px; padding: 6px 9px; font-size: 13px; }
-
-  .project .content { display: grid; grid-template-rows: auto 1fr; }
-  .project-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, .7fr); gap: 34px; align-items: center; }
-  .project h2 { margin-bottom: 12px; font-size: 40px; }
-  .project-description { max-width: 730px; margin-bottom: 20px; font-size: 18px; }
-  .project-meta { margin-top: 18px; color: var(--muted); font-size: 14px; font-weight: 650; }
-  .project-visual { display: flex; flex-direction: column; justify-content: center; min-height: 205px; padding: 22px; border: 1px solid #2e3945; border-radius: 18px; background: #111820; box-shadow: inset 1px 1px 0 rgba(255,255,255,.03); }
-  .visual-label { margin-bottom: 18px; color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
-  .flow { display: flex; align-items: center; gap: 8px; }
-  .flow-node { flex: 1; padding: 12px 8px; border: 1px solid #33404c; border-radius: 10px; color: var(--text); background: #18212b; text-align: center; font-size: 12px; font-weight: 700; }
-  .flow-arrow { color: var(--amber); font-size: 18px; }
-  .visual-number { color: var(--amber); font-size: 36px; font-weight: 780; letter-spacing: -.03em; }
-  .visual-copy { margin: 5px 0 0; font-size: 14px; }
-  .is-mobile .project-grid { grid-template-columns: 1fr; gap: 20px; }
-  .is-mobile .project h2 { font-size: 35px; }
-  .is-mobile .project-description { font-size: 17px; }
-  .is-mobile .project-visual { min-height: 145px; padding: 18px; }
-</style>
-      <section class="surface project"><div class="content">
-      <div class="eyebrow-row"><span class="index">02 / LOCAL-FIRST AI</span><span class="status"><span class="status-dot"></span>SELECTED WORK</span></div>
-      <div class="project-grid"><div><h2>Carivyo <span class="accent">&#8599;</span></h2><p class="project-description">Career intelligence with official ATS connectors, evidence-grounded AI, explicit approval gates, and a transparent 27-check resume diagnostic.</p><div class="chip-row"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">FastAPI</span><span class="chip">Python</span><span class="chip">SQLite</span><span class="chip">LLM APIs</span></div><div class="project-meta mono">4 ATS connectors  /  local-model support  /  explicit trust boundaries</div></div><aside class="project-visual"><div class="visual-label">EVIDENCE-GROUNDED FLOW</div><div class="flow"><div class="flow-node">SOURCE</div><div class="flow-arrow">&#8594;</div><div class="flow-node">EVIDENCE</div><div class="flow-arrow">&#8594;</div><div class="flow-node">REVIEW</div></div></aside></div>
-    </div></section>
-    </div>
-  </foreignObject>
+  <desc id="description">Career intelligence with official ATS connectors, evidence-grounded AI, explicit approval gates, and a transparent 27-check diagnostic.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17212b"/>
+      <stop offset="0.58" stop-color="#111820"/>
+      <stop offset="1" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19232e"/>
+      <stop offset="1" stop-color="#121a23"/>
+    </linearGradient>
+    <linearGradient id="amberLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dda756" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#dda756" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#dda756" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="390" fill="#0b0f14"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g filter="url(#shadow)">
+    <rect x="16" y="16" width="1168" height="358" rx="28" fill="url(#panel)" stroke="#34404d" stroke-width="1.5"/>
+    <rect x="26" y="26" width="1148" height="338" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    <path d="M54 17 H1146" stroke="#ffffff" stroke-opacity="0.08"/>
+  </g>
+      <text x="430" y="75" fill="#dda756" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="750" letter-spacing="1.3" text-anchor="start">02 / LOCAL-FIRST AI</text>
+      <text x="430" y="133" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="780" letter-spacing="-1.2" text-anchor="start">Carivyo ↗</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="430" y="176">Career intelligence with official ATS connectors, evidence-grounded AI,</tspan><tspan x="430" y="203">explicit approval gates, and a transparent 27-check diagnostic.</tspan></text>
+      <rect x="430" y="231" width="67" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="463.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">React</text><rect x="506" y="231" width="109" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="560.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">TypeScript</text><rect x="624" y="231" width="84" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="666" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">FastAPI</text><rect x="717" y="231" width="75" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="754.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">Python</text><rect x="801" y="231" width="75" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="838.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">SQLite</text><rect x="885" y="231" width="92" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="931" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="middle">LLM APIs</text>
+      <text x="430" y="317" fill="#aab2bc" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="650" letter-spacing="0" text-anchor="start">4 ATS connectors  /  local-model support  /  explicit trust boundaries</text>
+      <g>
+    <rect x="64" y="70" width="316" height="240" rx="20" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M82 71 H362" stroke="#ffffff" stroke-opacity="0.055"/>
+  </g>
+    <text x="88" y="114" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">EVIDENCE-GROUNDED FLOW</text>
+    <rect x="88" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="127" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0" text-anchor="middle">SOURCE</text><text x="174" y="205" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="0" text-anchor="middle">›</text><rect x="183" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="222" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0" text-anchor="middle">EVIDENCE</text><text x="269" y="205" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="0" text-anchor="middle">›</text><rect x="278" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="317" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0" text-anchor="middle">REVIEW</text></g>
 </svg>

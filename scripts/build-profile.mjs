@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -6,527 +6,473 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
 const outputDirectory = path.join(repositoryRoot, "assets", "profile");
 
-const palette = {
-  background: "#0d1117",
-  surface: "#121820",
-  elevated: "#171f29",
-  border: "#303a46",
-  borderSoft: "#232c36",
-  text: "#f2eee6",
-  muted: "#a9b0b8",
-  faint: "#69727d",
-  amber: "#d7a15b",
-  amberSoft: "#8f6b3f",
-  sage: "#91aaa4",
+const colors = {
+  bg: "#0b0f14",
+  panel: "#121922",
+  panelDeep: "#0f151d",
+  card: "#161f29",
+  cardDeep: "#121a23",
+  border: "#34404d",
+  borderSoft: "#25303b",
+  text: "#f3efe7",
+  muted: "#aab2bc",
+  faint: "#707b87",
+  amber: "#dda756",
+  sage: "#91aba5",
+  red: "#a76059",
 };
 
-const commonCss = `
-  * { box-sizing: border-box; }
-  html, body { margin: 0; width: 100%; height: 100%; }
-  .root {
-    --bg: ${palette.background};
-    --surface: ${palette.surface};
-    --elevated: ${palette.elevated};
-    --border: ${palette.border};
-    --border-soft: ${palette.borderSoft};
-    --text: ${palette.text};
-    --muted: ${palette.muted};
-    --faint: ${palette.faint};
-    --amber: ${palette.amber};
-    --amber-soft: ${palette.amberSoft};
-    --sage: ${palette.sage};
-    width: 100%;
-    height: 100%;
-    padding: 22px;
-    color: var(--text);
-    background:
-      radial-gradient(circle at 12% 0%, rgba(215, 161, 91, .055), transparent 25%),
-      radial-gradient(circle at 88% 100%, rgba(145, 170, 164, .045), transparent 28%),
-      var(--bg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
-    text-rendering: geometricPrecision;
-  }
-  .surface {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: 26px;
-    background: linear-gradient(145deg, #151c24 0%, #10161d 58%, #0f141b 100%);
-    box-shadow:
-      inset 1px 1px 0 rgba(255,255,255,.045),
-      inset -1px -1px 0 rgba(0,0,0,.72),
-      0 18px 38px rgba(0,0,0,.28);
-  }
-  .surface::before {
-    content: "";
-    position: absolute;
-    inset: 10px;
-    pointer-events: none;
-    border: 1px solid rgba(255,255,255,.025);
-    border-radius: 18px;
-  }
-  .surface::after {
-    content: "";
-    position: absolute;
-    left: 34px;
-    right: 34px;
-    top: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.13), transparent);
-  }
-  .content { position: relative; z-index: 1; height: 100%; padding: 42px 48px; }
-  .kicker {
-    margin: 0 0 14px;
-    color: var(--sage);
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .17em;
-    text-transform: uppercase;
-  }
-  h1, h2, h3, p { margin-top: 0; }
-  h1 { margin-bottom: 12px; font-size: 64px; line-height: 1.02; letter-spacing: -.045em; font-weight: 780; }
-  h2 { margin-bottom: 12px; font-size: 38px; line-height: 1.12; letter-spacing: -.025em; font-weight: 760; }
-  h3 { margin-bottom: 10px; font-size: 24px; line-height: 1.2; letter-spacing: -.015em; font-weight: 730; }
-  p { color: var(--muted); font-size: 20px; line-height: 1.55; }
-  strong { color: var(--text); }
-  .accent { color: var(--amber); }
-  .muted { color: var(--muted); }
-  .mono { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
-  .chip-row { display: flex; flex-wrap: wrap; gap: 9px; }
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    min-height: 30px;
-    padding: 6px 11px;
-    border: 1px solid #2c3641;
-    border-radius: 9px;
-    color: #d9dee2;
-    background: #1b232d;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.035);
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 14px;
-    font-weight: 650;
-    line-height: 1;
-  }
-  .divider { height: 1px; background: var(--border-soft); }
-  .eyebrow-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-  .index { color: var(--amber); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 15px; font-weight: 700; letter-spacing: .12em; }
-  .status { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 14px; font-weight: 650; }
-  .status-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--sage); box-shadow: 0 0 0 5px rgba(145,170,164,.08); }
-  .is-mobile { padding: 14px; }
-  .is-mobile .surface { border-radius: 22px; }
-  .is-mobile .content { padding: 30px 28px; }
-  .is-mobile .kicker { font-size: 13px; margin-bottom: 11px; }
-  .is-mobile h1 { font-size: 48px; }
-  .is-mobile h2 { font-size: 31px; }
-  .is-mobile h3 { font-size: 23px; }
-  .is-mobile p { font-size: 18px; line-height: 1.5; }
-  .is-mobile .chip { min-height: 28px; padding: 6px 9px; font-size: 13px; }
-`;
+const sans = `-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`;
+const mono = `'SFMono-Regular', Consolas, 'Liberation Mono', monospace`;
 
-function svgDocument({ width, height, title, description, html, css = "", mobile = false }) {
+function escapeXml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function svgDocument({ width, height, title, description, body }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
-  <title id="title">${title}</title>
-  <desc id="description">${description}</desc>
-  <rect width="${width}" height="${height}" fill="${palette.background}"/>
-  <foreignObject x="0" y="0" width="${width}" height="${height}">
-    <div xmlns="http://www.w3.org/1999/xhtml" class="root${mobile ? " is-mobile" : ""}">
-      <style>${commonCss}${css}</style>
-      ${html}
-    </div>
-  </foreignObject>
+  <title id="title">${escapeXml(title)}</title>
+  <desc id="description">${escapeXml(description)}</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17212b"/>
+      <stop offset="0.58" stop-color="#111820"/>
+      <stop offset="1" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19232e"/>
+      <stop offset="1" stop-color="#121a23"/>
+    </linearGradient>
+    <linearGradient id="amberLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${colors.amber}" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="${colors.amber}" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="${colors.amber}" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="${width}" height="${height}" fill="${colors.bg}"/>
+  <g font-family="${sans}">${body}</g>
 </svg>`;
 }
 
-const heroCss = `
-  .hero .content { display: flex; flex-direction: column; justify-content: space-between; }
-  .brand-line { display: flex; justify-content: space-between; align-items: center; }
-  .monogram { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #3a4551; border-radius: 12px; color: var(--amber); background: #171e27; font-size: 14px; font-weight: 800; letter-spacing: .08em; }
-  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, .75fr); align-items: center; gap: 48px; }
-  .role { margin: 0 0 14px; color: var(--amber); font-size: 27px; font-weight: 700; letter-spacing: -.01em; }
-  .lede { max-width: 700px; margin: 0; }
-  .current-card { padding: 24px; border: 1px solid #313c48; border-radius: 18px; background: linear-gradient(145deg, #19222c, #121920); box-shadow: inset 1px 1px 0 rgba(255,255,255,.035), 10px 12px 26px rgba(0,0,0,.22); }
-  .current-label { margin-bottom: 10px; color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; font-weight: 750; letter-spacing: .13em; }
-  .current-card h3 { margin-bottom: 6px; }
-  .current-card p { margin-bottom: 0; font-size: 16px; }
-  .hero-rail { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-soft); }
-  .hero-rail span { padding-top: 18px; color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; font-weight: 650; letter-spacing: .08em; text-align: center; }
-  .hero-rail span + span { border-left: 1px solid var(--border-soft); }
-  .is-mobile .hero-grid { grid-template-columns: 1fr; gap: 26px; }
-  .is-mobile .brand-line { margin-bottom: 28px; }
-  .is-mobile .role { font-size: 24px; }
-  .is-mobile .lede { font-size: 18px; }
-  .is-mobile .current-card { padding: 20px; }
-  .is-mobile .hero-rail { margin-top: 24px; grid-template-columns: 1fr; }
-  .is-mobile .hero-rail span { padding: 10px 0; text-align: left; }
-  .is-mobile .hero-rail span + span { border-left: 0; border-top: 1px solid var(--border-soft); }
-`;
+function surface(width, height, radius = 28) {
+  return `<g filter="url(#shadow)">
+    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${radius}" fill="url(#panel)" stroke="${colors.border}" stroke-width="1.5"/>
+    <rect x="26" y="26" width="${width - 52}" height="${height - 52}" rx="${Math.max(12, radius - 9)}" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    <path d="M54 17 H${width - 54}" stroke="#ffffff" stroke-opacity="0.08"/>
+  </g>`;
+}
+
+function card(x, y, width, height, radius = 18, emphasis = false) {
+  return `<g>
+    <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${radius}" fill="${emphasis ? colors.card : colors.cardDeep}" stroke="${colors.borderSoft}" stroke-width="1.4"/>
+    <path d="M${x + 18} ${y + 1} H${x + width - 18}" stroke="#ffffff" stroke-opacity="0.055"/>
+  </g>`;
+}
+
+function text({ x, y, value, size = 18, fill = colors.text, weight = 500, family = sans, spacing = 0, anchor = "start" }) {
+  return `<text x="${x}" y="${y}" fill="${fill}" font-family="${family}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}">${escapeXml(value)}</text>`;
+}
+
+function lines({ x, y, values, size = 18, lineHeight = 28, fill = colors.muted, weight = 450, family = sans, spacing = 0, anchor = "start" }) {
+  const spans = values.map((value, index) => `<tspan x="${x}" y="${y + index * lineHeight}">${escapeXml(value)}</tspan>`).join("");
+  return `<text fill="${fill}" font-family="${family}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}">${spans}</text>`;
+}
+
+function kicker(x, y, value) {
+  return text({ x, y, value: value.toUpperCase(), size: 15, fill: colors.sage, weight: 750, family: mono, spacing: 2.4 });
+}
+
+function status(x, y, value) {
+  return `<circle cx="${x}" cy="${y - 5}" r="5" fill="${colors.sage}"/><circle cx="${x}" cy="${y - 5}" r="9" fill="none" stroke="${colors.sage}" stroke-opacity="0.16"/>${text({ x: x + 18, y, value, size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}`;
+}
+
+function chipLayout(chips, startX, startY, maxWidth, fontSize = 15, rowHeight = 39) {
+  let x = startX;
+  let y = startY;
+  let output = "";
+  for (const chip of chips) {
+    const width = Math.max(58, Math.round(chip.length * fontSize * 0.61 + 24));
+    if (x + width > startX + maxWidth) {
+      x = startX;
+      y += rowHeight;
+    }
+    output += `<rect x="${x}" y="${y - 24}" width="${width}" height="31" rx="9" fill="#1c2632" stroke="${colors.border}" stroke-width="1"/>`;
+    output += text({ x: x + width / 2, y: y - 4, value: chip, size: fontSize, fill: "#dce1e5", weight: 650, family: mono, anchor: "middle" });
+    x += width + 9;
+  }
+  return output;
+}
 
 function hero(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 830 : 520;
+  const height = mobile ? 780 : 520;
+  const desktopBody = `${surface(width, height)}
+    <rect x="64" y="62" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
+    ${text({ x: 86, y: 91, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
+    ${status(985, 90, "BENGALURU / IST")}
+    ${kicker(64, 158, "Applied AI + Backend Engineering")}
+    ${text({ x: 64, y: 230, value: "Manohar Eldhandi", size: 66, weight: 780, spacing: -2.7 })}
+    ${text({ x: 66, y: 278, value: "AI & Backend Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
+    ${lines({ x: 66, y: 331, values: ["I build dependable backend platforms and applied-AI products with Java and Python—", "designed for real users, observable decisions, and production reliability."], size: 19, lineHeight: 31 })}
+    ${card(820, 126, 314, 230, 20, true)}
+    ${kicker(850, 165, "Current role")}
+    ${text({ x: 850, y: 211, value: "Software Engineer", size: 26, weight: 740 })}
+    ${text({ x: 850, y: 243, value: "at Cisco", size: 26, weight: 740 })}
+    ${lines({ x: 850, y: 281, values: ["Applying agentic AI and backend", "engineering to security-compliance", "workflows across product teams."], size: 16, lineHeight: 25 })}
+    <path d="M64 418 H1136" stroke="${colors.borderSoft}"/>
+    ${text({ x: 230, y: 458, value: "BACKEND SYSTEMS", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    <path d="M405 432 V470" stroke="${colors.borderSoft}"/>
+    ${text({ x: 600, y: 458, value: "APPLIED AI", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    <path d="M795 432 V470" stroke="${colors.borderSoft}"/>
+    ${text({ x: 970, y: 458, value: "PRODUCT ENGINEERING", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
+
+  const mobileBody = `${surface(width, height)}
+    <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
+    ${text({ x: 66, y: 77, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
+    ${status(418, 76, "BENGALURU / IST")}
+    ${kicker(44, 146, "Applied AI + Backend")}
+    ${lines({ x: 44, y: 211, values: ["Manohar", "Eldhandi"], size: 58, lineHeight: 60, fill: colors.text, weight: 780, spacing: -2.2 })}
+    ${text({ x: 46, y: 352, value: "AI & Backend Engineer", size: 27, fill: colors.amber, weight: 730 })}
+    ${lines({ x: 46, y: 401, values: ["I build dependable backend platforms and applied-AI", "products with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 17, lineHeight: 27 })}
+    ${card(44, 505, 512, 160, 18, true)}
+    ${kicker(68, 540, "Current role")}
+    ${text({ x: 68, y: 578, value: "Software Engineer at Cisco", size: 24, weight: 740 })}
+    ${lines({ x: 68, y: 614, values: ["Agentic AI + backend engineering for security-compliance", "workflows used across Cisco product teams."], size: 15, lineHeight: 24 })}
+    <path d="M44 704 H556" stroke="${colors.borderSoft}"/>
+    ${text({ x: 300, y: 735, value: "BACKEND  /  APPLIED AI  /  PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
+
   return svgDocument({
     width,
     height,
-    mobile,
     title: "Manohar Eldhandi — AI and Backend Engineer",
     description: "Software Engineer at Cisco in Bengaluru focused on applied AI, backend systems, and product engineering.",
-    css: heroCss,
-    html: `<section class="surface hero">
-      <div class="content">
-        <div class="brand-line">
-          <div class="monogram">ME</div>
-          <div class="status"><span class="status-dot"></span><span>BENGALURU / IST</span></div>
-        </div>
-        <div class="hero-grid">
-          <div>
-            <p class="kicker">Applied AI &amp; Backend Systems</p>
-            <h1>Manohar<br class="desktop-break"/>Eldhandi</h1>
-            <p class="role">AI &amp; Backend Engineer</p>
-            <p class="lede">I build dependable backend platforms and applied-AI products with Java and Python—designed for real users, observable decisions, and production reliability.</p>
-          </div>
-          <aside class="current-card">
-            <div class="current-label">CURRENT ROLE</div>
-            <h3>Software Engineer at Cisco</h3>
-            <p>Applying agentic AI and backend engineering to security-compliance workflows used across product teams.</p>
-          </aside>
-        </div>
-        <div class="hero-rail">
-          <span>BACKEND ENGINEERING</span>
-          <span>APPLIED AI</span>
-          <span>PRODUCT SYSTEMS</span>
-        </div>
-      </div>
-    </section>`,
+    body: mobile ? mobileBody : desktopBody,
   });
 }
 
-const navCss = `
-  .root { padding: 8px; }
-  .nav { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-radius: 18px; }
-  .nav-copy { display: flex; align-items: baseline; gap: 12px; }
-  .nav-index { color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; }
-  .nav-label { color: var(--text); font-size: 20px; font-weight: 750; letter-spacing: -.01em; }
-  .nav-arrow { color: var(--amber); font-size: 24px; font-weight: 700; }
-  .is-mobile { padding: 5px; }
-  .is-mobile .nav { padding: 0 13px; border-radius: 14px; }
-  .is-mobile .nav-copy { gap: 6px; }
-  .is-mobile .nav-index { display: none; }
-  .is-mobile .nav-label { font-size: 22px; }
-  .is-mobile .nav-arrow { font-size: 22px; }
-`;
-
-function navButton(index, label, mobile = false) {
-  const width = mobile ? 600 : 1200;
-  const height = mobile ? 70 : 88;
+function navButton(label, caption) {
+  const width = 280;
+  const height = 82;
   return svgDocument({
     width,
     height,
-    mobile,
     title: label,
     description: `Open ${label}`,
-    css: navCss,
-    html: `<div class="surface nav"><div class="nav-copy"><span class="nav-index">${index}</span><span class="nav-label">${label}</span></div><span class="nav-arrow">&#8599;</span></div>`,
+    body: `<rect x="4" y="4" width="272" height="74" rx="18" fill="url(#panel)" stroke="${colors.border}"/>
+      <rect x="12" y="12" width="256" height="58" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+      ${text({ x: 24, y: 36, value: label.toUpperCase(), size: 20, weight: 760, spacing: -0.2 })}
+      ${text({ x: 24, y: 58, value: caption, size: 10, fill: colors.sage, weight: 700, family: mono, spacing: 1.1 })}
+      ${text({ x: 252, y: 51, value: "↗", size: 26, fill: colors.amber, weight: 700, anchor: "middle" })}`,
   });
 }
-
-const profileCss = `
-  .profile .content { display: grid; grid-template-rows: auto 1fr auto; }
-  .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
-  .profile-card { padding: 25px 27px; border: 1px solid var(--border-soft); border-radius: 18px; background: rgba(20,28,36,.72); }
-  .profile-card p { margin-bottom: 0; font-size: 18px; }
-  .discipline-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
-  .discipline { padding: 14px 16px; border: 1px solid #29333e; border-radius: 13px; color: var(--muted); background: #141b23; text-align: center; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: .07em; }
-  .is-mobile .profile-grid { grid-template-columns: 1fr; gap: 14px; }
-  .is-mobile .profile-card { padding: 21px; }
-  .is-mobile .discipline-row { grid-template-columns: 1fr; gap: 8px; margin-top: 16px; }
-  .is-mobile .discipline { text-align: left; }
-`;
 
 function profile(mobile = false) {
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 980 : 620;
+  const metrics = [
+    ["50+", "ENGINEERS", ["Adopted across four Cisco", "product teams."]],
+    ["70%", "LESS REVIEW", ["Traceable automation reduced", "manual effort."]],
+    ["10×", "FEWER CALLS", ["A deterministic-first", "11-phase AI pipeline."]],
+    ["736", "TESTS / 96% UI", ["Automation strengthened", "release confidence."]],
+  ];
+
+  if (!mobile) {
+    const metricCards = metrics.map(([value, label, copy], index) => {
+      const x = 64 + index * 270;
+      return `${card(x, 366, 252, 180, 17, index === 0 || index === 3)}
+        ${text({ x: x + 22, y: 414, value, size: 34, weight: 780, spacing: -1 })}
+        ${text({ x: x + 22, y: 445, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
+        ${lines({ x: x + 22, y: 484, values: copy, size: 14, lineHeight: 22 })}`;
+    }).join("");
+    return svgDocument({
+      width,
+      height,
+      title: "Engineering profile and selected impact",
+      description: "Backend and applied-AI engineering profile with measurable outcomes at Cisco.",
+      body: `${surface(width, height)}
+        ${kicker(64, 78, "Engineering profile")}
+        ${text({ x: 64, y: 126, value: "Build the foundation. Apply intelligence where it earns its place.", size: 36, weight: 760, spacing: -1.1 })}
+        ${card(64, 166, 520, 160, 18)}
+        ${text({ x: 90, y: 207, value: "What I build", size: 24, weight: 740 })}
+        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services, agent tooling, and", "deterministic-first LLM pipelines that hold up in production."], size: 17, lineHeight: 28 })}
+        ${card(602, 166, 534, 160, 18, true)}
+        ${text({ x: 628, y: 207, value: "Current focus", size: 24, weight: 740 })}
+        ${lines({ x: 628, y: 245, values: ["At Cisco, I apply AI and backend engineering to automate", "security-compliance workflows used across product teams."], size: 17, lineHeight: 28 })}
+        ${metricCards}`,
+    });
+  }
+
+  const metricCards = metrics.map(([value, label, copy], index) => {
+    const column = index % 2;
+    const row = Math.floor(index / 2);
+    const x = 44 + column * 256;
+    const y = 610 + row * 178;
+    return `${card(x, y, 240, 158, 16, index === 0 || index === 3)}
+      ${text({ x: x + 18, y: y + 43, value, size: 30, weight: 780 })}
+      ${text({ x: x + 18, y: y + 70, value: label, size: 11, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
+      ${lines({ x: x + 18, y: y + 108, values: copy, size: 13, lineHeight: 20 })}`;
+  }).join("");
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 720 : 440,
-    mobile,
-    title: "Engineering profile",
-    description: "Manohar builds backend systems and applied-AI products, currently applying those skills to security and compliance at Cisco.",
-    css: profileCss,
-    html: `<section class="surface profile"><div class="content">
-      <div><p class="kicker">Profile</p><h2>Backend foundations. Applied-AI systems. Product outcomes.</h2></div>
-      <div class="profile-grid">
-        <article class="profile-card"><h3>What I build</h3><p>Reliable APIs, deterministic-first LLM pipelines, agent tooling, event-driven services, and full-stack workflows that hold up beyond the demo.</p></article>
-        <article class="profile-card"><h3>Current focus</h3><p>At Cisco, I apply AI and backend engineering to security-compliance automation used across product teams.</p></article>
-      </div>
-      <div class="discipline-row"><div class="discipline">BACKEND ENGINEERING</div><div class="discipline">APPLIED AI</div><div class="discipline">PRODUCT OWNERSHIP</div></div>
-    </div></section>`,
+    width,
+    height,
+    title: "Engineering profile and selected impact",
+    description: "Backend and applied-AI engineering profile with measurable outcomes at Cisco.",
+    body: `${surface(width, height)}
+      ${kicker(44, 70, "Engineering profile")}
+      ${lines({ x: 44, y: 116, values: ["Build the foundation.", "Apply intelligence where", "it earns its place."], size: 30, lineHeight: 38, fill: colors.text, weight: 760, spacing: -0.7 })}
+      ${card(44, 250, 512, 145, 18)}
+      ${text({ x: 68, y: 290, value: "What I build", size: 23, weight: 740 })}
+      ${lines({ x: 68, y: 327, values: ["Reliable APIs, event-driven services, agent tooling,", "and deterministic-first LLM pipelines."], size: 16, lineHeight: 26 })}
+      ${card(44, 415, 512, 155, 18, true)}
+      ${text({ x: 68, y: 456, value: "Current focus", size: 23, weight: 740 })}
+      ${lines({ x: 68, y: 493, values: ["At Cisco, I apply AI and backend engineering to", "security-compliance automation across product teams."], size: 16, lineHeight: 26 })}
+      ${metricCards}`,
   });
 }
 
-const impactCss = `
-  .impact .content { display: grid; grid-template-rows: auto 1fr; }
-  .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .metric { display: flex; flex-direction: column; justify-content: space-between; min-height: 185px; padding: 23px 25px; border: 1px solid var(--border-soft); border-radius: 18px; background: linear-gradient(145deg, #171f28, #121920); }
-  .metric-value { margin-bottom: 10px; color: var(--text); font-size: 36px; line-height: 1; font-weight: 780; letter-spacing: -.035em; }
-  .metric p { margin: 0; font-size: 16px; line-height: 1.45; }
-  .metric-label { margin-top: 18px; color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
-  .is-mobile .impact-grid { grid-template-columns: 1fr; }
-  .is-mobile .metric { min-height: 155px; padding: 20px 21px; }
-  .is-mobile .metric-value { font-size: 33px; }
-`;
-
-function impact(mobile = false) {
+function projectsHeader(mobile = false) {
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 230 : 190;
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 1030 : 610,
-    mobile,
-    title: "Selected impact at Cisco",
-    description: "Platform adoption, reduced review effort, fewer model calls, and strong automated test coverage.",
-    css: impactCss,
-    html: `<section class="surface impact"><div class="content">
-      <div><p class="kicker">Selected Impact</p><h2>Systems measured by what they change.</h2></div>
-      <div class="impact-grid">
-        <article class="metric"><div><div class="metric-value">50+ engineers</div><p>Adopted across four Cisco product teams.</p></div><div class="metric-label">PLATFORM ADOPTION</div></article>
-        <article class="metric"><div><div class="metric-value">70% less review</div><p>Traceable findings and remediations accelerated manual security review.</p></div><div class="metric-label">WORKFLOW AUTOMATION</div></article>
-        <article class="metric"><div><div class="metric-value">10&#215; fewer calls</div><p>An 11-phase pipeline and 100-worker inference engine reduced LLM usage.</p></div><div class="metric-label">AI ORCHESTRATION</div></article>
-        <article class="metric"><div><div class="metric-value">736 tests / 96%</div><p>Backend and Playwright coverage reduced manual QA effort by 60%.</p></div><div class="metric-label">RELEASE CONFIDENCE</div></article>
-      </div>
-    </div></section>`,
+    width,
+    height,
+    title: "Selected projects",
+    description: "Three selected projects showing backend, applied AI, and machine-learning engineering.",
+    body: `${surface(width, height, 24)}
+      ${kicker(mobile ? 44 : 64, mobile ? 70 : 72, "Selected builds")}
+      ${mobile
+        ? lines({ x: 44, y: 116, values: ["Three systems.", "Three different engineering problems."], size: 30, lineHeight: 38, fill: colors.text, weight: 760 })
+        : text({ x: 64, y: 128, value: "Three systems. Three different engineering problems.", size: 38, weight: 760, spacing: -1 })}
+    `,
   });
 }
 
-const projectCss = `
-  .project .content { display: grid; grid-template-rows: auto 1fr; }
-  .project-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, .7fr); gap: 34px; align-items: center; }
-  .project h2 { margin-bottom: 12px; font-size: 40px; }
-  .project-description { max-width: 730px; margin-bottom: 20px; font-size: 18px; }
-  .project-meta { margin-top: 18px; color: var(--muted); font-size: 14px; font-weight: 650; }
-  .project-visual { display: flex; flex-direction: column; justify-content: center; min-height: 205px; padding: 22px; border: 1px solid #2e3945; border-radius: 18px; background: #111820; box-shadow: inset 1px 1px 0 rgba(255,255,255,.03); }
-  .visual-label { margin-bottom: 18px; color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
-  .flow { display: flex; align-items: center; gap: 8px; }
-  .flow-node { flex: 1; padding: 12px 8px; border: 1px solid #33404c; border-radius: 10px; color: var(--text); background: #18212b; text-align: center; font-size: 12px; font-weight: 700; }
-  .flow-arrow { color: var(--amber); font-size: 18px; }
-  .visual-number { color: var(--amber); font-size: 36px; font-weight: 780; letter-spacing: -.03em; }
-  .visual-copy { margin: 5px 0 0; font-size: 14px; }
-  .is-mobile .project-grid { grid-template-columns: 1fr; gap: 20px; }
-  .is-mobile .project h2 { font-size: 35px; }
-  .is-mobile .project-description { font-size: 17px; }
-  .is-mobile .project-visual { min-height: 145px; padding: 18px; }
-`;
-
-const projectData = {
+const projects = {
   ontheway: {
     index: "01 / EVENT-DRIVEN PLATFORM",
     title: "OnTheWay",
-    description: "Route-aware pickup that synchronizes preparation with a customer's live ETA across customer, merchant, and admin workflows.",
+    copy: ["Route-aware pickup that synchronizes preparation with a customer's", "live ETA across customer, merchant, and admin workflows."],
+    mobileCopy: ["Route-aware pickup that synchronizes preparation", "with a customer's live ETA across customer,", "merchant, and admin workflows."],
     chips: ["Java 17", "Spring Boot", "Kafka", "Elasticsearch", "React", "Kubernetes"],
     meta: "115 shops  /  507 items  /  70+ tests  /  1,000-user load test",
-    visual: `<div class="visual-label">ETA-SYNCHRONIZED FLOW</div><div class="flow"><div class="flow-node">ROUTE</div><div class="flow-arrow">&#8594;</div><div class="flow-node">PREP</div><div class="flow-arrow">&#8594;</div><div class="flow-node">PICKUP</div></div>`,
+    side: "right",
+    visual: "flow",
   },
   carivyo: {
     index: "02 / LOCAL-FIRST AI",
     title: "Carivyo",
-    description: "Career intelligence with official ATS connectors, evidence-grounded AI, explicit approval gates, and a transparent 27-check resume diagnostic.",
+    copy: ["Career intelligence with official ATS connectors, evidence-grounded AI,", "explicit approval gates, and a transparent 27-check diagnostic."],
+    mobileCopy: ["Career intelligence with official ATS connectors,", "evidence-grounded AI, explicit approval gates,", "and a transparent 27-check diagnostic."],
     chips: ["React", "TypeScript", "FastAPI", "Python", "SQLite", "LLM APIs"],
     meta: "4 ATS connectors  /  local-model support  /  explicit trust boundaries",
-    visual: `<div class="visual-label">EVIDENCE-GROUNDED FLOW</div><div class="flow"><div class="flow-node">SOURCE</div><div class="flow-arrow">&#8594;</div><div class="flow-node">EVIDENCE</div><div class="flow-arrow">&#8594;</div><div class="flow-node">REVIEW</div></div>`,
+    side: "left",
+    visual: "evidence",
   },
   waternet: {
     index: "03 / APPLIED MACHINE LEARNING",
     title: "WaterNet",
-    description: "Reproducible water-quality classification with a cached ensemble, traceable predictions, batch inference, and a hardened Django API.",
+    copy: ["Reproducible water-quality classification with a cached ensemble,", "traceable predictions, batch inference, and a hardened Django API."],
+    mobileCopy: ["Reproducible water-quality classification with", "a cached ensemble, traceable predictions, batch", "inference, and a hardened Django API."],
     chips: ["Python", "Django", "scikit-learn", "XGBoost"],
     meta: "95%+ accuracy  /  0.96 AUC  /  sub-50 ms inference",
-    visual: `<div class="visual-label">MODEL READOUT</div><div class="visual-number">0.96 AUC</div><p class="visual-copy">Voting ensemble over nine water-chemistry features.</p>`,
+    side: "right",
+    visual: "gauge",
   },
 };
 
-function project(key, mobile = false) {
-  const project = projectData[key];
-  const chips = project.chips.map((chip) => `<span class="chip">${chip}</span>`).join("");
-  return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 620 : 390,
-    mobile,
-    title: `${project.title} project`,
-    description: `${project.title}: ${project.description}`,
-    css: projectCss,
-    html: `<section class="surface project"><div class="content">
-      <div class="eyebrow-row"><span class="index">${project.index}</span><span class="status"><span class="status-dot"></span>SELECTED WORK</span></div>
-      <div class="project-grid"><div><h2>${project.title} <span class="accent">&#8599;</span></h2><p class="project-description">${project.description}</p><div class="chip-row">${chips}</div><div class="project-meta mono">${project.meta}</div></div><aside class="project-visual">${project.visual}</aside></div>
-    </div></section>`,
-  });
+function projectVisual(kind, x, y, width, height) {
+  const base = `${card(x, y, width, height, 20, true)}`;
+  if (kind === "gauge") {
+    return `${base}
+      ${kicker(x + 26, y + 42, "Model readout")}
+      <circle cx="${x + width / 2}" cy="${y + 125}" r="59" fill="none" stroke="${colors.border}" stroke-width="12"/>
+      <circle cx="${x + width / 2}" cy="${y + 125}" r="59" fill="none" stroke="${colors.amber}" stroke-width="12" stroke-linecap="round" stroke-dasharray="356 371" transform="rotate(-90 ${x + width / 2} ${y + 125})"/>
+      ${text({ x: x + width / 2, y: y + 122, value: "0.96", size: 34, fill: colors.text, weight: 780, anchor: "middle" })}
+      ${text({ x: x + width / 2, y: y + 147, value: "AUC", size: 12, fill: colors.sage, weight: 750, family: mono, anchor: "middle", spacing: 1 })}`;
+  }
+  const names = kind === "flow" ? ["ROUTE", "PREP", "PICKUP"] : ["SOURCE", "EVIDENCE", "REVIEW"];
+  const label = kind === "flow" ? "ETA-SYNCHRONIZED FLOW" : "EVIDENCE-GROUNDED FLOW";
+  const nodeWidth = Math.floor((width - 82) / 3);
+  const nodeY = y + 100;
+  return `${base}
+    ${kicker(x + 24, y + 44, label)}
+    ${names.map((name, index) => {
+      const nodeX = x + 24 + index * (nodeWidth + 17);
+      return `<rect x="${nodeX}" y="${nodeY}" width="${nodeWidth}" height="54" rx="12" fill="#1b2632" stroke="${colors.border}"/>${text({ x: nodeX + nodeWidth / 2, y: nodeY + 34, value: name, size: 12, weight: 750, family: mono, anchor: "middle" })}${index < 2 ? text({ x: nodeX + nodeWidth + 8, y: nodeY + 35, value: "›", size: 24, fill: colors.amber, weight: 700, anchor: "middle" }) : ""}`;
+    }).join("")}`;
 }
 
-const toolkitCss = `
-  .toolkit .content { display: grid; grid-template-rows: auto 1fr; }
-  .tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
-  .tool-card { padding: 20px; border: 1px solid var(--border-soft); border-radius: 16px; background: #141b23; }
-  .tool-card h3 { margin-bottom: 15px; font-size: 20px; }
-  .tool-card .chip-row { gap: 7px; }
-  .tool-card .chip { padding: 5px 8px; font-size: 12px; }
-  .is-mobile .tool-grid { grid-template-columns: 1fr; gap: 10px; }
-  .is-mobile .tool-card { padding: 18px; }
-`;
+function projectAsset(key, mobile = false) {
+  const project = projects[key];
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 600 : 390;
+  if (mobile) {
+    return svgDocument({
+      width,
+      height,
+      title: `${project.title} project`,
+      description: project.mobileCopy.join(" "),
+      body: `${surface(width, height)}
+        ${text({ x: 44, y: 67, value: project.index, size: 14, fill: colors.amber, weight: 750, family: mono, spacing: 1.2 })}
+        ${text({ x: 44, y: 119, value: `${project.title} ↗`, size: 38, weight: 780, spacing: -1 })}
+        ${lines({ x: 44, y: 160, values: project.mobileCopy, size: 16, lineHeight: 25 })}
+        ${chipLayout(project.chips, 44, 259, 512, 14, 37)}
+        ${text({ x: 44, y: 337, value: project.meta, size: 12, fill: colors.muted, weight: 650, family: mono })}
+        ${projectVisual(project.visual, 44, 374, 512, 172)}`,
+    });
+  }
 
-const toolGroups = [
-  ["Backend", ["Java", "Python", "Spring Boot", "FastAPI", "REST", "GraphQL"]],
-  ["Applied AI", ["MCP", "RAG", "LLM APIs", "Prompting", "LLM-as-judge"]],
-  ["Data + Events", ["Kafka", "Elasticsearch", "MySQL", "SQLite", "WebSockets"]],
-  ["Product", ["React", "TypeScript", "JavaScript", "HTML", "CSS"]],
-  ["Quality", ["JUnit 5", "pytest", "Playwright", "API Testing"]],
-  ["Delivery", ["Docker", "Kubernetes", "GitHub Actions", "Git"]],
-];
+  const textX = project.side === "left" ? 430 : 64;
+  const visualX = project.side === "left" ? 64 : 820;
+  return svgDocument({
+    width,
+    height,
+    title: `${project.title} project`,
+    description: project.copy.join(" "),
+    body: `${surface(width, height)}
+      ${text({ x: textX, y: 75, value: project.index, size: 14, fill: colors.amber, weight: 750, family: mono, spacing: 1.3 })}
+      ${text({ x: textX, y: 133, value: `${project.title} ↗`, size: 42, weight: 780, spacing: -1.2 })}
+      ${lines({ x: textX, y: 176, values: project.copy, size: 17, lineHeight: 27 })}
+      ${chipLayout(project.chips, textX, 255, 710, 14, 38)}
+      ${text({ x: textX, y: 317, value: project.meta, size: 13, fill: colors.muted, weight: 650, family: mono })}
+      ${projectVisual(project.visual, visualX, 70, 316, 240)}`,
+  });
+}
 
 function toolkit(mobile = false) {
-  const cards = toolGroups.map(([title, tools]) => `<article class="tool-card"><h3>${title}</h3><div class="chip-row">${tools.map((tool) => `<span class="chip">${tool}</span>`).join("")}</div></article>`).join("");
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 740 : 500;
+  const groups = [
+    ["BACKEND + DATA", ["Java", "Python", "Spring Boot", "FastAPI", "Kafka", "Elasticsearch", "MySQL"]],
+    ["APPLIED AI + PRODUCT", ["MCP", "RAG", "LLM APIs", "React", "TypeScript", "WebSockets"]],
+    ["QUALITY + DELIVERY", ["JUnit 5", "pytest", "Playwright", "Docker", "Kubernetes", "GitHub Actions"]],
+  ];
+  if (!mobile) {
+    const rows = groups.map(([label, chips], index) => {
+      const y = 168 + index * 98;
+      return `${card(64, y, 1072, 82, 15, index === 1)}
+        ${text({ x: 90, y: y + 48, value: label, size: 14, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
+        <path d="M310 ${y + 18} V${y + 64}" stroke="${colors.border}"/>
+        ${chipLayout(chips, 338, y + 49, 760, 14, 35)}`;
+    }).join("");
+    return svgDocument({
+      width,
+      height,
+      title: "Engineering toolkit",
+      description: "A focused toolkit across backend, applied AI, product engineering, quality, and delivery.",
+      body: `${surface(width, height)}${kicker(64, 76, "Engineering toolkit")}${text({ x: 64, y: 126, value: "A focused stack for shipping complete systems.", size: 38, weight: 760, spacing: -1 })}${rows}`,
+    });
+  }
+  const rows = groups.map(([label, chips], index) => {
+    const y = 180 + index * 170;
+    return `${card(44, y, 512, 150, 17, index === 1)}
+      ${text({ x: 68, y: y + 38, value: label, size: 13, fill: colors.sage, weight: 750, family: mono, spacing: 0.9 })}
+      ${chipLayout(chips, 68, y + 86, 462, 14, 38)}`;
+  }).join("");
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 900 : 610,
-    mobile,
+    width,
+    height,
     title: "Engineering toolkit",
-    description: "Backend, applied AI, data, product engineering, quality, and delivery technologies.",
-    css: toolkitCss,
-    html: `<section class="surface toolkit"><div class="content"><div><p class="kicker">Engineering Toolkit</p><h2>A practical stack for shipping complete systems.</h2></div><div class="tool-grid">${cards}</div></div></section>`,
+    description: "A focused toolkit across backend, applied AI, product engineering, quality, and delivery.",
+    body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["A focused stack for shipping", "complete systems."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${rows}`,
   });
 }
 
-const notesCss = `
-  .notes .content { display: grid; grid-template-rows: auto 1fr; }
-  .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
-  .note { position: relative; padding: 21px 22px 21px 54px; border: 1px solid var(--border-soft); border-radius: 16px; background: #141b23; }
-  .note-number { position: absolute; left: 20px; top: 23px; color: var(--amber); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; font-weight: 750; }
-  .note h3 { margin-bottom: 7px; font-size: 20px; }
-  .note p { margin-bottom: 0; font-size: 15px; line-height: 1.45; }
-  .is-mobile .notes-grid { grid-template-columns: 1fr; gap: 10px; }
-  .is-mobile .note { padding: 19px 19px 19px 52px; }
-`;
-
-const principles = [
-  ["01", "Start deterministic", "Use explicit rules for what can be known before asking a model to reason."],
-  ["02", "Keep boundaries clear", "Treat remote content as untrusted input and keep permissions intentional."],
-  ["03", "Make decisions observable", "Prefer evidence, audit trails, and failure states engineers can inspect."],
-  ["04", "Test the real workflow", "Validate complete user and system paths—not only isolated happy paths."],
-];
-
-function notes(mobile = false) {
-  const cards = principles.map(([number, title, copy]) => `<article class="note"><span class="note-number">${number}</span><h3>${title}</h3><p>${copy}</p></article>`).join("");
+function highlights(mobile = false) {
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 850 : 570;
+  const items = [
+    ["COMPETITIVE PROGRAMMING", "Master / 2141", "CodeChef 4-star / 1893"],
+    ["NATIONAL SELECTION", "Top 1%", "Amazon ML Summer School / 50,000+ applicants"],
+    ["ENGINEERING COMPETITION", "Top 35", "Cisco Webex Playtime / 2,000+ teams"],
+    ["OPEN-SOURCE EDUCATION", "500+ learners", "LER_DSA / 30 days / 20 modules"],
+  ];
+  if (!mobile) {
+    const cards = items.map(([label, value, copy], index) => {
+      const x = 64 + (index % 2) * 544;
+      const y = 166 + Math.floor(index / 2) * 176;
+      return `${card(x, y, 526, 156, 18, index === 0 || index === 3)}
+        ${text({ x: x + 24, y: y + 36, value: label, size: 12, fill: colors.sage, weight: 750, family: mono, spacing: 1 })}
+        ${text({ x: x + 24, y: y + 82, value, size: 31, weight: 780, spacing: -0.8 })}
+        ${text({ x: x + 24, y: y + 119, value: copy, size: 15, fill: colors.muted, weight: 500 })}`;
+    }).join("");
+    return svgDocument({
+      width,
+      height,
+      title: "Selected highlights",
+      description: "Competitive programming, national selection, engineering competition, and open-source education highlights.",
+      body: `${surface(width, height)}${kicker(64, 76, "Selected highlights")}${text({ x: 64, y: 126, value: "Signals beyond the technology list.", size: 38, weight: 760, spacing: -1 })}${cards}`,
+    });
+  }
+  const cards = items.map(([label, value, copy], index) => {
+    const y = 176 + index * 158;
+    return `${card(44, y, 512, 140, 17, index === 0 || index === 3)}
+      ${text({ x: 68, y: y + 32, value: label, size: 11, fill: colors.sage, weight: 750, family: mono, spacing: 0.8 })}
+      ${text({ x: 68, y: y + 75, value, size: 29, weight: 780 })}
+      ${text({ x: 68, y: y + 108, value: copy, size: 14, fill: colors.muted })}`;
+  }).join("");
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 820 : 500,
-    mobile,
-    title: "How Manohar builds software",
-    description: "Four engineering principles: start deterministic, protect boundaries, make decisions observable, and test complete workflows.",
-    css: notesCss,
-    html: `<section class="surface notes"><div class="content"><div><p class="kicker">How I Build</p><h2>Principles that survive contact with production.</h2></div><div class="notes-grid">${cards}</div></div></section>`,
+    width,
+    height,
+    title: "Selected highlights",
+    description: "Competitive programming, national selection, engineering competition, and open-source education highlights.",
+    body: `${surface(width, height)}${kicker(44, 70, "Selected highlights")}${lines({ x: 44, y: 116, values: ["Signals beyond", "the technology list."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${cards}`,
   });
 }
 
-const proofHeaderCss = `
-  .proof-head .content { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
-  .proof-head h2 { margin-bottom: 0; }
-  .proof-side { max-width: 420px; margin: 0; text-align: right; font-size: 16px; }
-  .is-mobile .proof-head .content { align-items: flex-start; flex-direction: column; justify-content: center; gap: 10px; }
-  .is-mobile .proof-side { text-align: left; }
-`;
-
-function proofHeader(mobile = false) {
+function contributions(mobile = false) {
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 250 : 190;
+  const x = mobile ? 44 : 64;
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 250 : 190,
-    mobile,
-    title: "Signals beyond the stack",
-    description: "Competitive programming, national selection, engineering competition, and open-source education.",
-    css: proofHeaderCss,
-    html: `<section class="surface proof-head"><div class="content"><div><p class="kicker">Beyond the Stack</p><h2>Proof through practice.</h2></div><p class="proof-side">Competitive problem solving, national programs, engineering competitions, and work that helps others learn.</p></div></section>`,
-  });
-}
-
-const proofCardCss = `
-  .root { padding: 8px; }
-  .proof-card .content { display: flex; flex-direction: column; justify-content: space-between; padding: 28px 30px; }
-  .proof-type { color: var(--sage); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 750; letter-spacing: .12em; }
-  .proof-value { margin: 10px 0 7px; color: var(--text); font-size: 34px; font-weight: 780; letter-spacing: -.035em; }
-  .proof-copy { margin: 0; font-size: 15px; line-height: 1.42; }
-  .proof-link { color: var(--amber); font-size: 20px; font-weight: 750; }
-  .is-mobile { padding: 5px; }
-  .is-mobile .proof-card .content { padding: 20px; }
-  .is-mobile .proof-type { font-size: 12px; }
-  .is-mobile .proof-value { font-size: 32px; }
-  .is-mobile .proof-copy { font-size: 18px; }
-  .is-mobile .proof-link { font-size: 20px; }
-`;
-
-const proofData = {
-  codeforces: ["COMPETITIVE PROGRAMMING", "Master / 2141", "CodeChef 4-star / 1893", "VIEW PROFILE &#8599;"],
-  amazon: ["NATIONAL SELECTION", "Top 1%", "Amazon ML Summer School / 50,000+ applicants", "2024"],
-  cisco: ["ENGINEERING COMPETITION", "Top 35", "Cisco Webex Playtime / 2,000+ teams", "AI COMPLIANCE TOOL"],
-  lerdsa: ["OPEN-SOURCE EDUCATION", "500+ learners", "30-day Java DSA roadmap / 20 modules", "OPEN REPOSITORY &#8599;"],
-};
-
-function proofCard(key, mobile = false) {
-  const [type, value, copy, link] = proofData[key];
-  return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 280 : 220,
-    mobile,
-    title: `${value} — ${type}`,
-    description: copy,
-    css: proofCardCss,
-    html: `<article class="surface proof-card"><div class="content"><div><div class="proof-type">${type}</div><div class="proof-value">${value}</div><p class="proof-copy">${copy}</p></div><div class="proof-link">${link}</div></div></article>`,
-  });
-}
-
-const contributionCss = `
-  .contribution .content { display: flex; align-items: center; justify-content: space-between; gap: 36px; }
-  .contribution h2 { margin-bottom: 0; }
-  .legend { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 14px; }
-  .legend-dots { display: flex; gap: 7px; }
-  .legend-dot { width: 13px; height: 13px; border-radius: 4px; border: 1px solid rgba(255,255,255,.08); }
-  .legend-dot:nth-child(1) { background: #5f3745; }
-  .legend-dot:nth-child(2) { background: #8c4f4f; }
-  .legend-dot:nth-child(3) { background: #c17649; }
-  .legend-dot:nth-child(4) { background: #e6b85c; }
-  .is-mobile .contribution .content { align-items: flex-start; flex-direction: column; justify-content: center; gap: 20px; }
-`;
-
-function contributionHeader(mobile = false) {
-  return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 300 : 210,
-    mobile,
+    width,
+    height,
     title: "Contribution activity",
-    description: "The contribution snake changes color as it eats differently weighted contribution cells.",
-    css: contributionCss,
-    html: `<section class="surface contribution"><div class="content"><div><p class="kicker">Contributions</p><h2>Consistency leaves a trail.</h2></div><div class="legend"><span>ACTIVITY</span><div class="legend-dots"><i class="legend-dot"></i><i class="legend-dot"></i><i class="legend-dot"></i><i class="legend-dot"></i></div></div></div></section>`,
+    description: "Contribution activity with a color-changing snake animation below.",
+    body: `${surface(width, height, 24)}
+      ${kicker(x, mobile ? 70 : 72, "Contributions")}
+      ${mobile
+        ? lines({ x, y: 116, values: ["Consistency", "leaves a trail."], size: 31, lineHeight: 38, fill: colors.text, weight: 760 })
+        : text({ x, y: 128, value: "Consistency leaves a trail.", size: 38, weight: 760, spacing: -1 })}
+      <g transform="translate(${mobile ? 410 : 1008} ${mobile ? 176 : 100})">
+        <rect x="0" y="0" width="16" height="16" rx="4" fill="#5f3745"/>
+        <rect x="24" y="0" width="16" height="16" rx="4" fill="#8c4f4f"/>
+        <rect x="48" y="0" width="16" height="16" rx="4" fill="#c17649"/>
+        <rect x="72" y="0" width="16" height="16" rx="4" fill="#e6b85c"/>
+      </g>`,
   });
 }
-
-const footerCss = `
-  .footer .content { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
-  .footer h2 { max-width: 650px; margin-bottom: 0; font-size: 43px; }
-  .footer-action { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border: 1px solid #3b4652; border-radius: 15px; color: var(--text); background: #171f29; box-shadow: inset 1px 1px 0 rgba(255,255,255,.04); font-size: 18px; font-weight: 750; }
-  .footer-action span:last-child { color: var(--amber); font-size: 25px; }
-  .footer-meta { margin: 16px 0 0; color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; }
-  .is-mobile .footer .content { align-items: flex-start; flex-direction: column; justify-content: center; }
-  .is-mobile .footer h2 { font-size: 36px; }
-  .is-mobile .footer-action { width: 100%; justify-content: space-between; }
-`;
 
 function footer(mobile = false) {
+  const width = mobile ? 600 : 1200;
+  const height = mobile ? 420 : 300;
+  if (!mobile) {
+    return svgDocument({
+      width,
+      height,
+      title: "Contact Manohar Eldhandi",
+      description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
+      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Let's build something useful.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "BACKEND  /  APPLIED AI  /  DEVTOOLS  /  PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
+        ${card(854, 91, 282, 102, 18, true)}${text({ x: 882, y: 150, value: "EMAIL MANOHAR", size: 18, weight: 760 })}${text({ x: 1104, y: 154, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+    });
+  }
   return svgDocument({
-    width: mobile ? 600 : 1200,
-    height: mobile ? 450 : 300,
-    mobile,
+    width,
+    height,
     title: "Contact Manohar Eldhandi",
-    description: "Start a conversation about backend platforms, applied AI, developer tooling, or product engineering.",
-    css: footerCss,
-    html: `<footer class="surface footer"><div class="content"><div><p class="kicker">Contact</p><h2>Let&apos;s build something useful.</h2><p class="footer-meta">BACKEND / APPLIED AI / DEVTOOLS / PRODUCT</p></div><div class="footer-action"><span>EMAIL MANOHAR</span><span>&#8599;</span></div></div></footer>`,
+    description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
+    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Let's build", "something useful."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "BACKEND / APPLIED AI / DEVTOOLS / PRODUCT", size: 12, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL MANOHAR", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
   });
 }
 
+await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 
 const assets = new Map([
@@ -534,39 +480,32 @@ const assets = new Map([
   ["hero-mobile.svg", hero(true)],
   ["profile.svg", profile(false)],
   ["profile-mobile.svg", profile(true)],
-  ["impact.svg", impact(false)],
-  ["impact-mobile.svg", impact(true)],
-  ["project-ontheway.svg", project("ontheway", false)],
-  ["project-ontheway-mobile.svg", project("ontheway", true)],
-  ["project-carivyo.svg", project("carivyo", false)],
-  ["project-carivyo-mobile.svg", project("carivyo", true)],
-  ["project-waternet.svg", project("waternet", false)],
-  ["project-waternet-mobile.svg", project("waternet", true)],
+  ["projects-header.svg", projectsHeader(false)],
+  ["projects-header-mobile.svg", projectsHeader(true)],
+  ["project-ontheway.svg", projectAsset("ontheway", false)],
+  ["project-ontheway-mobile.svg", projectAsset("ontheway", true)],
+  ["project-carivyo.svg", projectAsset("carivyo", false)],
+  ["project-carivyo-mobile.svg", projectAsset("carivyo", true)],
+  ["project-waternet.svg", projectAsset("waternet", false)],
+  ["project-waternet-mobile.svg", projectAsset("waternet", true)],
   ["toolkit.svg", toolkit(false)],
   ["toolkit-mobile.svg", toolkit(true)],
-  ["notes.svg", notes(false)],
-  ["notes-mobile.svg", notes(true)],
-  ["proof-header.svg", proofHeader(false)],
-  ["proof-header-mobile.svg", proofHeader(true)],
-  ["contributions.svg", contributionHeader(false)],
-  ["contributions-mobile.svg", contributionHeader(true)],
+  ["highlights.svg", highlights(false)],
+  ["highlights-mobile.svg", highlights(true)],
+  ["contributions.svg", contributions(false)],
+  ["contributions-mobile.svg", contributions(true)],
   ["footer.svg", footer(false)],
   ["footer-mobile.svg", footer(true)],
+  ["nav-portfolio.svg", navButton("Portfolio", "SELECTED WORK")],
+  ["nav-resume.svg", navButton("Resume", "EXPERIENCE")],
+  ["nav-linkedin.svg", navButton("LinkedIn", "CONNECT")],
+  ["nav-email.svg", navButton("Email", "START A CONVERSATION")],
+  ["nav-codeforces.svg", navButton("Codeforces", "MASTER / 2141")],
+  ["nav-lerdsa.svg", navButton("LER_DSA", "OPEN ROADMAP")],
 ]);
-
-for (const [index, label] of [["01", "PORTFOLIO"], ["02", "RESUME"], ["03", "LINKEDIN"], ["04", "EMAIL"]]) {
-  const name = label.toLowerCase();
-  assets.set(`nav-${name}.svg`, navButton(index, label, false));
-  assets.set(`nav-${name}-mobile.svg`, navButton(index, label, true));
-}
-
-for (const key of Object.keys(proofData)) {
-  assets.set(`proof-${key}.svg`, proofCard(key, false));
-  assets.set(`proof-${key}-mobile.svg`, proofCard(key, true));
-}
 
 for (const [filename, svg] of assets) {
   await writeFile(path.join(outputDirectory, filename), `${svg}\n`, "utf8");
 }
 
-console.log(`Generated ${assets.size} profile assets in ${outputDirectory}`);
+console.log(`Generated ${assets.size} pure-SVG profile assets in ${outputDirectory}`);
