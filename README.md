@@ -1,255 +1,266 @@
-<!--
-  GitHub-native profile interface.
-  Intentionally uses only HTML/Markdown supported by GitHub's sanitizer:
-  no generated layout images, SVG artwork, inline CSS, or JavaScript.
--->
+<!-- GitHub profile README: native HTML/Markdown with a consistent two-column layout. -->
+
+<h1 align="center">Manohar Eldhandi</h1>
+
+<h3 align="center">Software Engineer at Cisco</h3>
 
 <p align="center">
-  <samp>&#9679;&nbsp; SYSTEM ONLINE &nbsp;/&nbsp; BENGALURU, INDIA</samp>
+  <em>Backend Systems &nbsp;&middot;&nbsp; Security Automation &nbsp;&middot;&nbsp; Agentic AI</em><br>
+  <sub>Bengaluru, India</sub>
 </p>
-
-<h1 align="center">MANOHAR ELDHANDI</h1>
-
-<p align="center">
-  <strong>Software Engineer</strong><br>
-  <samp>BACKEND SYSTEMS &nbsp;&middot;&nbsp; SECURITY AUTOMATION &nbsp;&middot;&nbsp; AGENTIC AI</samp>
-</p>
-
-<p align="center">
-  <a href="https://manohareldhandi.github.io/portfolio/"><kbd>&nbsp; Portfolio &nearr; &nbsp;</kbd></a>&nbsp;
-  <a href="https://manohareldhandi.github.io/Resume/"><kbd>&nbsp; Resume &nearr; &nbsp;</kbd></a>&nbsp;
-  <a href="https://www.linkedin.com/in/manohar-eldhandi/"><kbd>&nbsp; LinkedIn &nearr; &nbsp;</kbd></a>&nbsp;
-  <a href="mailto:manohareldhandi@outlook.com"><kbd>&nbsp; Email &nearr; &nbsp;</kbd></a>
-</p>
-
-<br>
 
 <table>
   <tr>
-    <td width="61%" valign="top">
-      <sub><samp>PRIMARY CONSOLE / 01</samp></sub>
-      <h2>Building trustworthy software where backend engineering meets applied AI.</h2>
-      <p>
-        I am a Software Engineer at <strong>Cisco</strong>, working on Java and Python systems
-        for security, compliance, and AI-assisted engineering. I like hard problems with
-        visible outcomes: reliable APIs, deterministic-first LLM pipelines, secure agent
-        tooling, and products that hold up beyond the demo.
-      </p>
-      <blockquote>
-        Current focus: turning complex security-review workflows into fast, explainable,
-        production-grade engineering systems.
-      </blockquote>
+    <td width="25%" align="center">
+      <a href="https://manohareldhandi.github.io/portfolio/"><strong>Portfolio</strong></a><br>
+      <sub>View work &nearr;</sub>
     </td>
-    <td width="39%" valign="top">
-      <sub><samp>SYSTEM STATUS</samp></sub>
-      <br><br>
-      <samp>
-        ROLE&nbsp;&nbsp;&nbsp;&nbsp; Software Engineer<br>
-        ORG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cisco Systems<br>
-        BASE&nbsp;&nbsp;&nbsp;&nbsp; Bengaluru, India<br>
-        MODE&nbsp;&nbsp;&nbsp;&nbsp; Building + shipping
-      </samp>
-      <br><br>
-      <sub><samp>CORE CHANNELS</samp></sub>
-      <p>
-        <kbd>Java</kbd>&nbsp; <kbd>Python</kbd>&nbsp; <kbd>Spring</kbd><br><br>
-        <kbd>FastAPI</kbd>&nbsp; <kbd>MCP</kbd>&nbsp; <kbd>LLM APIs</kbd>
-      </p>
+    <td width="25%" align="center">
+      <a href="https://manohareldhandi.github.io/Resume/"><strong>Resume</strong></a><br>
+      <sub>View profile &nearr;</sub>
+    </td>
+    <td width="25%" align="center">
+      <a href="https://www.linkedin.com/in/manohar-eldhandi/"><strong>LinkedIn</strong></a><br>
+      <sub>Connect &nearr;</sub>
+    </td>
+    <td width="25%" align="center">
+      <a href="mailto:manohareldhandi@outlook.com"><strong>Email</strong></a><br>
+      <sub>Write to me &nearr;</sub>
     </td>
   </tr>
 </table>
 
 <br>
 
-<h3><samp>02 / IMPACT CONSOLE</samp></h3>
-
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h2>50+ engineers &middot; 4 teams</h2>
-      <sub><samp>PLATFORM ADOPTION</samp></sub>
-      <p>Agentic security-compliance tooling shipped inside Cisco.</p>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h2>70% less review effort</h2>
-      <sub><samp>SECURITY AUTOMATION</samp></sub>
-      <p>Faster code-risk review with traceable findings and remediations.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h2>10&times; fewer model calls</h2>
-      <sub><samp>LLM ORCHESTRATION</samp></sub>
-      <p>11 deterministic phases and a 100-worker concurrent inference engine.</p>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h2>736 tests &middot; 96% UI</h2>
-      <sub><samp>RELEASE CONFIDENCE</samp></sub>
-      <p>Backend and Playwright coverage that reduced manual QA effort by 60%.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<h3><samp>03 / SELECTED BUILDS</samp></h3>
-
-<table>
-  <tr>
-    <td colspan="2">
-      <sub><samp>FEATURED BUILD / EVENT-DRIVEN SYSTEMS</samp></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="64%" valign="top">
-      <h2><a href="https://github.com/ManoharEldhandi/OnTheWay">OnTheWay &nearr;</a></h2>
-      <p>
-        A route-aware pickup platform that synchronizes preparation with a customer's live
-        ETA. It supports customer, merchant, and admin flows across 16 retail verticals,
-        with replayable events, catalog search, and live tracking.
-      </p>
-      <p><kbd>Java 17</kbd>&nbsp; <kbd>Spring Boot</kbd>&nbsp; <kbd>React</kbd>&nbsp; <kbd>Kafka</kbd></p>
-    </td>
-    <td width="36%" valign="top">
-      <sub><samp>OPERATING READOUT</samp></sub>
-      <p><strong>115</strong> shops<br><strong>507</strong> items<br><strong>70+</strong> tests<br><strong>1,000</strong>-user load test</p>
-      <p><a href="https://github.com/ManoharEldhandi/OnTheWay"><kbd>&nbsp; Inspect repository &rarr; &nbsp;</kbd></a></p>
-    </td>
-  </tr>
-</table>
+<h2>01 / PROFILE</h2>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <sub><samp>LOCAL-FIRST AI / 02</samp></sub>
+      <h3>What I build</h3>
+      <p>
+        I build Java and Python systems at <strong>Cisco</strong> for security, compliance,
+        and AI-assisted engineering. My work spans reliable APIs, deterministic-first LLM
+        pipelines, agent tooling, and release automation.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>How I approach it</h3>
+      <p>
+        I prefer software with explicit trust boundaries, observable decisions, and tests
+        that cover the real workflow. AI should improve a system without hiding uncertainty
+        or weakening its engineering foundations.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>02 / IMPACT</h2>
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>50+ engineers &middot; 4 teams</h3>
+      <p>Agentic security-compliance tooling adopted across Cisco product teams.</p>
+      <sub><strong>Platform adoption</strong></sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3>70% less review effort</h3>
+      <p>Traceable code-risk findings and remediations accelerated manual review.</p>
+      <sub><strong>Security automation</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>10&times; fewer model calls</h3>
+      <p>An 11-phase pipeline and 100-worker inference engine reduced LLM usage.</p>
+      <sub><strong>AI orchestration</strong></sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3>736 tests &middot; 96% UI coverage</h3>
+      <p>Backend and Playwright suites reduced manual QA effort by 60%.</p>
+      <sub><strong>Release confidence</strong></sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>03 / BUILDS</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/ManoharEldhandi/OnTheWay">OnTheWay &nearr;</a></h3>
+      <p>
+        Route-aware pickup across 16 retail verticals, with ETA-synchronized preparation,
+        event streaming, search, and live tracking.
+      </p>
+      <p><code>Java</code> <code>Spring Boot</code> <code>Kafka</code> <code>React</code></p>
+      <sub>115 shops &middot; 507 items &middot; 70+ tests &middot; 1,000-user load test</sub>
+    </td>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharEldhandi/Carivyo-AI">Carivyo &nearr;</a></h3>
       <p>
-        Career intelligence with four official ATS connectors, evidence-grounded AI,
-        explicit approval gates, and a transparent 27-check resume diagnostic.
+        Local-first career intelligence with official ATS connectors, evidence-grounded
+        AI, approval gates, and a transparent 27-check resume diagnostic.
       </p>
-      <p><kbd>React</kbd>&nbsp; <kbd>TypeScript</kbd>&nbsp; <kbd>FastAPI</kbd>&nbsp; <kbd>SQLite</kbd></p>
+      <p><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>SQLite</code></p>
+      <sub>4 ATS connectors &middot; local model support &middot; explicit trust boundaries</sub>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
-      <sub><samp>APPLIED ML / 03</samp></sub>
       <h3><a href="https://github.com/ManoharEldhandi/WaterNet">WaterNet &nearr;</a></h3>
       <p>
         Reproducible water-quality classification with a cached ensemble, traceable
         predictions, batch inference, and a hardened Django API.
       </p>
-      <p><kbd>Python</kbd>&nbsp; <kbd>Django</kbd>&nbsp; <kbd>scikit-learn</kbd>&nbsp; <kbd>XGBoost</kbd></p>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td width="20%" align="center" valign="middle">
-      <samp>OPEN SOURCE</samp>
-    </td>
-    <td width="60%" valign="middle">
-      <strong><a href="https://github.com/ManoharEldhandi/LER_DSA">LER_DSA</a></strong><br>
-      <sub>30-day Java DSA roadmap &middot; 20 modules &middot; adopted by 500+ learners</sub>
-    </td>
-    <td width="20%" align="center" valign="middle">
-      <a href="https://github.com/ManoharEldhandi/LER_DSA"><kbd>&nbsp; OPEN &rarr; &nbsp;</kbd></a>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<h3><samp>04 / ENGINEERING RACK</samp></h3>
-
-<table>
-  <tr>
-    <th align="left">CHANNEL</th>
-    <th align="left">WORKING SET</th>
-  </tr>
-  <tr>
-    <td width="24%"><samp>BACKEND</samp></td>
-    <td>Java &middot; Python &middot; Spring Boot &middot; FastAPI &middot; REST &middot; GraphQL &middot; Microservices</td>
-  </tr>
-  <tr>
-    <td><samp>DATA + EVENTS</samp></td>
-    <td>Kafka &middot; Elasticsearch &middot; MySQL &middot; SQLite &middot; WebSockets</td>
-  </tr>
-  <tr>
-    <td><samp>AGENTIC AI</samp></td>
-    <td>MCP &middot; RAG &middot; LLM APIs &middot; Prompt-injection defenses &middot; LLM-as-judge</td>
-  </tr>
-  <tr>
-    <td><samp>QUALITY</samp></td>
-    <td>JUnit 5 &middot; pytest &middot; Playwright &middot; API testing &middot; Code review</td>
-  </tr>
-  <tr>
-    <td><samp>DELIVERY</samp></td>
-    <td>Docker &middot; Kubernetes &middot; GitHub Actions &middot; CI/CD &middot; Git</td>
-  </tr>
-</table>
-
-<br>
-
-<h3><samp>05 / SIGNALS BEYOND THE STACK</samp></h3>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <sub><samp>COMPETITIVE PROGRAMMING</samp></sub>
-      <h3><a href="https://codeforces.com/profile/ACatLastTry">Codeforces Master &middot; 2141</a></h3>
-      <p><a href="https://www.codechef.com/users/acatlasttry">CodeChef 4-star &middot; 1893</a></p>
+      <p><code>Python</code> <code>Django</code> <code>scikit-learn</code> <code>XGBoost</code></p>
+      <sub>95%+ accuracy &middot; 0.96 AUC &middot; sub-50 ms inference</sub>
     </td>
     <td width="50%" valign="top">
-      <sub><samp>NATIONAL SELECTION</samp></sub>
-      <h3>Amazon ML Summer School</h3>
-      <p>Top 1% of 50,000+ applicants in 2024.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <sub><samp>ENGINEERING COMPETITION</samp></sub>
-      <h3>Cisco Webex Playtime</h3>
-      <p>Top 35 of 2,000+ teams with an AI security-compliance tool.</p>
-    </td>
-    <td width="50%" valign="top">
-      <sub><samp>COMMUNITY IMPACT</samp></sub>
-      <h3>500+ learners reached</h3>
-      <p>Reusable Java DSA curriculum, templates, progress tracking, and documentation.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<details>
-  <summary><strong><samp>OPEN ENGINEERING NOTES</samp></strong></summary>
-  <br>
-  <blockquote>
-    <strong>How I work</strong><br>
-    Start deterministic. Keep trust boundaries explicit. Make failures observable.
-    Test the real workflow. Use AI where it improves the system—not where it hides uncertainty.
-  </blockquote>
-  <p>
-    I am especially interested in backend, platform, security automation, developer tooling,
-    and applied-AI systems where product usefulness and engineering rigor matter equally.
-  </p>
-</details>
-
-<br>
-
-<table>
-  <tr>
-    <td align="center">
-      <sub><samp>OPEN CHANNEL / LET'S BUILD SOMETHING USEFUL</samp></sub>
-      <h2>Backend, platform, security, or applied AI?</h2>
-      <p>I am always glad to meet engineers and teams working on difficult, meaningful systems.</p>
+      <h3><a href="https://github.com/ManoharEldhandi/LER_DSA">LER_DSA &nearr;</a></h3>
       <p>
-        <a href="mailto:manohareldhandi@outlook.com"><kbd>&nbsp; Start a conversation &rarr; &nbsp;</kbd></a>&nbsp;
-        <a href="https://manohareldhandi.github.io/portfolio/"><kbd>&nbsp; View full portfolio &nearr; &nbsp;</kbd></a>
+        A structured Java interview roadmap with reusable patterns, guided practice,
+        progress tracking, and documentation designed for consistent learning.
       </p>
+      <p><code>Java</code> <code>DSA</code> <code>Interview Preparation</code></p>
+      <sub>30 days &middot; 20 modules &middot; adopted by 500+ learners</sub>
     </td>
   </tr>
 </table>
+
+<br>
+
+<h2>04 / TOOLKIT</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Backend</h3>
+      <p><code>Java</code> <code>Python</code> <code>Spring Boot</code> <code>FastAPI</code></p>
+      <sub>REST &middot; GraphQL &middot; Microservices &middot; Secure API design</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Agentic AI + Security</h3>
+      <p><code>MCP</code> <code>RAG</code> <code>LLM APIs</code> <code>LLM-as-judge</code></p>
+      <sub>Prompt-injection defense &middot; evidence grounding &middot; auditability</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Data + Events</h3>
+      <p><code>Kafka</code> <code>Elasticsearch</code> <code>MySQL</code> <code>SQLite</code></p>
+      <sub>Event-driven workflows &middot; search &middot; WebSockets &middot; persistence</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Product Engineering</h3>
+      <p><code>React</code> <code>TypeScript</code> <code>JavaScript</code> <code>HTML/CSS</code></p>
+      <sub>End-to-end product flows &middot; responsive interfaces &middot; API integration</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Quality</h3>
+      <p><code>JUnit 5</code> <code>pytest</code> <code>Playwright</code> <code>API Testing</code></p>
+      <sub>Regression coverage &middot; code review &middot; release evidence</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Delivery</h3>
+      <p><code>Docker</code> <code>Kubernetes</code> <code>GitHub Actions</code> <code>Git</code></p>
+      <sub>CI/CD &middot; containerized delivery &middot; reproducible environments</sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>05 / ENGINEERING NOTES</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Start deterministic</h3>
+      <p>Use explicit rules for what can be known before asking a model to reason.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Protect the boundary</h3>
+      <p>Treat external content as untrusted input and keep permissions intentional.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Make decisions observable</h3>
+      <p>Prefer evidence, audit trails, and failure states that engineers can inspect.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Test the real workflow</h3>
+      <p>Validate complete user and system paths, not only isolated happy-path units.</p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>06 / PROOF</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://codeforces.com/profile/ACatLastTry">Codeforces Master &middot; 2141 &nearr;</a></h3>
+      <p><a href="https://www.codechef.com/users/acatlasttry">CodeChef 4-star &middot; 1893 &nearr;</a></p>
+      <sub>Competitive programming</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Amazon ML Summer School</h3>
+      <p>Selected in the top 1% of more than 50,000 applicants.</p>
+      <sub>National selection &middot; 2024</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Cisco Webex Playtime</h3>
+      <p>Placed in the top 35 of more than 2,000 teams with an AI security tool.</p>
+      <sub>Engineering competition</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>500+ learners reached</h3>
+      <p>Created reusable DSA curriculum, templates, tracking, and documentation.</p>
+      <sub>Open-source education</sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>07 / CONTRIBUTIONS</h2>
 
 <p align="center">
-  <sub><samp>DESIGNED AS NATIVE GITHUB HTML &nbsp;&middot;&nbsp; NO LAYOUT IMAGES &nbsp;&middot;&nbsp; NO SVG ARTWORK</samp></sub>
+  <sub>Contribution intensity is represented by five distinct dot colors, from quiet days to peak activity.</sub>
 </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake.svg">
+  <img alt="Animated contribution graph with five activity colors" src="https://raw.githubusercontent.com/ManoharEldhandi/ManoharEldhandi/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+
+<br>
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <h3>Explore the complete work</h3>
+      <p>Architecture, decisions, demos, and deeper project stories.</p>
+      <p><a href="https://manohareldhandi.github.io/portfolio/"><strong>View portfolio &nearr;</strong></a></p>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <h3>Start a conversation</h3>
+      <p>Backend, platform, security automation, or applied AI.</p>
+      <p><a href="mailto:manohareldhandi@outlook.com"><strong>Email Manohar &nearr;</strong></a></p>
+    </td>
+  </tr>
+</table>

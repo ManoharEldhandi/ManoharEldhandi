@@ -1,0 +1,47 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/snake.yml
+      - .github/scripts/colorize-snake.mjs
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Generate contribution animations
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=%2324292f&color_dots=%23ebedf0,%23d9c7b3,%23bc8f68,%2395633f,%236a432e
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23f4efe6&color_dots=%23161b22,%235f3745,%238c4f4f,%23c17649,%23e6b85c
+
+      - name: Match the snake color to each contribution it eats
+        run: >-
+          node .github/scripts/colorize-snake.mjs
+          dist/github-contribution-grid-snake.svg
+          dist/github-contribution-grid-snake-dark.svg
+
+      - name: Publish animations to the output branch
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        with:
+          target_branch: output
+          build_dir: dist
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
