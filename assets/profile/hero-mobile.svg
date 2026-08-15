@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="780" viewBox="0 0 600 780" role="img" aria-labelledby="title description">
-  <title id="title">Manohar Eldhandi — AI and Backend Engineer</title>
-  <desc id="description">Software Engineer at Cisco in Bengaluru focused on applied AI, backend systems, and product engineering.</desc>
+  <title id="title">Manohar Eldhandi — Software Engineer</title>
+  <desc id="description">Software Engineer at Cisco in Bengaluru focused on AI security, backend systems, and product engineering.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -23,10 +23,10 @@
     <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="#34404d"/>
     <text x="66" y="77" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="1" text-anchor="middle">ME</text>
     <circle cx="418" cy="71" r="5" fill="#91aba5"/><circle cx="418" cy="71" r="9" fill="none" stroke="#91aba5" stroke-opacity="0.16"/><text x="436" y="76" fill="#aab2bc" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="700" letter-spacing="0.7" text-anchor="start">BENGALURU / IST</text>
-    <text x="44" y="146" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">APPLIED AI + BACKEND</text>
+    <text x="44" y="146" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">AI + SECURITY + BACKEND</text>
     <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="780" letter-spacing="-2.2" text-anchor="start"><tspan x="44" y="211">Manohar</tspan><tspan x="44" y="271">Eldhandi</tspan></text>
-    <text x="46" y="352" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="730" letter-spacing="0" text-anchor="start">AI &amp; Backend Engineer</text>
-    <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="46" y="401">I build dependable backend platforms and applied-AI</tspan><tspan x="46" y="430">products with Java and Python—designed for real users,</tspan><tspan x="46" y="459">observable decisions, and production reliability.</tspan></text>
+    <text x="46" y="352" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="730" letter-spacing="0" text-anchor="start">Software Engineer</text>
+    <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="46" y="401">I build Python agentic-AI security workflows at Cisco,</tspan><tspan x="46" y="430">Java and Spring Boot systems, and full-stack products</tspan><tspan x="46" y="459">with measurable evidence and reliable delivery.</tspan></text>
     <g>
     <rect x="44" y="505" width="512" height="160" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
     <path d="M62 506 H538" stroke="#ffffff" stroke-opacity="0.055"/>

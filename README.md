@@ -1,18 +1,18 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg">
-    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — AI and Backend Engineer at Cisco in Bengaluru, building dependable backend platforms and applied-AI products.">
+    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer at Cisco in Bengaluru, building Python agentic-AI security workflows, backend systems, and full-stack products.">
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://manohareldhandi.github.io/portfolio/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-portfolio-mobile.svg"><img src="./assets/profile/nav-portfolio.svg" alt="Open Manohar's portfolio"></picture></a>&ensp;<a href="https://manohareldhandi.github.io/Resume/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-resume-mobile.svg"><img src="./assets/profile/nav-resume.svg" alt="Open Manohar's resume"></picture></a>&ensp;<a href="https://www.linkedin.com/in/manohar-eldhandi/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-linkedin-mobile.svg"><img src="./assets/profile/nav-linkedin.svg" alt="Connect with Manohar on LinkedIn"></picture></a>&ensp;<a href="mailto:manohareldhandi@outlook.com"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-email-mobile.svg"><img src="./assets/profile/nav-email.svg" alt="Email Manohar"></picture></a>
+  <a href="https://manohareldhandi.github.io/portfolio/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-portfolio-mobile.svg"><img src="./assets/profile/nav-portfolio.svg" alt="Open Manohar's portfolio"></picture></a>&ensp;<a href="https://manohareldhandi.github.io/Resume/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-resume-mobile.svg"><img src="./assets/profile/nav-resume.svg" alt="Open Manohar's resume"></picture></a>&ensp;<a href="https://www.linkedin.com/in/manohar-eldhandi/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-linkedin-mobile.svg"><img src="./assets/profile/nav-linkedin.svg" alt="Connect with Manohar on LinkedIn"></picture></a>&ensp;<a href="mailto:eldhandimanohar@gmail.com"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-email-mobile.svg"><img src="./assets/profile/nav-email.svg" alt="Email Manohar"></picture></a>
 </p>
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/profile-mobile.svg">
-    <img src="./assets/profile/profile.svg" width="1200" alt="Engineering profile and selected impact: reliable backend and applied-AI systems, adoption by 50+ engineers, 70% less review effort, 10 times fewer model calls, and 736 tests with 96% UI coverage.">
+    <img src="./assets/profile/profile.svg" width="1200" alt="Engineering profile and selected impact: AI security and backend systems, adoption by 50+ engineers, 70% less review effort, 10 times fewer model calls, and 736 tests with 97% UI coverage.">
   </picture>
 </p>
 
@@ -80,7 +80,7 @@
 </p>
 
 <p align="center">
-  <a href="mailto:manohareldhandi@outlook.com">
+  <a href="mailto:eldhandimanohar@gmail.com">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg">
       <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about backend platforms, applied AI, developer tooling, or product engineering.">

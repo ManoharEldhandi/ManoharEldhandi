@@ -111,10 +111,10 @@ function hero(mobile = false) {
     <rect x="64" y="62" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 86, y: 91, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(985, 90, "BENGALURU / IST")}
-    ${kicker(64, 158, "Applied AI + Backend Engineering")}
+    ${kicker(64, 158, "AI + Security + Backend Engineering")}
     ${text({ x: 64, y: 230, value: "Manohar Eldhandi", size: 66, weight: 780, spacing: -2.7 })}
-    ${text({ x: 66, y: 278, value: "AI & Backend Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
-    ${lines({ x: 66, y: 331, values: ["I build dependable backend platforms and applied-AI products", "with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 21, lineHeight: 29 })}
+    ${text({ x: 66, y: 278, value: "Software Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
+    ${lines({ x: 66, y: 331, values: ["I build Python agentic-AI security workflows at Cisco,", "Java and Spring Boot systems, and full-stack products", "with measurable evidence and reliable delivery."], size: 21, lineHeight: 29 })}
     ${card(820, 126, 314, 230, 20, true)}
     ${kicker(850, 165, "Current role")}
     ${text({ x: 850, y: 211, value: "Software Engineer", size: 26, weight: 740 })}
@@ -131,10 +131,10 @@ function hero(mobile = false) {
     <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 66, y: 77, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(418, 76, "BENGALURU / IST")}
-    ${kicker(44, 146, "Applied AI + Backend")}
+    ${kicker(44, 146, "AI + Security + Backend")}
     ${lines({ x: 44, y: 211, values: ["Manohar", "Eldhandi"], size: 58, lineHeight: 60, fill: colors.text, weight: 780, spacing: -2.2 })}
-    ${text({ x: 46, y: 352, value: "AI & Backend Engineer", size: 27, fill: colors.amber, weight: 730 })}
-    ${lines({ x: 46, y: 401, values: ["I build dependable backend platforms and applied-AI", "products with Java and Python—designed for real users,", "observable decisions, and production reliability."], size: 19, lineHeight: 29 })}
+    ${text({ x: 46, y: 352, value: "Software Engineer", size: 27, fill: colors.amber, weight: 730 })}
+    ${lines({ x: 46, y: 401, values: ["I build Python agentic-AI security workflows at Cisco,", "Java and Spring Boot systems, and full-stack products", "with measurable evidence and reliable delivery."], size: 19, lineHeight: 29 })}
     ${card(44, 505, 512, 160, 18, true)}
     ${kicker(68, 540, "Current role")}
     ${text({ x: 68, y: 578, value: "Software Engineer at Cisco", size: 24, weight: 740 })}
@@ -145,8 +145,8 @@ function hero(mobile = false) {
   return svgDocument({
     width,
     height,
-    title: "Manohar Eldhandi — AI and Backend Engineer",
-    description: "Software Engineer at Cisco in Bengaluru focused on applied AI, backend systems, and product engineering.",
+    title: "Manohar Eldhandi — Software Engineer",
+    description: "Software Engineer at Cisco in Bengaluru focused on AI security, backend systems, and product engineering.",
     body: mobile ? mobileBody : desktopBody,
   });
 }
@@ -171,8 +171,8 @@ function profile(mobile = false) {
   const metrics = [
     ["50+", "ENGINEERS", ["Adopted across four Cisco", "product teams."]],
     ["70%", "LESS REVIEW", ["Traceable automation reduced", "manual effort."]],
-    ["10×", "FEWER CALLS", ["A deterministic-first", "11-phase AI pipeline."]],
-    ["736", "TESTS / 96% UI", ["Automation strengthened", "release confidence."]],
+    ["10×", "FEWER CALLS", ["A grounded, code-aware", "11-stage AI pipeline."]],
+    ["736", "TESTS / 97% UI", ["Automation covered 10+", "CI/CD releases."]],
   ];
 
   if (!mobile) {
@@ -193,7 +193,7 @@ function profile(mobile = false) {
         ${text({ x: 64, y: 126, value: "Build the foundation. Apply intelligence where it earns its place.", size: 36, weight: 760, spacing: -1.1 })}
         ${card(64, 166, 520, 160, 18)}
         ${text({ x: 90, y: 207, value: "What I build", size: 24, weight: 740 })}
-        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services,", "agent tooling, and deterministic-first", "LLM pipelines that hold up in production."], size: 19, lineHeight: 27 })}
+        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services,", "agent tooling, grounded retrieval,", "and code-aware LLM pipelines."], size: 19, lineHeight: 27 })}
         ${card(602, 166, 534, 160, 18, true)}
         ${text({ x: 628, y: 207, value: "Current focus", size: 24, weight: 740 })}
         ${lines({ x: 628, y: 245, values: ["At Cisco, I apply AI and backend engineering", "to automate security-compliance workflows", "used across product teams."], size: 19, lineHeight: 27 })}
@@ -254,17 +254,17 @@ const projects = {
     copy: ["Route-aware pickup that synchronizes preparation with a customer's", "live ETA across customer, merchant, and admin workflows."],
     mobileCopy: ["Route-aware pickup that synchronizes preparation", "with a customer's live ETA across customer,", "merchant, and admin workflows."],
     chips: ["Java 17", "Spring Boot", "Kafka", "Elasticsearch", "React", "Kubernetes"],
-    meta: "115 shops  /  507 items  /  70+ tests  /  1,000-user load test",
+    meta: "47 REST + 3 GraphQL  /  85 tests  /  730 sessions/sec  /  p99 884 ms",
     side: "right",
     visual: "flow",
   },
   carivyo: {
     index: "02 / LOCAL-FIRST AI",
-    title: "Carivyo",
+    title: "Carivyo-AI",
     copy: ["Career intelligence with official ATS connectors, evidence-grounded AI,", "explicit approval gates, and a transparent 27-check diagnostic."],
     mobileCopy: ["Career intelligence with official ATS connectors,", "evidence-grounded AI, explicit approval gates,", "and a transparent 27-check diagnostic."],
     chips: ["React", "TypeScript", "FastAPI", "Python", "SQLite", "LLM APIs"],
-    meta: "4 ATS connectors  /  local-model support  /  explicit trust boundaries",
+    meta: "2 runtimes  /  4 connectors  /  27 ATS checks  /  120 boards",
     side: "left",
     visual: "evidence",
   },
