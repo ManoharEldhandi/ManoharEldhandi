@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg">
-    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer at Cisco in Bengaluru, building Python agentic-AI security workflows, backend systems, and full-stack products.">
+    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer in Cisco's India Technical Apprentice Program, building agentic AI and Python backend systems.">
   </picture>
 </p>
 
@@ -12,7 +12,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/profile-mobile.svg">
-    <img src="./assets/profile/profile.svg" width="1200" alt="Engineering profile and selected impact: AI security and backend systems, adoption by 50+ engineers, 70% less review effort, 10 times fewer model calls, and 736 tests with 97% UI coverage.">
+    <img src="./assets/profile/profile.svg" width="1200" alt="Engineering profile and selected impact: agentic AI and backend systems, 70% less manual effort, 10 times fewer model calls, and 736 tests with 97% UI coverage.">
   </picture>
 </p>
 
@@ -24,28 +24,28 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/ManoharEldhandi/model-worklog">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/project-model-logger-mobile.svg">
+      <img src="./assets/profile/project-model-logger.svg" width="1200" alt="Open Model Logger — local-first activity logs for coding agents, available as a CLI, SDK, and VS Code extension.">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ManoharEldhandi/agent-contract-lab">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./assets/profile/project-agent-contract-lab-mobile.svg">
+      <img src="./assets/profile/project-agent-contract-lab.svg" width="1200" alt="Open Agent Contract Lab — local observability and contract tests for coding agents with redacted evidence bundles.">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/ManoharEldhandi/OnTheWay">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/project-ontheway-mobile.svg">
-      <img src="./assets/profile/project-ontheway.svg" width="1200" alt="Open OnTheWay — a route-aware pickup platform built with Java, Spring Boot, Kafka, Elasticsearch, React, and Kubernetes.">
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ManoharEldhandi/Carivyo-AI">
-    <picture>
-      <source media="(max-width: 600px)" srcset="./assets/profile/project-carivyo-mobile.svg">
-      <img src="./assets/profile/project-carivyo.svg" width="1200" alt="Open Carivyo — a local-first career-intelligence workspace with official ATS connectors, evidence-grounded AI, and explicit approval gates.">
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ManoharEldhandi/WaterNet">
-    <picture>
-      <source media="(max-width: 600px)" srcset="./assets/profile/project-waternet-mobile.svg">
-      <img src="./assets/profile/project-waternet.svg" width="1200" alt="Open WaterNet — a reproducible water-quality classification system with a cached ensemble, traceable predictions, batch inference, and a Django API.">
+      <img src="./assets/profile/project-ontheway.svg" width="1200" alt="Open OnTheWay — a route-aware pickup platform built with Java, Spring Boot, Kafka, React, and Kubernetes.">
     </picture>
   </a>
 </p>
@@ -53,7 +53,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/toolkit-mobile.svg">
-    <img src="./assets/profile/toolkit.svg" width="1200" alt="Engineering toolkit across applied AI, backend, frontend, cloud, and engineering tools.">
+    <img src="./assets/profile/toolkit.svg" width="1200" alt="Engineering toolkit across agentic AI, backend, frontend, cloud, and engineering tools.">
   </picture>
 </p>
 
@@ -83,7 +83,7 @@
   <a href="mailto:eldhandimanohar@gmail.com">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg">
-      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about backend platforms, applied AI, developer tooling, or product engineering.">
+      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about backend platforms, agentic AI, developer tooling, or product engineering.">
     </picture>
   </a>
 </p>

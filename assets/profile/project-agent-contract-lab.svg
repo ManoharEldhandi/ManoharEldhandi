@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title description">
+  <title id="title">Agent Contract Lab project</title>
+  <desc id="description">Local observability and contract tests for coding agents with redacted timelines, deterministic checks, and verified evidence bundles.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17212b"/>
+      <stop offset="0.58" stop-color="#111820"/>
+      <stop offset="1" stop-color="#0e141b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19232e"/>
+      <stop offset="1" stop-color="#121a23"/>
+    </linearGradient>
+    <linearGradient id="amberLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dda756" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#dda756" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#dda756" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g>
+    <rect x="0.5" y="0.5" width="1199" height="389" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
+  </g>
+      <text x="430" y="75" fill="#dda756" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="1.3" text-anchor="start">02 / AGENTIC AI TOOLING</text>
+      <text x="430" y="133" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="780" letter-spacing="-1.2" text-anchor="start">Agent Contract Lab ↗</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="430" y="176">Local observability and contract tests for coding agents with</tspan><tspan x="430" y="205">redacted timelines, deterministic checks, and verified evidence bundles.</tspan></text>
+      <rect x="430" y="231" width="116" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="488" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">TypeScript</text><rect x="555" y="231" width="88" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="599" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">Node.js</text><rect x="652" y="231" width="58" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="681" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">CLI</text><rect x="719" y="231" width="88" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="763" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">VS Code</text><rect x="816" y="231" width="70" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="851" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">JSONL</text>
+      <text x="430" y="317" fill="#aab2bc" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="start">5 evidence categories  /  YAML contracts  /  SHA-256 bundles</text>
+      <g>
+    <rect x="64" y="70" width="316" height="240" rx="20" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M82 71 H362" stroke="#ffffff" stroke-opacity="0.055"/>
+  </g>
+    <text x="88" y="114" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">EVIDENCE-GROUNDED FLOW</text>
+    <rect x="88" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="127" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="0" text-anchor="middle">SOURCE</text><text x="174" y="205" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="0" text-anchor="middle">›</text><rect x="183" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="222" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="0" text-anchor="middle">EVIDENCE</text><text x="269" y="205" fill="#dda756" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="0" text-anchor="middle">›</text><rect x="278" y="170" width="78" height="54" rx="12" fill="#1b2632" stroke="#34404d"/><text x="317" y="204" fill="#f3efe7" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="0" text-anchor="middle">REVIEW</text></g>
+</svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="780" viewBox="0 0 600 780" role="img" aria-labelledby="title description">
   <title id="title">Engineering toolkit</title>
-  <desc id="description">Applied AI, backend, frontend, cloud, and engineering tools used to ship complete systems.</desc>
+  <desc id="description">Agentic AI, backend, frontend, cloud, and engineering tools used to ship complete systems.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -25,7 +25,7 @@
   </g>
       <rect x="140" y="200" width="56" height="56" rx="15.120000000000001" fill="#18232e" stroke="#34404d" stroke-width="1.4"/><path d="M168 228 L151 214 M168 228 L186 215 M168 228 L168 248" fill="none" stroke="#dda756" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       <circle cx="168" cy="228" r="7" fill="#dda756"/><circle cx="149" cy="212" r="5" fill="#91aba5"/><circle cx="188" cy="213" r="5" fill="#91aba5"/><circle cx="168" cy="251" r="5" fill="#91aba5"/>
-      <text x="168" y="288" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="760" letter-spacing="0" text-anchor="middle">AI</text>
+      <text x="168" y="288" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="760" letter-spacing="0" text-anchor="middle">Agentic AI</text>
       <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="560" letter-spacing="0" text-anchor="middle"><tspan x="168" y="319">MCP · RAG</tspan><tspan x="168" y="342">LLM APIs</tspan></text><g>
     <rect x="308" y="180" width="248" height="190" rx="17" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
     <path d="M326 181 H538" stroke="#ffffff" stroke-opacity="0.055"/>

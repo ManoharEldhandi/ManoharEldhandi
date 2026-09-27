@@ -111,19 +111,23 @@ function hero(mobile = false) {
     <rect x="64" y="62" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 86, y: 91, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(985, 90, "BENGALURU / IST")}
-    ${kicker(64, 158, "AI + Security + Backend Engineering")}
+    ${kicker(64, 158, "Agentic AI + Backend")}
     ${text({ x: 64, y: 230, value: "Manohar Eldhandi", size: 66, weight: 780, spacing: -2.7 })}
     ${text({ x: 66, y: 278, value: "Software Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
-    ${lines({ x: 66, y: 331, values: ["I build Python agentic-AI security workflows at Cisco,", "Java and Spring Boot systems, and full-stack products", "with measurable evidence and reliable delivery."], size: 21, lineHeight: 29 })}
-    ${card(820, 126, 314, 230, 20, true)}
-    ${kicker(850, 165, "Current role")}
-    ${text({ x: 850, y: 211, value: "Software Engineer", size: 26, weight: 740 })}
-    ${text({ x: 850, y: 243, value: "at Cisco", size: 26, weight: 740 })}
-    ${lines({ x: 850, y: 281, values: ["Applying agentic AI and", "backend engineering to", "security-compliance workflows", "across product teams."], size: 17, lineHeight: 24 })}
+    ${lines({ x: 66, y: 331, values: ["I build agentic AI and Python backend systems at Cisco,", "plus Java and Spring Boot products with clear evidence", "and reliable delivery."], size: 21, lineHeight: 29 })}
+    <path d="M790 126 V356" stroke="${colors.borderSoft}" stroke-width="1.4"/>
+    <path d="M812 126 V356" stroke="#b88a4d" stroke-opacity="0.58" stroke-width="1.4"/>
+    ${kicker(842, 158, "Current role")}
+    ${text({ x: 842, y: 205, value: "Software Engineer", size: 27, weight: 740 })}
+    ${lines({ x: 842, y: 234, values: ["India Technical", "Apprentice Program"], size: 12, lineHeight: 16, fill: colors.amber, weight: 700, family: mono, spacing: 0.2 })}
+    <path d="M842 267 H1136" stroke="${colors.borderSoft}"/>
+    ${kicker(842, 294, "Focus")}
+    ${text({ x: 842, y: 325, value: "Agentic AI + Backend", size: 20, weight: 720 })}
+    ${text({ x: 842, y: 353, value: "Code-review automation and internal tools.", size: 16, fill: colors.muted, weight: 500 })}
     <path d="M64 418 H1136" stroke="${colors.borderSoft}"/>
     ${text({ x: 230, y: 458, value: "BACKEND SYSTEMS", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
     <path d="M405 432 V470" stroke="${colors.borderSoft}"/>
-    ${text({ x: 600, y: 458, value: "APPLIED AI", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    ${text({ x: 600, y: 458, value: "AGENTIC AI", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
     <path d="M795 432 V470" stroke="${colors.borderSoft}"/>
     ${text({ x: 970, y: 458, value: "PRODUCT ENGINEERING", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
 
@@ -131,22 +135,23 @@ function hero(mobile = false) {
     <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 66, y: 77, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(418, 76, "BENGALURU / IST")}
-    ${kicker(44, 146, "AI + Security + Backend")}
+    ${kicker(44, 146, "Agentic AI + Backend")}
     ${lines({ x: 44, y: 211, values: ["Manohar", "Eldhandi"], size: 58, lineHeight: 60, fill: colors.text, weight: 780, spacing: -2.2 })}
     ${text({ x: 46, y: 352, value: "Software Engineer", size: 27, fill: colors.amber, weight: 730 })}
-    ${lines({ x: 46, y: 401, values: ["I build Python agentic-AI security workflows at Cisco,", "Java and Spring Boot systems, and full-stack products", "with measurable evidence and reliable delivery."], size: 19, lineHeight: 29 })}
+    ${lines({ x: 46, y: 401, values: ["I build agentic AI and Python backend systems at Cisco,", "plus Java and Spring Boot products with clear evidence", "and reliable delivery."], size: 19, lineHeight: 29 })}
     ${card(44, 505, 512, 160, 18, true)}
     ${kicker(68, 540, "Current role")}
-    ${text({ x: 68, y: 578, value: "Software Engineer at Cisco", size: 24, weight: 740 })}
-    ${lines({ x: 68, y: 614, values: ["Agentic AI + backend engineering for security-compliance", "workflows used across Cisco product teams."], size: 17, lineHeight: 26 })}
+    ${text({ x: 68, y: 578, value: "Software Engineer", size: 24, weight: 740 })}
+    ${text({ x: 68, y: 603, value: "India Technical Apprentice Program", size: 12, fill: colors.amber, weight: 700, family: mono, spacing: 0.1 })}
+    ${text({ x: 68, y: 638, value: "Agentic AI + backend systems for code review.", size: 15, fill: colors.muted, weight: 450 })}
     <path d="M44 704 H556" stroke="${colors.borderSoft}"/>
-    ${text({ x: 300, y: 735, value: "BACKEND  /  APPLIED AI  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
+    ${text({ x: 300, y: 735, value: "BACKEND  /  AGENTIC AI  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
 
   return svgDocument({
     width,
     height,
     title: "Manohar Eldhandi — Software Engineer",
-    description: "Software Engineer at Cisco in Bengaluru focused on AI security, backend systems, and product engineering.",
+    description: "Software Engineer at Cisco in Bengaluru focused on agentic AI, backend systems, and product engineering.",
     body: mobile ? mobileBody : desktopBody,
   });
 }
@@ -169,8 +174,8 @@ function profile(mobile = false) {
   const width = mobile ? 600 : 1200;
   const height = mobile ? 980 : 620;
   const metrics = [
-    ["50+", "ENGINEERS", ["Adopted across four Cisco", "product teams."]],
-    ["70%", "LESS REVIEW", ["Traceable automation reduced", "manual effort."]],
+    ["2", "MCP TOOLS", ["Ground review data and", "approved actions."]],
+    ["70%", "LESS MANUAL EFFORT", ["Automation makes application", "checks faster."]],
     ["10×", "FEWER CALLS", ["A grounded, code-aware", "11-stage AI pipeline."]],
     ["736", "TESTS / 97% UI", ["Automation covered 10+", "CI/CD releases."]],
   ];
@@ -193,10 +198,10 @@ function profile(mobile = false) {
         ${text({ x: 64, y: 126, value: "Build the foundation. Apply intelligence where it earns its place.", size: 36, weight: 760, spacing: -1.1 })}
         ${card(64, 166, 520, 160, 18)}
         ${text({ x: 90, y: 207, value: "What I build", size: 24, weight: 740 })}
-        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services,", "agent tooling, grounded retrieval,", "and code-aware LLM pipelines."], size: 19, lineHeight: 27 })}
+        ${lines({ x: 90, y: 245, values: ["Reliable APIs, event-driven services,", "agent tooling, grounded retrieval,", "and code-aware LLM workflows."], size: 19, lineHeight: 27 })}
         ${card(602, 166, 534, 160, 18, true)}
         ${text({ x: 628, y: 207, value: "Current focus", size: 24, weight: 740 })}
-        ${lines({ x: 628, y: 245, values: ["At Cisco, I apply AI and backend engineering", "to automate security-compliance workflows", "used across product teams."], size: 19, lineHeight: 27 })}
+        ${lines({ x: 628, y: 245, values: ["At Cisco, I apply agentic AI and backend", "engineering to application code-review", "automation and internal tools."], size: 19, lineHeight: 27 })}
         ${metricCards}`,
     });
   }
@@ -221,10 +226,10 @@ function profile(mobile = false) {
       ${lines({ x: 44, y: 116, values: ["Build the foundation.", "Apply intelligence where", "it earns its place."], size: 30, lineHeight: 38, fill: colors.text, weight: 760, spacing: -0.7 })}
       ${card(44, 250, 512, 145, 18)}
       ${text({ x: 68, y: 290, value: "What I build", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 327, values: ["Reliable APIs, event-driven services,", "agent tooling, and deterministic-first", "LLM pipelines."], size: 18, lineHeight: 27 })}
+      ${lines({ x: 68, y: 327, values: ["Reliable APIs, event-driven services,", "agent tooling, and code-aware", "LLM workflows."], size: 18, lineHeight: 27 })}
       ${card(44, 415, 512, 155, 18, true)}
       ${text({ x: 68, y: 456, value: "Current focus", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 493, values: ["At Cisco, I apply AI and backend", "engineering to security-compliance", "workflows across product teams."], size: 18, lineHeight: 27 })}
+      ${lines({ x: 68, y: 493, values: ["At Cisco, I apply agentic AI and", "backend engineering to application", "code-review automation."], size: 18, lineHeight: 27 })}
       ${metricCards}`,
   });
 }
@@ -236,7 +241,7 @@ function projectsHeader(mobile = false) {
     width,
     height,
     title: "Selected projects",
-    description: "Three selected projects showing backend, applied AI, and machine-learning engineering.",
+    description: "Three selected projects showing agentic AI, backend, and product engineering.",
     body: `${text({ x: width / 2, y: mobile ? 30 : 31, value: "SELECTED BUILDS", size: mobile ? 13 : 14, fill: colors.sage, weight: 750, family: mono, spacing: 2.1, anchor: "middle" })}
       ${mobile
         ? lines({ x: width / 2, y: 74, values: ["Three systems.", "Three different engineering problems."], size: 27, lineHeight: 35, fill: colors.text, weight: 760, anchor: "middle" })
@@ -248,35 +253,35 @@ function projectsHeader(mobile = false) {
 }
 
 const projects = {
+  modelLogger: {
+    index: "01 / PUBLISHED DEVTOOL",
+    title: "Model Logger",
+    copy: ["Local-first activity logs for coding agents with redacted events,", "tool calls, file changes, tests, and exportable JSON evidence."],
+    mobileCopy: ["Local-first activity logs for coding agents with", "redacted events, tool calls, file changes, tests,", "and exportable JSON evidence."],
+    chips: ["TypeScript", "Node.js", "CLI + SDK", "VS Code"],
+    meta: "v0.1.15 release  /  npm CLI + SDK  /  local JSON",
+    side: "right",
+    visual: "evidence",
+  },
+  agentContractLab: {
+    index: "02 / AGENTIC AI TOOLING",
+    title: "Agent Contract Lab",
+    copy: ["Local observability and contract tests for coding agents with", "redacted timelines, deterministic checks, and verified evidence bundles."],
+    mobileCopy: ["Local observability and contract tests for", "coding agents, with redacted timelines,", "deterministic checks, and verified bundles."],
+    chips: ["TypeScript", "Node.js", "CLI", "VS Code", "JSONL"],
+    meta: "5 evidence categories  /  YAML contracts  /  SHA-256 bundles",
+    side: "left",
+    visual: "evidence",
+  },
   ontheway: {
-    index: "01 / EVENT-DRIVEN PLATFORM",
+    index: "03 / EVENT-DRIVEN PLATFORM",
     title: "OnTheWay",
     copy: ["Route-aware pickup that synchronizes preparation with a customer's", "live ETA across customer, merchant, and admin workflows."],
     mobileCopy: ["Route-aware pickup that synchronizes preparation", "with a customer's live ETA across customer,", "merchant, and admin workflows."],
     chips: ["Java 17", "Spring Boot", "Kafka", "Elasticsearch", "React", "Kubernetes"],
-    meta: "47 REST + 3 GraphQL  /  85 tests  /  730 sessions/sec  /  p99 884 ms",
+    meta: "47 REST + 3 GraphQL  /  85 tests  /  730 local sessions/sec",
     side: "right",
     visual: "flow",
-  },
-  carivyo: {
-    index: "02 / LOCAL-FIRST AI",
-    title: "Carivyo-AI",
-    copy: ["Career intelligence with official ATS connectors, evidence-grounded AI,", "explicit approval gates, and a transparent 27-check diagnostic."],
-    mobileCopy: ["Career intelligence with official ATS connectors,", "evidence-grounded AI, explicit approval gates,", "and a transparent 27-check diagnostic."],
-    chips: ["React", "TypeScript", "FastAPI", "Python", "SQLite", "LLM APIs"],
-    meta: "2 runtimes  /  4 connectors  /  27 ATS checks  /  120 boards",
-    side: "left",
-    visual: "evidence",
-  },
-  waternet: {
-    index: "03 / APPLIED MACHINE LEARNING",
-    title: "WaterNet",
-    copy: ["Reproducible water-quality classification with a cached ensemble,", "traceable predictions, batch inference, and a hardened Django API."],
-    mobileCopy: ["Reproducible water-quality classification with", "a cached ensemble, traceable predictions, batch", "inference, and a hardened Django API."],
-    chips: ["Python", "Django", "scikit-learn", "XGBoost"],
-    meta: "95%+ accuracy  /  0.96 AUC  /  sub-50 ms inference",
-    side: "right",
-    visual: "gauge",
   },
 };
 
@@ -365,7 +370,7 @@ function toolkit(mobile = false) {
   const width = mobile ? 600 : 1200;
   const height = mobile ? 780 : 500;
   const groups = [
-    { icon: "ai", label: "AI", details: ["MCP · RAG", "LLM APIs"] },
+    { icon: "ai", label: "Agentic AI", details: ["MCP · RAG", "LLM APIs"] },
     { icon: "backend", label: "Backend", details: ["Java · Python", "Spring · FastAPI"] },
     { icon: "frontend", label: "Frontend", details: ["React · TypeScript", "JavaScript"] },
     { icon: "cloud", label: "Cloud", details: ["Docker · Kubernetes", "GitHub Actions"] },
@@ -386,7 +391,7 @@ function toolkit(mobile = false) {
       width,
       height,
       title: "Engineering toolkit",
-      description: "Applied AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
+      description: "Agentic AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
       body: `${surface(width, height)}${kicker(64, 76, "Engineering toolkit")}${text({ x: 64, y: 126, value: "Five disciplines. One complete engineering workflow.", size: 38, weight: 760, spacing: -1 })}${cards}`,
     });
   }
@@ -408,7 +413,7 @@ function toolkit(mobile = false) {
     width,
     height,
     title: "Engineering toolkit",
-    description: "Applied AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
+    description: "Agentic AI, backend, frontend, cloud, and engineering tools used to ship complete systems.",
     body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["Five disciplines. One complete", "engineering workflow."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${compactCards}${toolsCard}`,
   });
 }
@@ -419,7 +424,7 @@ function highlights(mobile = false) {
   const items = [
     ["COMPETITIVE PROGRAMMING", "Master / 2141", "CodeChef 4-star / 1893"],
     ["NATIONAL SELECTION", "Top 1%", "Amazon ML Summer School / 50,000+ applicants"],
-    ["ENGINEERING COMPETITION", "Top 35", "Cisco Webex Playtime / 2,000+ teams"],
+    ["PUBLISHED DEVTOOL", "v0.1.15", "Model Logger / CLI · SDK · VS Code"],
     ["OPEN-SOURCE EDUCATION", "500+ learners", "LER_DSA / 30 days / 20 modules"],
   ];
   if (!mobile) {
@@ -486,8 +491,8 @@ function footer(mobile = false) {
       width,
       height,
       title: "Contact Manohar Eldhandi",
-      description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
-      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Let's build something useful.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "BACKEND  /  APPLIED AI  /  DEVTOOLS  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
+      description: "Email Manohar about backend, agentic AI, developer tooling, or product engineering.",
+      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Let's build something useful.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "BACKEND  /  AGENTIC AI  /  DEVTOOLS  /  PRODUCT", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
         ${card(854, 91, 282, 102, 18, true)}${text({ x: 882, y: 150, value: "EMAIL ME", size: 18, weight: 760 })}${text({ x: 1104, y: 154, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
     });
   }
@@ -495,8 +500,8 @@ function footer(mobile = false) {
     width,
     height,
     title: "Contact Manohar Eldhandi",
-    description: "Email Manohar about backend, applied AI, developer tooling, or product engineering.",
-    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Let's build", "something useful."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "BACKEND / APPLIED AI / DEVTOOLS / PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL ME", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+    description: "Email Manohar about backend, agentic AI, developer tooling, or product engineering.",
+    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Let's build", "something useful."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "BACKEND / AGENTIC AI / DEVTOOLS / PRODUCT", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL ME", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
   });
 }
 
@@ -510,12 +515,12 @@ const assets = new Map([
   ["profile-mobile.svg", profile(true)],
   ["projects-header.svg", projectsHeader(false)],
   ["projects-header-mobile.svg", projectsHeader(true)],
+  ["project-model-logger.svg", projectAsset("modelLogger", false)],
+  ["project-model-logger-mobile.svg", projectAsset("modelLogger", true)],
+  ["project-agent-contract-lab.svg", projectAsset("agentContractLab", false)],
+  ["project-agent-contract-lab-mobile.svg", projectAsset("agentContractLab", true)],
   ["project-ontheway.svg", projectAsset("ontheway", false)],
   ["project-ontheway-mobile.svg", projectAsset("ontheway", true)],
-  ["project-carivyo.svg", projectAsset("carivyo", false)],
-  ["project-carivyo-mobile.svg", projectAsset("carivyo", true)],
-  ["project-waternet.svg", projectAsset("waternet", false)],
-  ["project-waternet-mobile.svg", projectAsset("waternet", true)],
   ["toolkit.svg", toolkit(false)],
   ["toolkit-mobile.svg", toolkit(true)],
   ["highlights.svg", highlights(false)],
