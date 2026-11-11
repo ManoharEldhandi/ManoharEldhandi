@@ -1,25 +1,25 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg">
-    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer in Cisco's India Technical Apprentice Program, building agentic AI and Python backend systems.">
+    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer focused on Python, agentic AI, and automation. Cisco experience, October 2025 to October 2026. Building Model Logger and Carivyo.">
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://manohareldhandi.github.io/portfolio/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-portfolio-mobile.svg"><img src="./assets/profile/nav-portfolio.svg" alt="Open Manohar's portfolio"></picture></a>&ensp;<a href="https://manohareldhandi.github.io/Resume/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-resume-mobile.svg"><img src="./assets/profile/nav-resume.svg" alt="Open Manohar's resume"></picture></a>&ensp;<a href="https://www.linkedin.com/in/manohar-eldhandi/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-linkedin-mobile.svg"><img src="./assets/profile/nav-linkedin.svg" alt="Connect with Manohar on LinkedIn"></picture></a>&ensp;<a href="mailto:eldhandimanohar@gmail.com"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-email-mobile.svg"><img src="./assets/profile/nav-email.svg" alt="Email Manohar"></picture></a>
+  <a href="https://manohareldhandi.github.io/portfolio/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-portfolio-mobile.svg"><img src="./assets/profile/nav-portfolio.svg" alt="Open Manohar's portfolio"></picture></a>&ensp;<a href="https://www.linkedin.com/in/manohar-eldhandi/"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-linkedin-mobile.svg"><img src="./assets/profile/nav-linkedin.svg" alt="Connect with Manohar on LinkedIn"></picture></a>&ensp;<a href="mailto:eldhandimanohar@gmail.com"><picture><source media="(max-width: 600px)" srcset="./assets/profile/nav-email-mobile.svg"><img src="./assets/profile/nav-email.svg" alt="Email Manohar"></picture></a>
 </p>
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/profile-mobile.svg">
-    <img src="./assets/profile/profile.svg" width="1200" alt="Engineering profile and selected impact: agentic AI and backend systems, 70% less manual effort, 10 times fewer model calls, and 736 tests with 97% UI coverage.">
+    <img src="./assets/profile/profile.svg" width="1200" alt="At Cisco: Python and agentic AI security reviews for 50+ engineers across four teams. Review time fell from 80 to 16 hours per cycle. An 11-stage RAG and code-graph pipeline covered 20K+ source files with 10 times fewer model calls.">
   </picture>
 </p>
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/projects-header-mobile.svg">
-    <img src="./assets/profile/projects-header.svg" width="1200" alt="Selected builds: three systems solving three different engineering problems.">
+    <img src="./assets/profile/projects-header.svg" width="1200" alt="Selected projects: Model Logger and Carivyo.">
   </picture>
 </p>
 
@@ -27,25 +27,16 @@
   <a href="https://github.com/ManoharEldhandi/model-worklog">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/project-model-logger-mobile.svg">
-      <img src="./assets/profile/project-model-logger.svg" width="1200" alt="Open Model Logger — local-first activity logs for coding agents, available as a CLI, SDK, and VS Code extension.">
+      <img src="./assets/profile/project-model-logger.svg" width="1200" alt="Open Model Logger — local traces for AI agents, with a published v2.1.0 tracing SDK and VS Code extension. A separate RAG layer on main searches captured logs using ChromaDB, BM25, RRF, and reranking. Built with TypeScript and Node.js.">
     </picture>
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ManoharEldhandi/agent-contract-lab">
+  <a href="https://github.com/ManoharEldhandi/Carivyo-AI">
     <picture>
-      <source media="(max-width: 600px)" srcset="./assets/profile/project-agent-contract-lab-mobile.svg">
-      <img src="./assets/profile/project-agent-contract-lab.svg" width="1200" alt="Open Agent Contract Lab — local observability and contract tests for coding agents with redacted evidence bundles.">
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ManoharEldhandi/OnTheWay">
-    <picture>
-      <source media="(max-width: 600px)" srcset="./assets/profile/project-ontheway-mobile.svg">
-      <img src="./assets/profile/project-ontheway.svg" width="1200" alt="Open OnTheWay — a route-aware pickup platform built with Java, Spring Boot, Kafka, React, and Kubernetes.">
+      <source media="(max-width: 600px)" srcset="./assets/profile/project-carivyo-mobile.svg">
+      <img src="./assets/profile/project-carivyo.svg" width="1200" alt="Open Carivyo — a Python career workspace built with FastAPI and SQLite, with Codex or on-device Ollama. Four ATS connectors, 120 company boards, and 27 resume checks.">
     </picture>
   </a>
 </p>
@@ -53,7 +44,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/toolkit-mobile.svg">
-    <img src="./assets/profile/toolkit.svg" width="1200" alt="Engineering toolkit across agentic AI, backend, frontend, cloud, and engineering tools.">
+    <img src="./assets/profile/toolkit.svg" width="1200" alt="Tools I use: Python, FastAPI, asyncio, SQL, SQLite, LangGraph, LangChain, MCP, LLM APIs, ChromaDB, BM25, RRF, embeddings, Playwright, pytest, Git, CI/CD, Docker, Linux, TypeScript, and Node.js.">
   </picture>
 </p>
 
@@ -83,7 +74,7 @@
   <a href="mailto:eldhandimanohar@gmail.com">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg">
-      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about backend platforms, agentic AI, developer tooling, or product engineering.">
+      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about Python, agentic AI, and automation roles.">
     </picture>
   </a>
 </p>

@@ -18,7 +18,7 @@
     </linearGradient>
   </defs>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><text x="300" y="30" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="750" letter-spacing="2.1" text-anchor="middle">CONTRIBUTIONS</text>
-      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="29" font-weight="760" letter-spacing="0" text-anchor="middle"><tspan x="300" y="74">Consistency</tspan><tspan x="300" y="109">leaves a trail.</tspan></text>
+      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="29" font-weight="760" letter-spacing="0" text-anchor="middle"><tspan x="300" y="74">GitHub</tspan><tspan x="300" y="109">activity.</tspan></text>
       <path d="M104 143 H250" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
       <path d="M350 143 H496" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
       <g transform="translate(268 135)">

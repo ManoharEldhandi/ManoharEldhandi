@@ -8,3 +8,4 @@
 
 # Local visual QA artifacts
 /output/playwright/
+/.playwright-cli/

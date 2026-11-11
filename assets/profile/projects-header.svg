@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="title description">
   <title id="title">Selected projects</title>
-  <desc id="description">Three selected projects showing agentic AI, backend, and product engineering.</desc>
+  <desc id="description">Model Logger and Carivyo: agent observability, retrieval, and Python automation.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -17,8 +17,8 @@
       <stop offset="1" stop-color="#dda756" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><text x="600" y="31" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="750" letter-spacing="2.1" text-anchor="middle">SELECTED BUILDS</text>
-      <text x="600" y="82" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" font-weight="760" letter-spacing="-1" text-anchor="middle">Three systems. Three different engineering problems.</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><text x="600" y="31" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="750" letter-spacing="2.1" text-anchor="middle">PROJECTS</text>
+      <text x="600" y="82" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" font-weight="760" letter-spacing="-1" text-anchor="middle">What I’m building.</text>
       <path d="M110 111 H514" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
       <path d="M686 111 H1090" stroke="#b88a4d" stroke-width="1" vector-effect="non-scaling-stroke"/>
       <path d="M600 105 l6 6 -6 6 -6 -6z" fill="#dda756"/></g>

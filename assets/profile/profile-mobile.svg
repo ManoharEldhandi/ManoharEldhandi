@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="980" viewBox="0 0 600 980" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="910" viewBox="0 0 600 910" role="img" aria-labelledby="title description">
   <title id="title">Engineering profile and selected impact</title>
-  <desc id="description">Backend and applied-AI engineering profile with measurable outcomes at Cisco.</desc>
+  <desc id="description">Python and agentic AI work at Cisco, October 2025 to October 2026. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -18,45 +18,45 @@
     </linearGradient>
   </defs>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g>
-    <rect x="0.5" y="0.5" width="599" height="979" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
+    <rect x="0.5" y="0.5" width="599" height="909" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
   </g>
       <text x="44" y="70" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">ENGINEERING PROFILE</text>
-      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="760" letter-spacing="-0.7" text-anchor="start"><tspan x="44" y="116">Build the foundation.</tspan><tspan x="44" y="154">Apply intelligence where</tspan><tspan x="44" y="192">it earns its place.</tspan></text>
+      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="760" letter-spacing="-0.7" text-anchor="start"><tspan x="44" y="116">Python and AI</tspan><tspan x="44" y="154">for security reviews.</tspan></text>
       <g>
-    <rect x="44" y="250" width="512" height="145" rx="18" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M62 251 H538" stroke="#ffffff" stroke-opacity="0.055"/>
+    <rect x="44" y="205" width="512" height="145" rx="18" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M62 206 H538" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="68" y="290" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">What I build</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="327">Reliable APIs, event-driven services,</tspan><tspan x="68" y="354">agent tooling, and code-aware</tspan><tspan x="68" y="381">LLM workflows.</tspan></text>
+      <text x="68" y="245" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">The work</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="282">Python, LangGraph, and LangChain,</tspan><tspan x="68" y="309">with MCP tools for Jira and security data.</tspan></text>
       <g>
-    <rect x="44" y="415" width="512" height="155" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M62 416 H538" stroke="#ffffff" stroke-opacity="0.055"/>
+    <rect x="44" y="370" width="512" height="145" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M62 371 H538" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="68" y="456" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">Current focus</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="493">At Cisco, I apply agentic AI and</tspan><tspan x="68" y="520">backend engineering to application</tspan><tspan x="68" y="547">code-review automation.</tspan></text>
+      <text x="68" y="410" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">Testing and review</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="447">Traceable retrieval and code review,</tspan><tspan x="68" y="474">with 97% Playwright UI coverage.</tspan></text>
       <g>
-    <rect x="44" y="610" width="240" height="158" rx="16" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M62 611 H266" stroke="#ffffff" stroke-opacity="0.055"/>
+    <rect x="44" y="550" width="240" height="158" rx="16" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M62 551 H266" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="62" y="653" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">2</text>
-      <text x="62" y="680" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">MCP TOOLS</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="62" y="718">Ground review data and</tspan><tspan x="62" y="740">approved actions.</tspan></text><g>
-    <rect x="300" y="610" width="240" height="158" rx="16" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M318 611 H522" stroke="#ffffff" stroke-opacity="0.055"/>
+      <text x="62" y="593" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">50+</text>
+      <text x="62" y="620" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">ENGINEERS</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="62" y="658">Across four Cisco</tspan><tspan x="62" y="680">product teams.</tspan></text><g>
+    <rect x="300" y="550" width="240" height="158" rx="16" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M318 551 H522" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="318" y="653" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">70%</text>
-      <text x="318" y="680" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">LESS MANUAL EFFORT</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="318" y="718">Automation makes application</tspan><tspan x="318" y="740">checks faster.</tspan></text><g>
-    <rect x="44" y="788" width="240" height="158" rx="16" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M62 789 H266" stroke="#ffffff" stroke-opacity="0.055"/>
+      <text x="318" y="593" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">80%</text>
+      <text x="318" y="620" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">LESS REVIEW TIME</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="318" y="658">80 to 16 hours</tspan><tspan x="318" y="680">per review cycle.</tspan></text><g>
+    <rect x="44" y="728" width="240" height="158" rx="16" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M62 729 H266" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="62" y="831" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">10×</text>
-      <text x="62" y="858" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">FEWER CALLS</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="62" y="896">A grounded, code-aware</tspan><tspan x="62" y="918">11-stage AI pipeline.</tspan></text><g>
-    <rect x="300" y="788" width="240" height="158" rx="16" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
-    <path d="M318 789 H522" stroke="#ffffff" stroke-opacity="0.055"/>
+      <text x="62" y="771" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">20K+</text>
+      <text x="62" y="798" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">SOURCE FILES</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="62" y="836">An 11-stage RAG and</tspan><tspan x="62" y="858">code-graph pipeline.</tspan></text><g>
+    <rect x="300" y="728" width="240" height="158" rx="16" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
+    <path d="M318 729 H522" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="318" y="831" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">736</text>
-      <text x="318" y="858" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">TESTS / 97% UI</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="318" y="896">Automation covered 10+</tspan><tspan x="318" y="918">CI/CD releases.</tspan></text></g>
+      <text x="318" y="771" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="780" letter-spacing="0" text-anchor="start">10×</text>
+      <text x="318" y="798" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="750" letter-spacing="0.8" text-anchor="start">FEWER MODEL CALLS</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="318" y="836">With source evidence</tspan><tspan x="318" y="858">kept traceable.</tspan></text></g>
 </svg>
