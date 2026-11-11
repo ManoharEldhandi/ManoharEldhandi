@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg">
-    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer focused on Python, agentic AI, and automation. Cisco experience, October 2025 to October 2026. Building Model Logger and Carivyo.">
+    <img src="./assets/profile/hero.svg" width="1200" alt="Manohar Eldhandi — Software Engineer building agentic AI systems for security automation. Cisco experience in prompt engineering, RAG architecture, and MCP integrations for security-compliance review automation. Building Model Logger and Carivyo for agent observability, retrieval, and security guardrails.">
   </picture>
 </p>
 
@@ -12,7 +12,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/profile-mobile.svg">
-    <img src="./assets/profile/profile.svg" width="1200" alt="At Cisco: Python and agentic AI security reviews for 50+ engineers across four teams. Review time fell from 80 to 16 hours per cycle. An 11-stage RAG and code-graph pipeline covered 20K+ source files with 10 times fewer model calls.">
+    <img src="./assets/profile/profile.svg" width="1200" alt="At Cisco: agentic AI for security-compliance review automation, with prompt engineering, RAG architecture, and MCP integrations. Used by 50+ engineers across four teams. Review time fell from 80 to 16 hours per cycle. An 11-stage RAG and code-graph pipeline covered 20K+ source files with 10 times fewer model calls.">
   </picture>
 </p>
 
@@ -36,7 +36,7 @@
   <a href="https://github.com/ManoharEldhandi/Carivyo-AI">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/project-carivyo-mobile.svg">
-      <img src="./assets/profile/project-carivyo.svg" width="1200" alt="Open Carivyo — a Python career workspace built with FastAPI and SQLite, with Codex or on-device Ollama. Four ATS connectors, 120 company boards, and 27 resume checks.">
+      <img src="./assets/profile/project-carivyo.svg" width="1200" alt="Open Carivyo — find jobs and prepare application materials from approved resume evidence, with Codex-assisted workflows, local Ollama chat, and user review. Built with Python, FastAPI, and SQLite. Four ATS connectors, 120 company boards, and 27 resume checks.">
     </picture>
   </a>
 </p>
@@ -44,7 +44,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/profile/toolkit-mobile.svg">
-    <img src="./assets/profile/toolkit.svg" width="1200" alt="Tools I use: Python, FastAPI, asyncio, SQL, SQLite, LangGraph, LangChain, MCP, LLM APIs, ChromaDB, BM25, RRF, embeddings, Playwright, pytest, Git, CI/CD, Docker, Linux, TypeScript, and Node.js.">
+    <img src="./assets/profile/toolkit.svg" width="1200" alt="Tools I use: Python, FastAPI, asyncio, SQL, SQLite, LangGraph, LangChain, MCP, LLM APIs, prompt engineering, structured outputs, security guardrails, ChromaDB, BM25, RRF, embeddings, reranking, Playwright, pytest, Git, CI/CD, Docker, Linux, TypeScript, and Node.js.">
   </picture>
 </p>
 
@@ -74,7 +74,7 @@
   <a href="mailto:eldhandimanohar@gmail.com">
     <picture>
       <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg">
-      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about Python, agentic AI, and automation roles.">
+      <img src="./assets/profile/footer.svg" width="1200" alt="Email Manohar about agentic AI, security automation, and developer tooling roles.">
     </picture>
   </a>
 </p>

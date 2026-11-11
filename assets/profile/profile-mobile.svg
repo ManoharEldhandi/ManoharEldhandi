@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="910" viewBox="0 0 600 910" role="img" aria-labelledby="title description">
   <title id="title">Engineering profile and selected impact</title>
-  <desc id="description">Python and agentic AI work at Cisco, October 2025 to October 2026. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.</desc>
+  <desc id="description">Agentic AI for security-compliance review automation at Cisco, October 2025 to October 2026. Prompt engineering, RAG architecture, and MCP integrations. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -21,19 +21,19 @@
     <rect x="0.5" y="0.5" width="599" height="909" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
   </g>
       <text x="44" y="70" fill="#91aba5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="2.4" text-anchor="start">ENGINEERING PROFILE</text>
-      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="760" letter-spacing="-0.7" text-anchor="start"><tspan x="44" y="116">Python and AI</tspan><tspan x="44" y="154">for security reviews.</tspan></text>
+      <text fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="760" letter-spacing="-0.7" text-anchor="start"><tspan x="44" y="116">Security-compliance</tspan><tspan x="44" y="154">review automation.</tspan></text>
       <g>
     <rect x="44" y="205" width="512" height="145" rx="18" fill="#121a23" stroke="#25303b" stroke-width="1.4"/>
     <path d="M62 206 H538" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
       <text x="68" y="245" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">The work</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="282">Python, LangGraph, and LangChain,</tspan><tspan x="68" y="309">with MCP tools for Jira and security data.</tspan></text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="282">LangGraph, LangChain, and two LLM providers.</tspan><tspan x="68" y="309">MCP tools for Jira and security data.</tspan><tspan x="68" y="336">Prompt engineering and structured outputs.</tspan></text>
       <g>
     <rect x="44" y="370" width="512" height="145" rx="18" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
     <path d="M62 371 H538" stroke="#ffffff" stroke-opacity="0.055"/>
   </g>
-      <text x="68" y="410" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">Testing and review</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="447">Traceable retrieval and code review,</tspan><tspan x="68" y="474">with 97% Playwright UI coverage.</tspan></text>
+      <text x="68" y="410" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="740" letter-spacing="0" text-anchor="start">RAG and testing</text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="68" y="447">RAG architecture with traceable source evidence.</tspan><tspan x="68" y="474">Code reviews and automated UI checks.</tspan><tspan x="68" y="501">97% Playwright UI coverage.</tspan></text>
       <g>
     <rect x="44" y="550" width="240" height="158" rx="16" fill="#161f29" stroke="#25303b" stroke-width="1.4"/>
     <path d="M62 551 H266" stroke="#ffffff" stroke-opacity="0.055"/>

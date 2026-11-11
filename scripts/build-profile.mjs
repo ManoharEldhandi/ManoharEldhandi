@@ -106,15 +106,15 @@ function chipLayout(chips, startX, startY, maxWidth, fontSize = 15, rowHeight = 
 
 function hero(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 780 : 520;
+  const height = mobile ? 840 : 540;
   const desktopBody = `${surface(width, height)}
     <rect x="64" y="62" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 86, y: 91, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(985, 90, "HYDERABAD / IST")}
-    ${kicker(64, 158, "Python + Agentic AI")}
+    ${kicker(64, 158, "Agentic AI · Security automation")}
     ${text({ x: 64, y: 230, value: "Manohar Eldhandi", size: 66, weight: 780, spacing: -2.7 })}
     ${text({ x: 66, y: 278, value: "Software Engineer", size: 29, fill: colors.amber, weight: 720, spacing: -0.4 })}
-    ${lines({ x: 66, y: 331, values: ["I build AI workflows, Python APIs, and automation.", "At Cisco, I worked on security reviews and RAG.", "Now I’m building Model Logger and Carivyo."], size: 21, lineHeight: 29 })}
+    ${lines({ x: 66, y: 322, values: ["I build agentic AI systems for security automation.", "My Cisco work covered prompting, RAG architecture,", "and MCP tools for security-compliance review automation.", "Now I’m building Model Logger and Carivyo."], size: 21, lineHeight: 28 })}
     <path d="M790 126 V356" stroke="${colors.borderSoft}" stroke-width="1.4"/>
     <path d="M812 126 V356" stroke="#b88a4d" stroke-opacity="0.58" stroke-width="1.4"/>
     ${kicker(842, 158, "Cisco · 2025–2026")}
@@ -122,36 +122,36 @@ function hero(mobile = false) {
     ${lines({ x: 842, y: 234, values: ["India Technical", "Apprentice Program"], size: 12, lineHeight: 16, fill: colors.amber, weight: 700, family: mono, spacing: 0.2 })}
     <path d="M842 267 H1136" stroke="${colors.borderSoft}"/>
     ${kicker(842, 294, "Focus")}
-    ${text({ x: 842, y: 325, value: "Python + Agentic AI", size: 20, weight: 720 })}
-    ${text({ x: 842, y: 353, value: "Automation, APIs, and retrieval.", size: 16, fill: colors.muted, weight: 500 })}
-    <path d="M64 418 H1136" stroke="${colors.borderSoft}"/>
-    ${text({ x: 230, y: 458, value: "PYTHON", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
-    <path d="M405 432 V470" stroke="${colors.borderSoft}"/>
-    ${text({ x: 600, y: 458, value: "AGENTIC AI", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
-    <path d="M795 432 V470" stroke="${colors.borderSoft}"/>
-    ${text({ x: 970, y: 458, value: "AUTOMATION", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
+    ${text({ x: 842, y: 325, value: "Agentic AI", size: 22, weight: 720 })}
+    ${text({ x: 842, y: 353, value: "Prompts, RAG, and guardrails.", size: 16, fill: colors.muted, weight: 500 })}
+    <path d="M64 438 H1136" stroke="${colors.borderSoft}"/>
+    ${text({ x: 230, y: 478, value: "AGENTIC AI", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    <path d="M405 452 V490" stroke="${colors.borderSoft}"/>
+    ${text({ x: 600, y: 478, value: "SECURITY AUTOMATION", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}
+    <path d="M795 452 V490" stroke="${colors.borderSoft}"/>
+    ${text({ x: 970, y: 478, value: "GUARDRAILS", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1.2, anchor: "middle" })}`;
 
   const mobileBody = `${surface(width, height)}
     <rect x="44" y="48" width="44" height="44" rx="12" fill="#18212b" stroke="${colors.border}"/>
     ${text({ x: 66, y: 77, value: "ME", size: 15, fill: colors.amber, weight: 800, anchor: "middle", spacing: 1 })}
     ${status(418, 76, "HYDERABAD / IST")}
-    ${kicker(44, 146, "Python + Agentic AI")}
+    ${kicker(44, 146, "Agentic AI · Security automation")}
     ${lines({ x: 44, y: 211, values: ["Manohar", "Eldhandi"], size: 58, lineHeight: 60, fill: colors.text, weight: 780, spacing: -2.2 })}
     ${text({ x: 46, y: 352, value: "Software Engineer", size: 27, fill: colors.amber, weight: 730 })}
-    ${lines({ x: 46, y: 401, values: ["I build AI workflows, Python APIs, and automation.", "At Cisco, I worked on security reviews and RAG.", "Now I’m building Model Logger and Carivyo."], size: 19, lineHeight: 29 })}
-    ${card(44, 505, 512, 160, 18, true)}
-    ${kicker(68, 540, "Cisco · 2025–2026")}
-    ${text({ x: 68, y: 578, value: "Software Engineer", size: 24, weight: 740 })}
-    ${text({ x: 68, y: 603, value: "India Technical Apprentice Program", size: 12, fill: colors.amber, weight: 700, family: mono, spacing: 0.1 })}
-    ${text({ x: 68, y: 638, value: "Security reviews, RAG, and internal tools.", size: 15, fill: colors.muted, weight: 450 })}
-    <path d="M44 704 H556" stroke="${colors.borderSoft}"/>
-    ${text({ x: 300, y: 735, value: "PYTHON  /  AGENTIC AI  /  AUTOMATION", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
+    ${lines({ x: 46, y: 401, values: ["I build agentic AI for security automation.", "At Cisco, I worked on prompt engineering,", "RAG architecture, and MCP integrations for", "security-compliance review automation.", "Now I’m building Model Logger and Carivyo."], size: 19, lineHeight: 29 })}
+    ${card(44, 565, 512, 160, 18, true)}
+    ${kicker(68, 600, "Cisco · 2025–2026")}
+    ${text({ x: 68, y: 638, value: "Software Engineer", size: 24, weight: 740 })}
+    ${text({ x: 68, y: 663, value: "India Technical Apprentice Program", size: 12, fill: colors.amber, weight: 700, family: mono, spacing: 0.1 })}
+    ${text({ x: 68, y: 698, value: "Security-compliance review automation.", size: 15, fill: colors.muted, weight: 450 })}
+    <path d="M44 764 H556" stroke="${colors.borderSoft}"/>
+    ${text({ x: 300, y: 795, value: "AGENTIC AI / SECURITY AUTOMATION / GUARDRAILS", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1, anchor: "middle" })}`;
 
   return svgDocument({
     width,
     height,
     title: "Manohar Eldhandi — Software Engineer",
-    description: "Manohar Eldhandi builds Python APIs, agentic AI workflows, and automation. Cisco experience, October 2025 to October 2026.",
+    description: "Manohar Eldhandi builds agentic AI systems for security automation, with Cisco experience in prompt engineering, RAG architecture, and MCP integrations. Building Model Logger and Carivyo for agent observability, retrieval, and security guardrails.",
     body: mobile ? mobileBody : desktopBody,
   });
 }
@@ -192,16 +192,16 @@ function profile(mobile = false) {
       width,
       height,
       title: "Engineering profile and selected impact",
-      description: "Python and agentic AI work at Cisco, October 2025 to October 2026. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.",
+      description: "Agentic AI for security-compliance review automation at Cisco, October 2025 to October 2026. Prompt engineering, RAG architecture, and MCP integrations. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.",
       body: `${surface(width, height)}
         ${kicker(64, 78, "Engineering profile")}
-        ${text({ x: 64, y: 126, value: "Python and AI for security reviews.", size: 36, weight: 760, spacing: -1.1 })}
+        ${text({ x: 64, y: 126, value: "Security-compliance review automation.", size: 36, weight: 760, spacing: -1.1 })}
         ${card(64, 166, 520, 160, 18)}
         ${text({ x: 90, y: 207, value: "The work", size: 24, weight: 740 })}
-        ${lines({ x: 90, y: 245, values: ["Python workflows with LangGraph and LangChain,", "plus MCP tools for Jira and security data."], size: 19, lineHeight: 27 })}
+        ${lines({ x: 90, y: 245, values: ["LangGraph, LangChain, and two LLM providers.", "MCP tools for Jira and security data.", "Prompt engineering and structured outputs."], size: 19, lineHeight: 27 })}
         ${card(602, 166, 534, 160, 18, true)}
-        ${text({ x: 628, y: 207, value: "Testing and review", size: 24, weight: 740 })}
-        ${lines({ x: 628, y: 245, values: ["Traceable retrieval and code review,", "with 97% Playwright UI coverage."], size: 19, lineHeight: 27 })}
+        ${text({ x: 628, y: 207, value: "RAG and testing", size: 24, weight: 740 })}
+        ${lines({ x: 628, y: 245, values: ["RAG architecture with traceable source evidence.", "Code reviews and automated UI checks.", "97% Playwright UI coverage."], size: 19, lineHeight: 27 })}
         ${metricCards}`,
     });
   }
@@ -220,16 +220,16 @@ function profile(mobile = false) {
     width,
     height,
     title: "Engineering profile and selected impact",
-    description: "Python and agentic AI work at Cisco, October 2025 to October 2026. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.",
+    description: "Agentic AI for security-compliance review automation at Cisco, October 2025 to October 2026. Prompt engineering, RAG architecture, and MCP integrations. Review time reduced from 80 to 16 hours per cycle for 50+ engineers across four product teams.",
     body: `${surface(width, height)}
       ${kicker(44, 70, "Engineering profile")}
-      ${lines({ x: 44, y: 116, values: ["Python and AI", "for security reviews."], size: 30, lineHeight: 38, fill: colors.text, weight: 760, spacing: -0.7 })}
+      ${lines({ x: 44, y: 116, values: ["Security-compliance", "review automation."], size: 30, lineHeight: 38, fill: colors.text, weight: 760, spacing: -0.7 })}
       ${card(44, 205, 512, 145, 18)}
       ${text({ x: 68, y: 245, value: "The work", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 282, values: ["Python, LangGraph, and LangChain,", "with MCP tools for Jira and security data."], size: 18, lineHeight: 27 })}
+      ${lines({ x: 68, y: 282, values: ["LangGraph, LangChain, and two LLM providers.", "MCP tools for Jira and security data.", "Prompt engineering and structured outputs."], size: 18, lineHeight: 27 })}
       ${card(44, 370, 512, 145, 18, true)}
-      ${text({ x: 68, y: 410, value: "Testing and review", size: 23, weight: 740 })}
-      ${lines({ x: 68, y: 447, values: ["Traceable retrieval and code review,", "with 97% Playwright UI coverage."], size: 18, lineHeight: 27 })}
+      ${text({ x: 68, y: 410, value: "RAG and testing", size: 23, weight: 740 })}
+      ${lines({ x: 68, y: 447, values: ["RAG architecture with traceable source evidence.", "Code reviews and automated UI checks.", "97% Playwright UI coverage."], size: 18, lineHeight: 27 })}
       ${metricCards}`,
   });
 }
@@ -241,7 +241,7 @@ function projectsHeader(mobile = false) {
     width,
     height,
     title: "Selected projects",
-    description: "Model Logger and Carivyo: agent observability, retrieval, and Python automation.",
+    description: "Model Logger and Carivyo: agent observability, hybrid retrieval, and career workflows with security guardrails.",
     body: `${text({ x: width / 2, y: mobile ? 30 : 31, value: "PROJECTS", size: mobile ? 13 : 14, fill: colors.sage, weight: 750, family: mono, spacing: 2.1, anchor: "middle" })}
       ${mobile
         ? lines({ x: width / 2, y: 74, values: ["Model Logger", "and Carivyo."], size: 27, lineHeight: 35, fill: colors.text, weight: 760, anchor: "middle" })
@@ -256,18 +256,18 @@ const projects = {
   modelLogger: {
     index: "01 / AGENT OBSERVABILITY",
     title: "Model Logger",
-    copy: ["Local traces for AI agents: tool calls, failures, and token usage.", "A separate RAG layer searches the captured logs."],
-    mobileCopy: ["Local traces for AI agents: tool calls,", "failures, and token usage. A separate RAG", "layer searches the captured logs."],
-    chips: ["TypeScript", "Node.js", "ChromaDB", "BM25 + RRF"],
-    meta: "v2.1.0 tracing / SDK + VS Code / RAG on main",
+    copy: ["Local traces for AI agents: tool calls, failures, and token usage.", "Redacts sensitive logs; hybrid search is available on main."],
+    mobileCopy: ["Redacted agent traces: tool calls, failures,", "and token usage. Hybrid log search is", "available in the source checkout."],
+    chips: ["TypeScript", "Node.js", "ChromaDB", "BM25 · RRF", "Reranking"],
+    meta: "v2.1.0 tracing / SDK and VS Code / RAG on main",
     side: "right",
     visual: "logs",
   },
   carivyo: {
-    index: "02 / PYTHON AUTOMATION",
+    index: "02 / CAREER INTELLIGENCE",
     title: "Carivyo",
-    copy: ["A Python workspace for finding jobs and preparing applications.", "FastAPI, SQLite, and explicit Codex or Ollama model selection."],
-    mobileCopy: ["A Python workspace for finding jobs and", "preparing applications, with FastAPI, SQLite,", "and Codex or on-device Ollama."],
+    copy: ["Find jobs and prepare materials from approved resume evidence.", "Codex-assisted workflows, local Ollama chat, and user review."],
+    mobileCopy: ["Find jobs and prepare application materials", "from approved resume evidence. Codex-assisted", "workflows, local Ollama chat, and user review."],
     chips: ["Python", "FastAPI", "SQLite", "Ollama"],
     meta: "4 ATS connectors / 120 boards / 27 resume checks",
     side: "left",
@@ -350,11 +350,11 @@ function toolkitIcon(kind, x, y, size) {
 
 function toolkit(mobile = false) {
   const width = mobile ? 600 : 1200;
-  const height = mobile ? 780 : 500;
+  const height = mobile ? 824 : 500;
   const groups = [
     { icon: "backend", label: "Python", details: ["FastAPI · asyncio", "SQL · SQLite"] },
-    { icon: "ai", label: "Agentic AI", details: ["LangGraph · LangChain", "MCP · LLM APIs"] },
-    { icon: "backend", label: "Retrieval", details: ["ChromaDB · BM25", "RRF · embeddings"] },
+    { icon: "ai", label: "Agentic AI", details: ["LangGraph · LangChain", "MCP · LLM APIs", "Prompts · guardrails"] },
+    { icon: "backend", label: "Retrieval", details: ["ChromaDB · BM25", "RRF · embeddings", "Reranking"] },
     { icon: "tools", label: "Testing", details: ["Playwright · pytest", "Git · CI/CD"] },
     { icon: "tools", label: "Tools", details: ["Docker · Linux", "TypeScript · Node.js"] },
   ];
@@ -373,30 +373,30 @@ function toolkit(mobile = false) {
       width,
       height,
       title: "Engineering toolkit",
-      description: "Python, agentic AI, retrieval, testing, and development tools.",
+      description: "Python, agentic AI, prompt engineering, security guardrails, retrieval, testing, and development tools.",
       body: `${surface(width, height)}${kicker(64, 76, "Engineering toolkit")}${text({ x: 64, y: 126, value: "Tools I use.", size: 38, weight: 760, spacing: -1 })}${cards}`,
     });
   }
 
   const compactCards = groups.slice(0, 4).map((group, index) => {
     const x = 44 + (index % 2) * 264;
-    const y = 180 + Math.floor(index / 2) * 206;
+    const y = 180 + Math.floor(index / 2) * 226;
     const center = x + 124;
-    return `${card(x, y, 248, 190, 17, index === 0)}
+    return `${card(x, y, 248, 210, 17, index === 0)}
       ${toolkitIcon(group.icon, center - 28, y + 20, 56)}
       ${text({ x: center, y: y + 108, value: group.label, size: 21, weight: 760, anchor: "middle" })}
       ${lines({ x: center, y: y + 139, values: group.details, size: 13, lineHeight: 23, fill: colors.muted, weight: 560, anchor: "middle" })}`;
   }).join("");
   const tools = groups[4];
-  const toolsCard = `${card(44, 592, 512, 128, 17, true)}${toolkitIcon(tools.icon, 68, 618, 72)}
-    ${text({ x: 170, y: 645, value: tools.label, size: 23, weight: 760 })}
-    ${lines({ x: 170, y: 676, values: tools.details, size: 14, lineHeight: 23, fill: colors.muted, weight: 560 })}`;
+  const toolsCard = `${card(44, 636, 512, 128, 17, true)}${toolkitIcon(tools.icon, 68, 662, 72)}
+    ${text({ x: 170, y: 689, value: tools.label, size: 23, weight: 760 })}
+    ${lines({ x: 170, y: 720, values: tools.details, size: 14, lineHeight: 23, fill: colors.muted, weight: 560 })}`;
   return svgDocument({
     width,
     height,
     title: "Engineering toolkit",
-    description: "Python, agentic AI, retrieval, testing, and development tools.",
-    body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["Tools I use.", "Python, AI, and automation."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${compactCards}${toolsCard}`,
+    description: "Python, agentic AI, prompt engineering, security guardrails, retrieval, testing, and development tools.",
+    body: `${surface(width, height)}${kicker(44, 70, "Engineering toolkit")}${lines({ x: 44, y: 116, values: ["Tools I use.", "Agents, retrieval, and testing."], size: 30, lineHeight: 37, fill: colors.text, weight: 760 })}${compactCards}${toolsCard}`,
   });
 }
 
@@ -473,8 +473,8 @@ function footer(mobile = false) {
       width,
       height,
       title: "Contact Manohar Eldhandi",
-      description: "Email Manohar about Python, agentic AI, and automation roles.",
-      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Get in touch.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "PYTHON  /  AGENTIC AI  /  AUTOMATION", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
+      description: "Email Manohar about agentic AI, security automation, and developer tooling roles.",
+      body: `${surface(width, height)}${kicker(64, 84, "Contact")}${text({ x: 64, y: 145, value: "Get in touch.", size: 46, weight: 770, spacing: -1.4 })}${text({ x: 66, y: 190, value: "AGENTIC AI / SECURITY AUTOMATION / DEVELOPER TOOLING", size: 14, fill: colors.muted, weight: 700, family: mono, spacing: 1 })}
         ${card(854, 91, 282, 102, 18, true)}${text({ x: 882, y: 150, value: "EMAIL ME", size: 18, weight: 760 })}${text({ x: 1104, y: 154, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
     });
   }
@@ -482,8 +482,8 @@ function footer(mobile = false) {
     width,
     height,
     title: "Contact Manohar Eldhandi",
-    description: "Email Manohar about Python, agentic AI, and automation roles.",
-    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Get in touch.", "I’d like to hear from you."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${text({ x: 46, y: 253, value: "PYTHON / AGENTIC AI / AUTOMATION", size: 13, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL ME", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
+    description: "Email Manohar about agentic AI, security automation, and developer tooling roles.",
+    body: `${surface(width, height)}${kicker(44, 76, "Contact")}${lines({ x: 44, y: 130, values: ["Get in touch.", "I’d like to hear from you."], size: 39, lineHeight: 47, fill: colors.text, weight: 770, spacing: -1 })}${lines({ x: 46, y: 241, values: ["AGENTIC AI / SECURITY AUTOMATION", "DEVELOPER TOOLING"], size: 13, lineHeight: 25, fill: colors.muted, weight: 700, family: mono, spacing: 0.7 })}${card(44, 292, 512, 76, 16, true)}${text({ x: 68, y: 339, value: "EMAIL ME", size: 19, weight: 760 })}${text({ x: 524, y: 343, value: "↗", size: 27, fill: colors.amber, weight: 700, anchor: "middle" })}`,
   });
 }
 

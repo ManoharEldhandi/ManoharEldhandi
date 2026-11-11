@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title description">
   <title id="title">Carivyo project</title>
-  <desc id="description">A Python workspace for finding jobs and preparing applications. FastAPI, SQLite, and explicit Codex or Ollama model selection.</desc>
+  <desc id="description">Find jobs and prepare materials from approved resume evidence. Codex-assisted workflows, local Ollama chat, and user review.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17212b"/>
@@ -20,9 +20,9 @@
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"><g>
     <rect x="0.5" y="0.5" width="1199" height="389" rx="28" fill="url(#panel)" stroke="#b88a4d" stroke-opacity="0.92" stroke-width="1" vector-effect="non-scaling-stroke" shape-rendering="geometricPrecision"/>
   </g>
-      <text x="430" y="75" fill="#dda756" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="1.3" text-anchor="start">02 / PYTHON AUTOMATION</text>
+      <text x="430" y="75" fill="#dda756" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="750" letter-spacing="1.3" text-anchor="start">02 / CAREER INTELLIGENCE</text>
       <text x="430" y="133" fill="#f3efe7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="780" letter-spacing="-1.2" text-anchor="start">Carivyo ↗</text>
-      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="430" y="176">A Python workspace for finding jobs and preparing applications.</tspan><tspan x="430" y="205">FastAPI, SQLite, and explicit Codex or Ollama model selection.</tspan></text>
+      <text fill="#aab2bc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="450" letter-spacing="0" text-anchor="start"><tspan x="430" y="176">Find jobs and prepare materials from approved resume evidence.</tspan><tspan x="430" y="205">Codex-assisted workflows, local Ollama chat, and user review.</tspan></text>
       <rect x="430" y="231" width="79" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="469.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">Python</text><rect x="518" y="231" width="88" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="562" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">FastAPI</text><rect x="615" y="231" width="79" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="654.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">SQLite</text><rect x="703" y="231" width="79" height="31" rx="9" fill="#1c2632" stroke="#34404d" stroke-width="1"/><text x="742.5" y="251" fill="#dce1e5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="650" letter-spacing="0" text-anchor="middle">Ollama</text>
       <text x="430" y="317" fill="#aab2bc" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="650" letter-spacing="0" text-anchor="start">4 ATS connectors / 120 boards / 27 resume checks</text>
       <g>
